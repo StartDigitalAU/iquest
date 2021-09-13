@@ -1,26 +1,9 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import logoLight from "/src/images/iquest-white-logo.png"
+import menuJson from "../../../content/menu.json"
 
-/* This example requires Tailwind CSS v2.0+ */
 const navigation = {
-  about: [
-    { name: 'About Us', href: '#' },
-    { name: 'Our Partners', href: '#' },
-    { name: 'Testimonials', href: '#' },
-    { name: 'Directors', href: '#' },
-  ],
-  ITsupport: [
-    { name: 'IT Support Services Perth', href: '#' },
-    { name: 'Business Helpdesk Support', href: '#' },
-    { name: 'Technology Consulting', href: '#' },
-    { name: 'Project Management', href: '#' },
-  ],
-  company: [
-    { name: 'Case Studies', href: '#' },
-    { name: 'Cloud Services', href: '#' },
-    { name: 'Office 365', href: '#' },
-    { name: 'Insights', href: '#' },
-  ],
   social: [
     {
       name: 'Facebook',
@@ -52,6 +35,7 @@ const navigation = {
 }
 
 export default function Footer() {
+  const menuItems = menuJson.menuItems
   return (
     <footer className="" aria-labelledby="footerHeading">
       <h2 id="footerHeading" className="sr-only">
@@ -66,49 +50,52 @@ export default function Footer() {
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
-                <a key={item.name} href={item.href} target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+                <Link key={item.name} to={item.href} target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
-                </a>
+                </Link>
               ))}
             </div>
           </div>
           <div className="mt-12 grid grid-cols-1 gap-8 xl:mt-0 xl:col-span-2">
             <div className="md:grid md:grid-cols-3 md:gap-8">
               <div>
-                <h3 className="text-lg font-semibold text-white">Our Services</h3>
+                <h3 className="text-lg font-semibold text-white">About</h3>
                 <ul className="mt-4 space-y-4">
-                  {navigation.ITsupport.map((item) => (
+                  {menuItems[0][1].map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-sm text-white hover:text-gray-400">
+                      <Link to={item.href} className="text-sm text-white hover:text-gray-400">
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </div>
               <div className="mt-12 md:mt-0 md:ml-10">
-                <h3 className="text-lg font-semibold text-white">About</h3>
+                <h3 className="text-lg font-semibold text-white">Our Services</h3>
                 <ul className="mt-4 space-y-4">
-                  {navigation.about.map((item) => (
+                  {menuItems[1][1].map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-sm text-white hover:text-gray-400">
+                      <Link to={item.href} className="text-sm text-white hover:text-gray-400">
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="mt-12 md:mt-0">
+              <div className="mt-12 md:mt-0 md:ml-10">
                 <h3 className="text-lg font-semibold text-white">More</h3>
                 <ul className="mt-4 space-y-4">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-sm text-white hover:text-gray-400">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
+                  <li>
+                    <Link to="/case-studies" className="text-sm text-white hover:text-gray-400">
+                      Case Studies
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/contact-us" className="text-sm text-white hover:text-gray-400">
+                      Contact Us
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
