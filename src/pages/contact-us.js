@@ -1,9 +1,16 @@
 import React, { useState } from 'react'
+import { navigate } from 'gatsby-link'
 import InternalLayout from "../components/layout/InternalLayout"
 import PageTransition from 'gatsby-plugin-page-transitions';
 
+function encode(data) {
+    return Object.keys(data)
+        .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+        .join('&')
+}
+
 const ContactUs = () => {
-    const [state, setState] = React.useState({})
+    const [state, setState] = useState({})
 
     const handleChange = (e) => {
         setState({ ...state, [e.target.name]: e.target.value })
@@ -21,7 +28,7 @@ const ContactUs = () => {
             }),
         })
             .then(() => navigate(form.getAttribute('action')))
-            .catch((error) => alert(error))
+            .catch((error) => log('Form submission error: ', error))
     }
 
     return (
