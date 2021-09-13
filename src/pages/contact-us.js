@@ -32,6 +32,7 @@ const ContactUs = () => {
                             <span className="block">Melbourne Office: Unit 201, 50 Market Street, VIC 3000</span>
                         </div>
                         <form className="lg:sticky top-8 grid lg:grid-cols-2 gap-6 self-start" name="contact" method="POST" data-netlify="true">
+                            <input type="hidden" name="contact" value="contact" />
                             <Input label="name" placeholder="John Doe" />
                             <Input label="subject" placeholder="IT Support Services" />
                             <Input label="email" type="email" placeholder="jane.doe@example.com.au" />
