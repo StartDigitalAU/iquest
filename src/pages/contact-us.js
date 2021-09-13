@@ -29,7 +29,7 @@ const ContactUs = () => {
             }),
         })
             .then(() => navigate(form.getAttribute('action')))
-            .catch((error) => log('Form submission error: ', error))
+            .catch((error) => console.log('Form submission error: ', error))
     }
 
     return (
