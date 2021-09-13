@@ -14,6 +14,7 @@ const ContactUs = () => {
 
     const handleChange = (e) => {
         setState({ ...state, [e.target.name]: e.target.value })
+        console.log('state: ', state);
     }
 
     const handleSubmit = (e) => {
