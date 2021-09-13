@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import InternalLayout from '../components/layout/InternalLayout'
-import { PageTransition } from 'gatsby-plugin-page-transitions'
+import PageTransition from 'gatsby-plugin-page-transitions';
 
 const Success = () => {
     return (
