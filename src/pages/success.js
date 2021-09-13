@@ -9,8 +9,8 @@ const Success = () => {
             <PageTransition>
                 <InternalLayout title="Success">
                     <h2>Thanks for your submission!</h2>
-                    <p>Somebody will get back to you shortly!</p>
-                    <Link to="/" className="btn btn-blue btn-small">Back to home</Link>
+                    <p>One of our team will get back to you shortly!</p>
+                    <Link to="/" className="btn btn-blue btn-small mt-4">Back to home</Link>
                 </InternalLayout>
             </PageTransition>
         </>

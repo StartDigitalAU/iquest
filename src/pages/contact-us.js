@@ -1,8 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import InternalLayout from "../components/layout/InternalLayout"
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 const ContactUs = () => {
+    const [state, setState] = React.useState({})
+
+    const handleChange = (e) => {
+        setState({ ...state, [e.target.name]: e.target.value })
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const form = e.target
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: encode({
+                'form-name': form.getAttribute('name'),
+                ...state,
+            }),
+        })
+            .then(() => navigate(form.getAttribute('action')))
+            .catch((error) => alert(error))
+    }
+
     return (
         <>
             <PageTransition>
@@ -31,13 +52,20 @@ const ContactUs = () => {
                             <span className="block">Perth Office: Level 5, 68 St Georges Terrace, WA 6000</span>
                             <span className="block">Melbourne Office: Unit 201, 50 Market Street, VIC 3000</span>
                         </div>
-                        <form className="lg:sticky top-8 grid lg:grid-cols-2 gap-6 self-start" action="/success" name="contact" method="POST" data-netlify="true">
-                            <input type="hidden" name="contact" value="contact" />
-                            <Input label="name" placeholder="John Doe" />
-                            <Input label="subject" placeholder="IT Support Services" />
-                            <Input label="email" type="email" placeholder="jane.doe@example.com.au" />
-                            <Input label="phone" type="tel" placeholder="0412345678" />
-                            <TextArea />
+                        <form
+                            className="lg:sticky top-8 grid lg:grid-cols-2 gap-6 self-start"
+                            action="/success"
+                            name="contact"
+                            method="POST"
+                            data-netlify="true"
+                            onSubmit={handleSubmit}
+                        >
+                            <input type="hidden" name="form-name" value="contact" />
+                            <Input label="name" placeholder="John Doe" onChange={handleChange} />
+                            <Input label="subject" placeholder="IT Support Services" onChange={handleChange} />
+                            <Input label="email" type="email" placeholder="jane.doe@example.com.au" onChange={handleChange} />
+                            <Input label="phone" type="tel" placeholder="0412345678" onChange={handleChange} />
+                            <TextArea onChange={handleChange} />
                             <button type="submit" className="btn btn-blue btn-small w-32 lg:col-span-full ml-auto">Submit</button>
                         </form>
                     </div>
