@@ -67,23 +67,6 @@
                     "icon": "DocumentTextIcon"
                 }
             ]
-        ],
-        [
-            {
-                "title": "Support"
-            },
-            [
-                {
-                    "name": "Learn More",
-                    "href": "#",
-                    "icon": "PlayIcon"
-                },
-                {
-                    "name": "Contact Sales",
-                    "href": "#",
-                    "icon": "PhoneIcon"
-                }
-            ]
         ]
     ]
 }

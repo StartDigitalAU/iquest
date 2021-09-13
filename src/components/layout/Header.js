@@ -62,7 +62,7 @@ const Header = () => {
                 })}
                 <Link to="/case-studies" className="text-base font-medium text-white hover:text-white-900">Case Studies</Link>
               </Popover.Group>
-              <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+              <div className="hidden md:flex items-center justify-end">
                 <Link
                   to="/contact-us"
                   className="btn btn-blue btn-small"
