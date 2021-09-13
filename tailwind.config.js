@@ -2,6 +2,10 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  purge: [
+    "./src/**/*.css",
+    "./src/**/*.js",
+  ],
   theme: {
     extend: {
       backgroundImage: theme => ({
