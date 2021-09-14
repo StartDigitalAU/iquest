@@ -105,7 +105,7 @@ const Header = () => {
                       {menuItems.map((item) => {
                         const subMenuItems = item[1]
                         return (
-                          <details>
+                          <details key={item[0].title}>
                             <summary>{item[0].title}</summary>
                             <div>
                               {subMenuItems.map(subItem => {

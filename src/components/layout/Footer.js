@@ -50,10 +50,10 @@ export default function Footer() {
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
-                <Link key={item.name} to={item.href} target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+                <a key={item.name} href={item.href} target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
-                </Link>
+                </a>
               ))}
             </div>
           </div>
