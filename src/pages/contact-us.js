@@ -23,11 +23,14 @@ const ContactUs = () => {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: encode({
-                'form-name': form.getAttribute('name'),
+                'form-name': "contact",
                 ...state,
             }),
         })
-            .then(() => navigate(form.getAttribute('action')))
+            .then((data) => {
+                navigate(form.getAttribute('action'))
+                console.log('data: ', data)
+            })
             .catch((error) => console.log('Form submission error: ', error))
     }
 
