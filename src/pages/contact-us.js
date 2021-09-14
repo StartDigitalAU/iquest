@@ -29,7 +29,6 @@ const ContactUs = () => {
         })
             .then((data) => {
                 navigate(form.getAttribute('action'))
-                console.log('data: ', data)
             })
             .catch((error) => console.log('Form submission error: ', error))
     }
