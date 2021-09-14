@@ -3,7 +3,7 @@ import InternalLayout from "./InternalLayout"
 import { ChevronRightIcon } from '@heroicons/react/outline'
 
 const CaseStudiesLayout = ({ pageContext }) => {
-    const frontMatter = pageContext.frontmatter
+    const frontMatter = pageContext.frontmattern
     return (
         <InternalLayout title={frontMatter.client}>
             <div className="px-4 lg:px-0 lg:grid lg:grid-cols-3 lg:gap-x-8">

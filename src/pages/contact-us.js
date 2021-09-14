@@ -14,7 +14,6 @@ const ContactUs = () => {
 
     const handleChange = (e) => {
         setState({ ...state, [e.target.name]: e.target.value })
-        console.log('state: ', state);
     }
 
     const handleSubmit = (e) => {
@@ -69,11 +68,11 @@ const ContactUs = () => {
                             onSubmit={handleSubmit}
                         >
                             <input type="hidden" name="form-name" value="contact" />
-                            <Input label="name" placeholder="John Doe" onChange={handleChange} />
-                            <Input label="subject" placeholder="IT Support Services" onChange={handleChange} />
-                            <Input label="email" type="email" placeholder="jane.doe@example.com.au" onChange={handleChange} />
-                            <Input label="phone" type="tel" placeholder="0412345678" onChange={handleChange} />
-                            <TextArea onChange={handleChange} />
+                            <Input label="name" placeholder="John Doe" changeHandler={handleChange} />
+                            <Input label="subject" placeholder="IT Support Services" changeHandler={handleChange} />
+                            <Input label="email" type="email" placeholder="jane.doe@example.com.au" changeHandler={handleChange} />
+                            <Input label="phone" type="tel" placeholder="0412345678" changeHandler={handleChange} />
+                            <TextArea changeHandler={handleChange} />
                             <button type="submit" className="btn btn-blue btn-small w-32 lg:col-span-full ml-auto">Submit</button>
                         </form>
                     </div>
@@ -83,7 +82,7 @@ const ContactUs = () => {
     )
 }
 
-const Input = ({ label, type = 'text', placeholder = '' }) => {
+const Input = ({ label, type = 'text', placeholder = '', changeHandler }) => {
     return (
         <div className="self-start relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
             <label
@@ -98,12 +97,13 @@ const Input = ({ label, type = 'text', placeholder = '' }) => {
                 id={label}
                 className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm"
                 placeholder={placeholder}
+                onChange={changeHandler}
             />
         </div>
     )
 }
 
-const TextArea = () => (
+const TextArea = ({ changeHandler }) => (
     <div className="self-start relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-indigo-600 lg:col-span-full">
         <label
             htmlFor="message"
@@ -116,7 +116,8 @@ const TextArea = () => (
             name="message"
             id="message"
             rows="5"
-            placeholder="I'd like to talk to you about...">
+            placeholder="I'd like to talk to you about..."
+            onChange={changeHandler}>
         </textarea>
     </div>
 )
