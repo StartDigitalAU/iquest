@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { navigate } from 'gatsby-link'
 import InternalLayout from "../components/layout/InternalLayout"
-import PageTransition from 'gatsby-plugin-page-transitions';
 
 function encode(data) {
     return Object.keys(data)
@@ -35,51 +34,49 @@ const ContactUs = () => {
 
     return (
         <>
-            <PageTransition>
-                <InternalLayout title="Contact Us">
-                    <div className="grid lg:grid-cols-2 gap-16">
-                        <div>
-                            <h2>Get in touch with us today!</h2>
-                            <p>iQuest may be a technology company, but at the very core we provide exceptional good old-fashioned service. In a highly competitive market, we are able to distinguish ourselves by offering a personal and premium service delivery experience. iQuest was created on the premise of providing understanding as well as true professionalism. Our success is mainly determined by the commitment and competence of our team of IT Engineers.</p>
-                            <h3 className="mt-6 mb-2">Contact Us</h3>
-                            <div className="flex flex-col">
-                                <span>General Manager: Pietro Bertolini</span>
-                                <a className="hover:underline" href="mailto:sales@iquest.com.au">sales@iquest.com.au</a>
-                                <a className="hover:underline" href="mailto:pietro.bertolini@iquest.com.au">pietro.bertolini@iquest.com.au</a>
-                            </div>
-                            <h3 className="mt-6 mb-2">Helpdesk</h3>
-                            <div className="flex flex-col">
-                                <p>The iQuest Helpdesk is here to primarily support our Australian and International clients in urgent need of our IT support team.</p>
-                                <span>
-                                    Australian line: <a className="hover:underline" href="tel:1300769859">1300 769 859</a>
-                                </span>
-                                <span>
-                                    International line: <a className="hover:underline" href="tel:+61862086510">(+61)8 6208 6510</a>
-                                </span>
-                            </div>
-                            <h3 className="mt-6 mb-2">iQuest Offices</h3>
-                            <span className="block">Perth Office: Level 5, 68 St Georges Terrace, WA 6000</span>
-                            <span className="block">Melbourne Office: Unit 201, 50 Market Street, VIC 3000</span>
+            <InternalLayout title="Contact Us">
+                <div className="grid lg:grid-cols-2 gap-16">
+                    <div>
+                        <h2>Get in touch with us today!</h2>
+                        <p>iQuest may be a technology company, but at the very core we provide exceptional good old-fashioned service. In a highly competitive market, we are able to distinguish ourselves by offering a personal and premium service delivery experience. iQuest was created on the premise of providing understanding as well as true professionalism. Our success is mainly determined by the commitment and competence of our team of IT Engineers.</p>
+                        <h3 className="mt-6 mb-2">Contact Us</h3>
+                        <div className="flex flex-col">
+                            <span>General Manager: Pietro Bertolini</span>
+                            <a className="hover:underline" href="mailto:sales@iquest.com.au">sales@iquest.com.au</a>
+                            <a className="hover:underline" href="mailto:pietro.bertolini@iquest.com.au">pietro.bertolini@iquest.com.au</a>
                         </div>
-                        <form
-                            className="lg:sticky top-8 grid lg:grid-cols-2 gap-6 self-start"
-                            action="/success"
-                            name="contact"
-                            method="POST"
-                            data-netlify="true"
-                            onSubmit={handleSubmit}
-                        >
-                            <input type="hidden" name="form-name" value="contact" />
-                            <Input label="name" placeholder="John Doe" changeHandler={handleChange} />
-                            <Input label="subject" placeholder="IT Support Services" changeHandler={handleChange} />
-                            <Input label="email" type="email" placeholder="jane.doe@example.com.au" changeHandler={handleChange} />
-                            <Input label="phone" type="tel" placeholder="0412345678" changeHandler={handleChange} />
-                            <TextArea changeHandler={handleChange} />
-                            <button type="submit" className="btn btn-blue btn-small w-32 lg:col-span-full ml-auto">Submit</button>
-                        </form>
+                        <h3 className="mt-6 mb-2">Helpdesk</h3>
+                        <div className="flex flex-col">
+                            <p>The iQuest Helpdesk is here to primarily support our Australian and International clients in urgent need of our IT support team.</p>
+                            <span>
+                                Australian line: <a className="hover:underline" href="tel:1300769859">1300 769 859</a>
+                            </span>
+                            <span>
+                                International line: <a className="hover:underline" href="tel:+61862086510">(+61)8 6208 6510</a>
+                            </span>
+                        </div>
+                        <h3 className="mt-6 mb-2">iQuest Offices</h3>
+                        <span className="block">Perth Office: Level 5, 68 St Georges Terrace, WA 6000</span>
+                        <span className="block">Melbourne Office: Unit 201, 50 Market Street, VIC 3000</span>
                     </div>
-                </InternalLayout>
-            </PageTransition>
+                    <form
+                        className="lg:sticky top-8 grid lg:grid-cols-2 gap-6 self-start"
+                        action="/success"
+                        name="contact"
+                        method="POST"
+                        data-netlify="true"
+                        onSubmit={handleSubmit}
+                    >
+                        <input type="hidden" name="form-name" value="contact" />
+                        <Input label="name" placeholder="John Doe" changeHandler={handleChange} />
+                        <Input label="subject" placeholder="IT Support Services" changeHandler={handleChange} />
+                        <Input label="email" type="email" placeholder="jane.doe@example.com.au" changeHandler={handleChange} />
+                        <Input label="phone" type="tel" placeholder="0412345678" changeHandler={handleChange} />
+                        <TextArea changeHandler={handleChange} />
+                        <button type="submit" className="btn btn-blue btn-small w-32 lg:col-span-full ml-auto">Submit</button>
+                    </form>
+                </div>
+            </InternalLayout>
         </>
     )
 }

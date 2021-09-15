@@ -8,6 +8,7 @@ export default function Testimonials() {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative">
           <img
+            data-animate
             className="mx-auto"
             src={clientLogo}
             width="250"
@@ -15,13 +16,13 @@ export default function Testimonials() {
           />
           <blockquote className="mt-10">
             <div className="max-w-3xl mx-auto text-center text-xl leading-9 font-medium text-white">
-              <p>
+              <p data-animate>
                 &ldquo;We cannot speak highly enough of the staff assigned to our implementation. Our new infrastructure more complex than our previous systems. The iQuest team were helpful, approachable, and knowledgeable. The ongoing excellent support is really something we sincerely appreciate and rely on.&rdquo;
               </p>
             </div>
             <footer className="mt-8">
               <div className="md:flex md:items-center md:justify-center">
-                <div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
+                <div data-animate-left className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
                   <div className="text-base font-medium text-white">Minh Tran</div>
 
                   <svg className="hidden md:block mx-1 h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
