@@ -1,5 +1,4 @@
 import * as React from "react"
-import PageTransition from 'gatsby-plugin-page-transitions';
 import InternalLayout from "../../components/layout/InternalLayout"
 import Quote from "../../components/Quote"
 
@@ -49,16 +48,14 @@ export default function Testimonials() {
 
   return (
     <>
-      <PageTransition>
-        <InternalLayout title="Our Testimonials">
-          <h2>Hear from iQuest's partners and clients</h2>
-          <div className="md:grid md:grid-cols-2 md:px-6 lg:px-8">
-            {testimonials.map(({ quote, company, image }) => (
-              <Quote quote={quote} company={company} image={image} />
-            ))}
-          </div>
-        </InternalLayout>
-      </PageTransition>
+      <InternalLayout title="Our Testimonials">
+        <h2>Hear from iQuest's partners and clients</h2>
+        <div className="md:grid md:grid-cols-2 md:px-6 lg:px-8">
+          {testimonials.map(({ quote, company, image }) => (
+            <Quote quote={quote} company={company} image={image} />
+          ))}
+        </div>
+      </InternalLayout>
     </>
   )
 }
