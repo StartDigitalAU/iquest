@@ -1,5 +1,6 @@
-import * as React from "react"
+import React, { useEffect } from "react"
 import { Helmet } from "react-helmet"
+import { pageTransition } from "../js/main"
 
 import Header from "../components/layout/Header"
 import WaveDivider from "../components/WaveDivider"
@@ -13,6 +14,10 @@ import CloudComputing from "../components/CloudComputing"
 import Footer from "../components/layout/Footer"
 
 function IndexPage() {
+  useEffect(() => {
+    pageTransition()
+  }, [])
+
   return (
     <>
       <Helmet htmlAttributes={{ lang: `en` }}>

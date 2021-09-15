@@ -11,16 +11,35 @@ export function pageTransition() {
 }
 
 export function animateInOnScroll() {
-    gsap.utils.toArray("p").forEach(p => {
-        gsap.from(p, {
-            opacity: 0,
-            y: 30,
-            duration: 0.6,
-            ease: "power4.Out",
-            scrollTrigger: {
-                trigger: p,
-                start: "top bottom-=50",
-            }
-        });
+    const defaults = {
+        opacity: 0,
+        duration: 0.5,
+        ease: "power4.Out",
+        scrollTrigger: {
+            start: "top bottom-=50",
+            markers: true,
+        }
+    }
+
+    const animationTypes = [
+        { attribute: '[data-animate]', settings: { ...defaults, y: 30, x: 0 } },
+        { attribute: '[data-animate-down]', settings: { ...defaults, y: -30, x: 0 } },
+        { attribute: '[data-animate-left]', settings: { ...defaults, y: 0, x: -30 } },
+        { attribute: '[data-animate-right]', settings: { ...defaults, y: 0, x: 30 } }
+    ]
+
+    animationTypes.forEach(animationType => {
+        const allElements = gsap.utils.toArray(animationType.attribute)
+
+        allElements.forEach(element => {
+            const trigger = { scrollTrigger: { trigger: element } }
+            const defaultSettings = { ...defaults, ...trigger }
+
+            const settings = Object.assign(animationType.settings, defaultSettings)
+
+            console.log('settings: ', settings);
+
+            gsap.from(element, settings);
+        })
     })
 }

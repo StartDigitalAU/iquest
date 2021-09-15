@@ -19,7 +19,7 @@ export default function About() {
         <StaticImage
           className="mt-20 rounded-xl shadow-xl lg:w-auto"
           src="../../src/images/About-iQuest-Image.jpg"
-          width="1224"
+          width={1224}
           alt="iQuest About Us Banner"
           placeholder="blurred" />
         <ClientLogos classes="py-20" />
