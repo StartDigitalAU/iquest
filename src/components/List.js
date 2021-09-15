@@ -11,7 +11,7 @@ const List = ({ items, icon }) => {
     }
 
     return (
-        <div className="mt-12 lg:mt-0">
+        <div data-animate-right className="mt-12 lg:mt-0">
             <dl className="space-y-4">
                 {items.map((item) => (
                     <div key={item} className="relative">

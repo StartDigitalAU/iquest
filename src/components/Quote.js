@@ -2,7 +2,7 @@ import React from 'react'
 
 const Quote = ({ quote, image, company }) => {
     return (
-        <div className="px-4 sm:px-6 md:flex md:flex-col py-8 md:pl-0 md:pr-10 lg:pr-16">
+        <div data-animate className="px-4 sm:px-6 md:flex md:flex-col py-8 md:pl-0 md:pr-10 lg:pr-16">
             <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
                 <div className="relative text-lg font-medium text-gray-600 md:flex-grow">
                     <svg

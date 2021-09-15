@@ -37,16 +37,16 @@ const ContactUs = () => {
             <InternalLayout title="Contact Us">
                 <div className="grid lg:grid-cols-2 gap-16">
                     <div>
-                        <h2>Get in touch with us today!</h2>
-                        <p>iQuest may be a technology company, but at the very core we provide exceptional good old-fashioned service. In a highly competitive market, we are able to distinguish ourselves by offering a personal and premium service delivery experience. iQuest was created on the premise of providing understanding as well as true professionalism. Our success is mainly determined by the commitment and competence of our team of IT Engineers.</p>
-                        <h3 className="mt-6 mb-2">Contact Us</h3>
-                        <div className="flex flex-col">
+                        <h2 data-animate>Get in touch with us today!</h2>
+                        <p> data-animateiQuest may be a technology company, but at the very core we provide exceptional good old-fashioned service. In a highly competitive market, we are able to distinguish ourselves by offering a personal and premium service delivery experience. iQuest was created on the premise of providing understanding as well as true professionalism. Our success is mainly determined by the commitment and competence of our team of IT Engineers.</p>
+                        <h3 data-animate className="mt-6 mb-2">Contact Us</h3>
+                        <div data-animate className="flex flex-col">
                             <span>General Manager: Pietro Bertolini</span>
                             <a className="hover:underline" href="mailto:sales@iquest.com.au">sales@iquest.com.au</a>
                             <a className="hover:underline" href="mailto:pietro.bertolini@iquest.com.au">pietro.bertolini@iquest.com.au</a>
                         </div>
-                        <h3 className="mt-6 mb-2">Helpdesk</h3>
-                        <div className="flex flex-col">
+                        <h3 data-animate className="mt-6 mb-2">Helpdesk</h3>
+                        <div data-animate className="flex flex-col">
                             <p>The iQuest Helpdesk is here to primarily support our Australian and International clients in urgent need of our IT support team.</p>
                             <span>
                                 Australian line: <a className="hover:underline" href="tel:1300769859">1300 769 859</a>
@@ -55,11 +55,12 @@ const ContactUs = () => {
                                 International line: <a className="hover:underline" href="tel:+61862086510">(+61)8 6208 6510</a>
                             </span>
                         </div>
-                        <h3 className="mt-6 mb-2">iQuest Offices</h3>
-                        <span className="block">Perth Office: Level 5, 68 St Georges Terrace, WA 6000</span>
-                        <span className="block">Melbourne Office: Unit 201, 50 Market Street, VIC 3000</span>
+                        <h3 data-animate className="mt-6 mb-2">iQuest Offices</h3>
+                        <span data-animate className="block">Perth Office: Level 5, 68 St Georges Terrace, WA 6000</span>
+                        <span data-animate className="block">Melbourne Office: Unit 201, 50 Market Street, VIC 3000</span>
                     </div>
                     <form
+                        data-animate-right
                         className="lg:sticky top-8 grid lg:grid-cols-2 gap-6 self-start"
                         action="/success"
                         name="contact"

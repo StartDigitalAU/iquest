@@ -7,7 +7,6 @@ import { pageTransition, setupAnimateInOnScroll } from "../../js/main";
 
 const InternalLayout = ({ children, title, description }) => {
     useEffect(() => {
-        pageTransition()
         setupAnimateInOnScroll()
     }, [])
 

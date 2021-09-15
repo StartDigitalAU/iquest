@@ -5,7 +5,7 @@ import { OfficeBuildingIcon, UserGroupIcon } from '@heroicons/react/solid'
 const CaseStudy = ({ caseStudy }) => {
     const data = caseStudy.node.frontmatter
     return (
-        <div className="flex flex-col bg-gray-50 shadow-md rounded-md">
+        <div data-animate className="flex flex-col bg-gray-50 shadow-md rounded-md">
             <img className="w-full rounded-t-md" src={`/${data.featuredImage}`} alt="" />
             <div className="p-4 flex flex-col space-y-3">
                 <div className="flex items-center space-x-1">

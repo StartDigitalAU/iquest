@@ -15,9 +15,7 @@ gsap.defaults({
 
 export function pageTransition() {
     gsap.from("body", {
-        opacity: 0,
         duration: 1,
-        ease: "power4.Out",
     });
 }
 

@@ -15,7 +15,6 @@ import Footer from "../components/layout/Footer"
 
 function IndexPage() {
   useEffect(() => {
-    pageTransition()
     setupAnimateInOnScroll()
   }, [])
 

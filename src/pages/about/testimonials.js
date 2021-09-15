@@ -49,7 +49,7 @@ export default function Testimonials() {
   return (
     <>
       <InternalLayout title="Our Testimonials">
-        <h2>Hear from iQuest's partners and clients</h2>
+        <h2 data-animate>Hear from iQuest's partners and clients</h2>
         <div className="md:grid md:grid-cols-2 md:px-6 lg:px-8">
           {testimonials.map(({ quote, company, image }) => (
             <Quote quote={quote} company={company} image={image} />
