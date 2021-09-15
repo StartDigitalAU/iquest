@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from "react";
 import Header from './Header'
 import Footer from './Footer'
 import InternalHeader from '../InternalHeader'
+import { pageTransition, animateInOnScroll } from "../../js/main";
 
 const InternalLayout = ({ children, title, description }) => {
+    useEffect(() => {
+        pageTransition()
+        animateInOnScroll()
+    }, [])
+
     return (
         <>
             <Header />
