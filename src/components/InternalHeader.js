@@ -8,7 +8,7 @@ const InternalHeader = ({ title, description }) => {
                     {title}
                 </h1>}
             {description &&
-                <p data-animate-left className="mt-3 text-lg leading-relaxed text-white sm:max-w-xl sm:mx-auto lg:mx-0">{description}</p>}
+                <p data-animate-more className="mt-3 text-lg leading-relaxed text-white sm:max-w-xl sm:mx-auto lg:mx-0">{description}</p>}
         </div>
     )
 }

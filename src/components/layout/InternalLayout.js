@@ -3,12 +3,12 @@ import Header from './Header'
 import Footer from './Footer'
 import WaveDivider from "../WaveDivider"
 import InternalHeader from '../InternalHeader'
-import { pageTransition, animateInOnScroll } from "../../js/main";
+import { pageTransition, setupAnimateInOnScroll } from "../../js/main";
 
 const InternalLayout = ({ children, title, description }) => {
     useEffect(() => {
         pageTransition()
-        animateInOnScroll()
+        setupAnimateInOnScroll()
     }, [])
 
     return (
