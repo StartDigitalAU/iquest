@@ -5,7 +5,7 @@ export default function MainBanner() {
   return (
     <div className="max-w-6xl mx-auto">
       <div className="relative z-10 pb-8 flex flex-wrap items-end sm:pb-16 md:pb-20 lg:max-w-full lg:w-full lg:pb-28 xl:pb-32">
-        <main className="mt-10 max-w-3xl px-4 float-left sm:mt-12 sm:px-6 md:mt-16 lg:mt-18 lg:px-8 xl:mt-18">
+        <main data-animate className="mt-10 max-w-3xl px-4 float-left sm:mt-12 sm:px-6 md:mt-16 lg:mt-18 lg:px-8 xl:mt-18">
           <div className="sm:text-center lg:text-left">
             <span className="text-md inline-block md:text-lg text-white tracking-wide mb-4">Perth's leading IT solutions team since 2004</span>
             <h1 className="text-4xl leading-tight font-bold sm:text-5xl md:leading-tight md:text-7xl text-blue-lighter">iQuest provide exceptional IT support</h1>

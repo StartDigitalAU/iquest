@@ -44,11 +44,11 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
-            <img src={logoLight} width="180" height="45" alt="iQuest Logo" />
-            <p className="text-white text-base leading-relaxed max-w-md">
+            <img data-animate src={logoLight} width="180" height="45" alt="iQuest Logo" />
+            <p data-animate className="text-white text-base leading-relaxed max-w-md">
               iQuest provide a complete suite of IT support services that allow you to focus on what's important - your business.
             </p>
-            <div className="flex space-x-6">
+            <div data-animate className="flex space-x-6">
               {navigation.social.map((item) => (
                 <a key={item.name} href={item.href} target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
                   <span className="sr-only">{item.name}</span>
@@ -60,10 +60,10 @@ export default function Footer() {
           <div className="mt-12 grid grid-cols-1 gap-8 xl:mt-0 xl:col-span-2">
             <div className="md:grid md:grid-cols-3 md:gap-8">
               <div>
-                <h3 className="text-lg font-semibold text-white">About</h3>
+                <h3 data-animate className="text-lg font-semibold text-white">About</h3>
                 <ul className="mt-4 space-y-4">
                   {menuItems[0][1].map((item) => (
-                    <li key={item.name}>
+                    <li data-animate key={item.name}>
                       <Link to={item.href} className="text-sm text-white hover:text-gray-400">
                         {item.name}
                       </Link>
@@ -72,10 +72,10 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0 md:ml-10">
-                <h3 className="text-lg font-semibold text-white">Our Services</h3>
+                <h3 data-animate className="text-lg font-semibold text-white">Our Services</h3>
                 <ul className="mt-4 space-y-4">
                   {menuItems[1][1].map((item) => (
-                    <li key={item.name}>
+                    <li data-animate key={item.name}>
                       <Link to={item.href} className="text-sm text-white hover:text-gray-400">
                         {item.name}
                       </Link>
@@ -84,14 +84,14 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0 md:ml-10">
-                <h3 className="text-lg font-semibold text-white">More</h3>
+                <h3 data-animate className="text-lg font-semibold text-white">More</h3>
                 <ul className="mt-4 space-y-4">
-                  <li>
+                  <li data-animate>
                     <Link to="/case-studies" className="text-sm text-white hover:text-gray-400">
                       Case Studies
                     </Link>
                   </li>
-                  <li>
+                  <li data-animate>
                     <Link to="/contact-us" className="text-sm text-white hover:text-gray-400">
                       Contact Us
                     </Link>
@@ -102,7 +102,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-gray-200 pt-8">
-          <p className="text-base text-white xl:text-center">&copy; 2021 iQuest, Inc. All rights reserved.</p>
+          <p data-animate className="text-base text-white xl:text-center">&copy; 2021 iQuest, Inc. All rights reserved.</p>
         </div>
       </div>
     </footer>

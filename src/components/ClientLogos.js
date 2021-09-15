@@ -27,9 +27,9 @@ export default function ClientLogos({ classes }) {
   return (
     <section className={`max-w-6xl mx-auto px-4 sm:px-6 ${classes}`}>
       <div className="flex items-center space-x-5">
-        {clientLogos.map(logo => {
+        {clientLogos.map((logo) => {
           return (
-            <div key={logo.alt} className="flex-1"><img className="client_logo md:px-0 px-2" src={logo.src} width="150" height="81" alt={`${logo.alt} Logo`} /></div>
+            <div data-animate-right key={logo.alt} className="flex-1"><img className="client_logo md:px-0 px-2" src={logo.src} width="150" height="81" alt={`${logo.alt} Logo`} /></div>
           )
         })}
       </div>

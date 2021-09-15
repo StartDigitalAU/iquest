@@ -9,7 +9,7 @@ gsap.defaults({
     x: 0,
     ease: "power4.Out",
     scrollTrigger: {
-        start: "top bottom-=50",
+        start: "top bottom-=25%",
     }
 })
 
@@ -29,14 +29,16 @@ export function setupAnimateInOnScroll() {
         animateRight: { attribute: '[data-animate-right]', settings: { y: 0, x: 30 } },
     }
 
-    // const additionalAnimationTypes = {
-    //     animateMore: { attribute: '[data-animate-more]', settings: { ...coreAnimationTypes.animate.settings, duration: 1.5 } }
-    // }
+    const additionalAnimationTypes = {
+        animateMore: { attribute: '[data-animate-more]', settings: { ...coreAnimationTypes.animate.settings, y: 45, duration: 1 } },
+        animateDownMore: { attribute: '[data-animate-down-more]', settings: { ...coreAnimationTypes.animateDown.settings, y: -45, duration: 1 } },
+        animateLeftMore: { attribute: '[data-animate-left-more]', settings: { ...coreAnimationTypes.animateLeft.settings, x: -45, duration: 1 } },
+        animateRightMore: { attribute: '[data-animate-right-more]', settings: { ...coreAnimationTypes.animateRight.settings, x: 45, duration: 1 } }
+    }
 
-    // const animationTypes = { ...coreAnimationTypes, ...additionalAnimationTypes }
+    const animationTypes = { ...coreAnimationTypes, ...additionalAnimationTypes }
 
-    for (const [key, value] of Object.entries(coreAnimationTypes)) {
-        console.log('value: ', value);
+    for (const [key, value] of Object.entries(animationTypes)) {
         animateInOnScroll(value)
     }
 }

@@ -1,12 +1,12 @@
 import React, { useEffect } from "react"
 import { Helmet } from "react-helmet"
-import { pageTransition } from "../js/main"
+import { pageTransition, setupAnimateInOnScroll } from "../js/main"
 
 import Header from "../components/layout/Header"
 import WaveDivider from "../components/WaveDivider"
 import Mainbanner from "../components/MainBanner"
 import ClientLogos from "../components/ClientLogos"
-import Featuredcontent from "../components/FeaturedContent"
+import FeaturedContent from "../components/FeaturedContent"
 import ManagedIT from "../components/ManagedIT"
 import CaseStudies from "../components/CaseStudies"
 import Testimonials from "../components/Testimonials"
@@ -16,6 +16,7 @@ import Footer from "../components/layout/Footer"
 function IndexPage() {
   useEffect(() => {
     pageTransition()
+    setupAnimateInOnScroll()
   }, [])
 
   return (
@@ -28,7 +29,7 @@ function IndexPage() {
       <Header />
       <Mainbanner />
       <ClientLogos />
-      <Featuredcontent />
+      <FeaturedContent />
       <ManagedIT />
       <WaveDivider />
       <CaseStudies />

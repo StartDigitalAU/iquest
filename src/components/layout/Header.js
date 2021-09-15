@@ -36,7 +36,7 @@ const Header = () => {
   }
 
   return (
-    <Popover className="relative z-50">
+    <Popover data-animate-down className="relative z-50">
       {({ open }) => (
         <>
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
