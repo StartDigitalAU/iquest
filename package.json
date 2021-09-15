@@ -21,7 +21,6 @@
     "gatsby-plugin-mdx": "^2.13.0",
     "gatsby-plugin-nprogress": "^3.10.0",
     "gatsby-plugin-offline": "^4.9.0",
-    "gatsby-plugin-page-transitions": "^1.0.8",
     "gatsby-plugin-react-helmet": "^4.9.0",
     "gatsby-plugin-sharp": "^3.10.2",
     "gatsby-source-filesystem": "^3.10.0",

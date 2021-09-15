@@ -1,5 +1,4 @@
 import * as React from "react"
-import PageTransition from 'gatsby-plugin-page-transitions';
 import InternalLayout from "../../components/layout/InternalLayout"
 import TwoColumnGrid from "../../components/TwoColumnGrid"
 import List from "../../components/List"
@@ -43,20 +42,18 @@ function ITSupportServicesPerth() {
 
   return (
     <>
-      <PageTransition>
-        <InternalLayout title="IT Support Services" description="Providing fully managed IT support services in Perth & Melbourne.">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-x-8 pb-16">
-            <div>
-              <h2 className="text-indigo-600">Technology shouldn't distract you from running your business</h2>
-              <p className="text-lg">
-                iQuest IT Support Perth ‘ provide fully managed IT Support Services and we take pride in being the offsite IT department for some of Perth’s most recognised businesses. Our mission is to remove issues before they occur, ensuring that our clients maximize their productivity. Our approach to IT support is customer focused and unique to Western Australia. By focusing on each of our clients needs we’re able to align technology with the overall goals of the business, in turn, improving productivity and reducing risk.
-              </p>
-            </div>
-            <List items={reasons} icon="CheckIcon" />
+      <InternalLayout title="IT Support Services" description="Providing fully managed IT support services in Perth & Melbourne.">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-x-8 pb-16">
+          <div>
+            <h2 className="text-indigo-600">Technology shouldn't distract you from running your business</h2>
+            <p className="text-lg">
+              iQuest IT Support Perth ‘ provide fully managed IT Support Services and we take pride in being the offsite IT department for some of Perth’s most recognised businesses. Our mission is to remove issues before they occur, ensuring that our clients maximize their productivity. Our approach to IT support is customer focused and unique to Western Australia. By focusing on each of our clients needs we’re able to align technology with the overall goals of the business, in turn, improving productivity and reducing risk.
+            </p>
           </div>
-          <TwoColumnGrid title="Why use iQuest?" items={items} />
-        </InternalLayout>
-      </PageTransition>
+          <List items={reasons} icon="CheckIcon" />
+        </div>
+        <TwoColumnGrid title="Why use iQuest?" items={items} />
+      </InternalLayout>
     </>
   )
 }
