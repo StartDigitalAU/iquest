@@ -26,10 +26,10 @@ export default function CloudComputing() {
               Cloud Computing
             </h2>
             <p className="max-w-lg text-xl font-bold text-gray-900">Local IT Services helping you access your content anywhere!</p>
-            <p className="mt-5">The concept of cloud computing may seem like a relatively new thing but it has been in use for over 10 years. Cloud Computing is a secure server that can be accessed via the internet.</p>
-            <p className="mt-5">This allows users to access business applications and store data online without the need for onsite hardware and software. As internet security improves at an exponential rate and NBN gets rolled out across Australia, the Cloud becomes an even more attractive solution.</p>
+            <p>The concept of cloud computing may seem like a relatively new thing but it has been in use for over 10 years. Cloud Computing is a secure server that can be accessed via the internet.</p>
+            <p>This allows users to access business applications and store data online without the need for onsite hardware and software. As internet security improves at an exponential rate and NBN gets rolled out across Australia, the Cloud becomes an even more attractive solution.</p>
             <div className="mt-6">
-              <Link to="#" className="btn btn-blue">Discover more</Link>
+              <Link to="/it-support/it-support-services-perth" className="btn btn-blue">Discover more</Link>
             </div>
           </div>
         </div>

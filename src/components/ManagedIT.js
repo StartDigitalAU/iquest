@@ -14,7 +14,7 @@ export default function ManagedIT() {
               <p>
                 From consulting and fully managed IT support services to business IT cloud solutions and long term IT strategies,  iQuest is the trusted IT company and technology partner behind some of Perth’s biggest companies, with a 96% client retention rate since 2004.
               </p>
-              <Link to="#" className="btn btn-blue">Get started</Link>
+              <Link to="/contact-us" className="btn btn-blue">Get started</Link>
             </div>
             <div className="mt-8 border-t border-gray-200 pt-6">
               <blockquote>

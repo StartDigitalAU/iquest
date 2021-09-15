@@ -111,7 +111,7 @@ const Header = () => {
                               {subMenuItems.map(subItem => {
                                 const Icon = subItem.icon.toString().toLowerCase()
                                 return (
-                                  <Link key={subItem.name} href={subItem.href} className="p-3 flex items-center rounded-md hover:bg-gray-50" >
+                                  <Link key={subItem.name} to={subItem.href} className="p-3 flex items-center rounded-md hover:bg-gray-50" >
                                     <IconLoader icon={icons[Icon]} classes={"flex-shrink-0 h-6 w-6 text-indigo-600"} />
                                     <span className="ml-3 text-base font-medium text-gray-900">{subItem.name}</span>
                                   </Link>

@@ -1,8 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import casestudy1 from "/src/images/iQuest-Client-Singtel.jpg"
-import casestudy2 from "/src/images/iQuest-Client-SLSC.jpg"
-import casestudy3 from "/src/images/iQuest-Client-Kwik-Logistics.jpg"
+import { StaticImage } from "gatsby-plugin-image"
 
 export default function CaseStudies() {
   return (
@@ -14,20 +12,41 @@ export default function CaseStudies() {
           <p className="max-w-xl mt-2 mx-auto text-xl text-gray-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
           </p>
-          <div className="mt-6"><Link to="#" className="btn btn-blue">View all case studies</Link></div>
+          <div className="mt-6"><Link to="/case-studies" className="btn btn-blue">View all case studies</Link></div>
         </div>
-        <div className="flex flex-wrap mt-12">
-          <div className=" md:w-1/3 sm:px-6 w-full mb-10">
-            <img className="mx-auto" src={casestudy1} width="350" height="347" alt="Singtel Casestudy" />
-            <div className="mt-6 text-center"><Link to="#" className="btn btn-small btn-blue">View case study</Link></div>
+        <div className="grid lg:grid-cols-3 gap-6 mt-12">
+          <div className="mb-10">
+            <StaticImage
+              className="mx-auto"
+              src={"../images/iQuest-Client-Singtel.jpg"}
+              width={350}
+              height={347}
+              alt="Singtel Casestudy"
+              placeholder="blurred"
+            />
+            <div className="mt-6 text-center"><Link to="/case-studies/kddl" className="btn btn-small btn-blue">View case study</Link></div>
           </div>
-          <div className="md:w-1/3 sm:px-6 w-full mb-10">
-            <img className="mx-auto" src={casestudy2} width="350" height="347" alt="Singtel Casestudy" />
-            <div className="mt-6 text-center"><Link to="#" className="btn btn-small btn-blue">View case study</Link></div>
+          <div className="mb-10">
+            <StaticImage
+              className="mx-auto"
+              src={"../images/iQuest-Client-SLSC.jpg"}
+              width={350}
+              height={347}
+              alt="Surf Life Saving WA Casestudy"
+              placeholder="blurred"
+            />
+            <div className="mt-6 text-center"><Link to="case-studies/surf-life-saving-wa" className="btn btn-small btn-blue">View case study</Link></div>
           </div>
-          <div className="md:w-1/3 sm:px-6 w-full mb-10">
-            <img className="mx-auto" src={casestudy3} width="350" height="347" alt="Singtel Casestudy" />
-            <div className="mt-6 text-center"><Link to="#" className="btn btn-small btn-blue">View case study</Link></div>
+          <div className="mb-10">
+            <StaticImage
+              className="mx-auto"
+              src={"../images/iQuest-Client-Kwik-Logistics.jpg"}
+              width={350}
+              height={347}
+              alt="Kwik Logistics Casestudy"
+              placeholder="blurred"
+            />
+            <div className="mt-6 text-center"><Link to="/case-studies/kwik-logistics" className="btn btn-small btn-blue">View case study</Link></div>
           </div>
         </div>
       </div>
