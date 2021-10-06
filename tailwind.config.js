@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'iquest-gradient': "url('../images/iQuest-Gradient.jpg')",
+        'iquest-gradient': "url('../images/gradient-bg.png')",
         'header-bg': "url('../images/About-Header-Background.jpg')"
       }),
       colors: {
