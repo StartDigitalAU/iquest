@@ -39,8 +39,8 @@ const Header = () => {
     <Popover data-animate-down className="relative z-50">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto lg:pt-12 px-4 sm:px-6">
-            <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+          <div className="max-w-7xl mx-auto pt-12 px-4 xl:px-0">
+            <div className="flex justify-between items-center md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link to={"/"}>
                   <span className="sr-only">iQuest</span>
@@ -124,7 +124,7 @@ const Header = () => {
                     </nav>
                   </div>
                 </div>
-                <div className="py-6 px-5 space-y-6">
+                <div className="px-5 space-y-6">
                   <div className="grid grid-cols-2 gap-4">
                     <Link to="/contact-us" className="btn btn-blue btn-small">Contact Us</Link>
                     <Link to="/case-studies" className="btn btn-white btn-small">Case Studies</Link>

@@ -1,5 +1,5 @@
 body {
-  @apply bg-iquest-gradient bg-blue-dark bg-cover bg-no-repeat;
+  @apply bg-iquest-gradient bg-blue-dark bg-cover bg-no-repeat overflow-x-hidden;
 }
 
 .container {

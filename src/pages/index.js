@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import { Helmet } from "react-helmet"
-import { pageTransition, setupAnimateInOnScroll } from "../js/main"
+import { setupAnimateInOnScroll } from "../js/main"
 
 import Header from "../components/layout/Header"
 import WaveDivider from "../components/WaveDivider"
