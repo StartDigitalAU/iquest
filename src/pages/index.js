@@ -27,7 +27,7 @@ function IndexPage() {
       </Helmet>
       <Header />
       <Mainbanner />
-      <ClientLogos />
+      <ClientLogos classes="py-12" />
       <FeaturedContent />
       <ManagedIT />
       <WaveDivider />
