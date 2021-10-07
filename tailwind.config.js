@@ -15,7 +15,9 @@ module.exports = {
       colors: {
         'blue-lighter': '#c4dbf8',
         'blue-light': '#90bef8',
-        'blue-dark': '#1a1c2c'
+        'blue-medium': '#1984b8',
+        'blue-dark': '#1a1c2c',
+        'blue-darker': '#201d48',
       },
       fontFamily: {
         display: ['termina', ...defaultTheme.fontFamily.sans],

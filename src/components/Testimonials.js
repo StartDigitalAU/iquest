@@ -5,7 +5,7 @@ import clientLogo from "/src/images/Fremantle-Dockers-Client-Logo.png"
 export default function Testimonials() {
   return (
     <section className="py-12  overflow-hidden md:py-20 lg:py-24">
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative">
           <img
             data-animate

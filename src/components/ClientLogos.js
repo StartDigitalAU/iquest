@@ -25,7 +25,7 @@ export default function ClientLogos({ classes }) {
   ]
 
   return (
-    <section className={`max-w-6xl mx-auto px-4 sm:px-6 ${classes}`}>
+    <section className={`max-w-7xl mx-auto px-4 sm:px-6 ${classes}`}>
       <div className="flex items-center space-x-5">
         {clientLogos.map((logo) => {
           return (

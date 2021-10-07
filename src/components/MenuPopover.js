@@ -40,7 +40,7 @@ const MenuPopover = ({ title, menu }) => {
         <Popover className="relative">
             {({ open }) => (
                 <>
-                    <Popover.Button className='group transparent rounded-md inline-flex items-center text-base font-medium text-white'>
+                    <Popover.Button className='group transparent rounded-md inline-flex items-center text-base font-display lowercase font-medium text-white'>
                         <span>{title}</span>
                         <ChevronDownIcon
                             className='ml-2 h-5 w-5 text-white'

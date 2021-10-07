@@ -39,7 +39,7 @@ const Header = () => {
     <Popover data-animate-down className="relative z-50">
       {({ open }) => (
         <>
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="max-w-7xl mx-auto lg:pt-12 px-4 sm:px-6">
             <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link to={"/"}>
@@ -60,12 +60,12 @@ const Header = () => {
                     <MenuPopover key={title} title={title} menu={menuItem[1]} />
                   )
                 })}
-                <Link to="/case-studies" className="text-base font-medium text-white hover:text-white-900">Case Studies</Link>
+                <Link to="/case-studies" className="text-base font-display lowercase font-medium text-white hover:text-white-900">Case Studies</Link>
               </Popover.Group>
               <div className="hidden md:flex items-center justify-end">
                 <Link
                   to="/contact-us"
-                  className="btn btn-blue btn-small"
+                  className="btn btn-blue md:text-base font-display lowercase"
                 >
                   Contact Us
                 </Link>

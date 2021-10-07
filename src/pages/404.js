@@ -12,7 +12,7 @@ const FourOhFour = () => {
     <>
       <Header />
       <div className="flex justify-center items-center my-32">
-        <div className="bg-white shadow-md p-16 max-w-6xl rounded-md">
+        <div className="bg-white shadow-md p-16 max-w-7xl rounded-md">
           <h2 className="text-5xl">Sorry, we couldn't find that page!</h2>
           <p className="text-2xl">Don't worry, we're taking you back home!</p>
           <div class="flex justify-center items-center mt-16">

@@ -6,7 +6,7 @@ export default function CloudComputing() {
   return (
     <div className="relative bg-white pt-20 pb-32 overflow-hidden">
       <div className="relative">
-        <div className="lg:mx-auto lg:max-w-6xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+        <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
           <div className="mt-12 sm:mt-16 lg:mt-0">
             <div data-animate-left className="px-4 sm:pl-6 lg:px-0 lg:m-0 lg:relative lg:h-full">
               <StaticImage
@@ -21,7 +21,7 @@ export default function CloudComputing() {
               />
             </div>
           </div>
-          <div className="mt-6 lg:mt-0 px-4 max-w-6xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
+          <div className="mt-6 lg:mt-0 px-4 max-w-7xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
             <h2 data-animate className="is-h1 text-gray-900">
               Cloud Computing
             </h2>

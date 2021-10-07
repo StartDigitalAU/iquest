@@ -7,8 +7,8 @@ export default function ManagedIT() {
   return (
     <div className="relative pt-16 pb-32 overflow-hidden">
       <div className="relative">
-        <div className="lg:mx-auto lg:max-w-6xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-          <div className="px-4 max-w-6xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
+        <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+          <div className="px-4 max-w-7xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
             <div className="text-white flex flex-col space-y-6">
               <h2 data-animate className="mb-0">Fully managed IT services</h2>
               <p data-animate>
