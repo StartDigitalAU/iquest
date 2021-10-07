@@ -30,7 +30,6 @@ function IndexPage() {
       <ClientLogos classes="py-12" />
       <FeaturedContent />
       <ManagedIT />
-      <WaveDivider />
       <CaseStudies />
       <Testimonials />
       <WaveDivider />

@@ -2,53 +2,49 @@ import React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-export default function CaseStudies() {
+const CaseStudies = () => {
   return (
-    <div className="bg-white">
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:pt-12 sm:pb-24 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h2 data-animate className="text-5xl font-extrabold tracking-tight text-gray-900">iQuest Case Studies</h2>
-          <p data-animate className="max-w-xl mt-2 mx-auto text-xl text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-          </p>
-          <div data-animate-more className="mt-6"><Link to="/case-studies" className="btn btn-blue">View all case studies</Link></div>
-        </div>
-        <div className="grid lg:grid-cols-3 gap-6 mt-12">
-          <div data-animate-left className="mb-10">
+    <div className="relative">
+      <div className="max-w-7xl relative z-10 mx-auto py-12 px-4 lg:py-20 xl:px-0">
+        <h2 data-animate className="lg:text-5xl text-white text-center">iQuest Case Studies</h2>
+        <div className="grid lg:grid-cols-3 gap-6 mt-6 lg:mt-40">
+          <div data-animate-left>
             <StaticImage
-              className="mx-auto"
-              src={"../images/iQuest-Client-Singtel.jpg"}
-              width={350}
-              height={347}
+              className="mx-auto w-full"
+              src={"../images/Singtel-ipad.png"}
               alt="Singtel Casestudy"
               placeholder="blurred"
             />
-            <div className="mt-6 text-center"><Link to="/case-studies/kddl" className="btn btn-small btn-blue">View case study</Link></div>
+            <div className="mt-3 lg:mt-6 text-center"><Link to="/case-studies/kddl" className="btn btn-blue">View case study</Link></div>
           </div>
-          <div data-animate className="mb-10">
+          <div data-animate>
             <StaticImage
-              className="mx-auto"
-              src={"../images/iQuest-Client-SLSC.jpg"}
-              width={350}
-              height={347}
+              className="mx-auto w-full transform lg:scale-125 lg:-translate-y-12"
+              src={"../images/Surf-Lifesavers-WA-ipad.png"}
               alt="Surf Life Saving WA Casestudy"
               placeholder="blurred"
             />
-            <div className="mt-6 text-center"><Link to="case-studies/surf-life-saving-wa" className="btn btn-small btn-blue">View case study</Link></div>
+            <div className="mt-3 lg:mt-6 text-center"><Link to="case-studies/surf-life-saving-wa" className="btn btn-blue">View case study</Link></div>
           </div>
-          <div data-animate-right className="mb-10">
+          <div data-animate-right>
             <StaticImage
-              className="mx-auto"
-              src={"../images/iQuest-Client-Kwik-Logistics.jpg"}
-              width={350}
-              height={347}
+              className="mx-auto w-full"
+              src={"../images/Kwik-Logistics-iPad.png"}
               alt="Kwik Logistics Casestudy"
               placeholder="blurred"
             />
-            <div className="mt-6 text-center"><Link to="/case-studies/kwik-logistics" className="btn btn-small btn-blue">View case study</Link></div>
+            <div className="mt-3 lg:mt-6 text-center"><Link to="/case-studies/kwik-logistics" className="btn btn-blue">View case study</Link></div>
           </div>
         </div>
       </div>
+      <StaticImage
+        src="../images/line-data.png"
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 opacity-10"
+      />
     </div>
   )
 }
+
+export default CaseStudies
