@@ -37,12 +37,14 @@ const CaseStudies = () => {
           </div>
         </div>
       </div>
-      <StaticImage
-        src="../images/line-data.png"
-        alt=""
-        aria-hidden="true"
-        className="absolute inset-0 opacity-10"
-      />
+      <div className="absolute inset-0">
+        <StaticImage
+          src="../images/line-data.png"
+          alt=""
+          aria-hidden="true"
+          className="opacity-10"
+        />
+      </div>
     </div>
   )
 }

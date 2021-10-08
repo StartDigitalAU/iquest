@@ -14,11 +14,13 @@ export default function MainBanner() {
           <StaticImage className="mt-6 w-1/3 object-contain" src="../images/google-reviews.png" alt="A 5-star Google review rating" />
         </a>
       </div>
-      <StaticImage
-        src="../images/circular-data.png"
-        alt="Large abstract shape that represents data"
-        className="opacity-50 absolute top-0 right-0 transform translate-x-1/4 lg:w-3/4 xl:w-3/5 xl:opacity-100"
-      />
+      <div className="absolute top-0 right-0 transform translate-x-1/4 lg:w-3/4 xl:w-3/5 ">
+        <StaticImage
+          src="../images/circular-data.png"
+          alt="Large abstract shape that represents data"
+          className="opacity-50 xl:opacity-100"
+        />
+      </div>
     </div>
   )
 }
