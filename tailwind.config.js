@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         'iquest-gradient': "url('../images/gradient-bg.png')",
+        'secondary-gradient': "url('../images/secondary-gradient-bg.png')",
         'header-bg': "url('../images/About-Header-Background.jpg')"
       }),
       colors: {

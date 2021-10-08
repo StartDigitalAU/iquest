@@ -32,7 +32,6 @@ function IndexPage() {
       <ManagedIT />
       <CaseStudies />
       <Testimonials />
-      <WaveDivider />
       <CloudComputing />
       <Footer />
     </>
