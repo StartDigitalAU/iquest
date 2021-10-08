@@ -20,6 +20,7 @@ module.exports = {
         'blue-dark': '#1a1c2c',
         'blue-darker': '#201d48',
         'blue-darkest': '#1c1c37',
+        'black-light': '#131421'
       },
       fontFamily: {
         display: ['termina', ...defaultTheme.fontFamily.sans],
