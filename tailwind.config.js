@@ -25,6 +25,7 @@ module.exports = {
       fontFamily: {
         display: ['termina', ...defaultTheme.fontFamily.sans],
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        // sans: ['forma-djr-text, sans-serif', ...defaultTheme.fontFamily.sans],
       },
     },
   },

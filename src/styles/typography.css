@@ -4,15 +4,18 @@ h2,
 .is-h2, 
 h3,
 .is-h3 {
-    @apply font-display font-extrabold mb-6;
+    @apply font-display font-normal mb-6;
 }
 
 h1, .is-h1 {
     @apply text-3xl md:text-4xl;
+    font-family: termina, sans-serif;
+    font-weight: 500 !important;
 }
 
 h2, .is-h2 {
     @apply text-2xl md:text-3xl;
+    font-weight: 500 !important;
 }
 
 h4, .is-h4 {
@@ -21,6 +24,7 @@ h4, .is-h4 {
 
 body {
     @apply font-sans font-normal text-lg leading-relaxed;
+    color: #c4dbf8 !important;
 }
 
 p + p {

@@ -24,7 +24,7 @@ export default function Directors() {
               className="w-full rounded-xl shadow-xl lg:w-auto"
               src="../../images/iQuest-Anderson.jpeg"
               alt="iQuest About Us Banner"
-              placeholder="blurred" />
+              placeholder="none"/>
           </div>
         </div>
       </InternalLayout>

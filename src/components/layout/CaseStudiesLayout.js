@@ -9,7 +9,7 @@ const CaseStudiesLayout = ({ pageContext }) => {
             <div className="px-4 lg:px-0 lg:grid lg:grid-cols-3 lg:gap-x-8">
                 <div>
                     <h2>{frontMatter.client} Executive Summary</h2>
-                    <em className="text-gray-600">"{frontMatter.testimonial}"</em>
+                    <em className="text-white">"{frontMatter.testimonial}"</em>
                 </div>
                 <div className="mt-12 lg:mt-0 lg:col-span-2">
                     <dl className="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
@@ -24,7 +24,7 @@ const CaseStudiesLayout = ({ pageContext }) => {
                     </dl>
                 </div>
             </div>
-            {frontMatter.content && <p className="text-gray-600 mt-6">{frontMatter.content}</p>}
+            {frontMatter.content && <p className="text-white mt-6">{frontMatter.content}</p>}
         </InternalLayout>
     )
 }
@@ -36,11 +36,11 @@ const SummaryPoint = ({ title, value }) => {
         <div className="relative">
             <dt>
                 <ChevronRightIcon className="absolute h-6 w-6 text-blue-light" aria-hidden="true" />
-                {title && <p className="ml-9 text-lg leading-6 font-medium text-gray-900">{title}</p>}
+                {title && <p className="ml-9 text-lg leading-6 font-medium text-white">{title}</p>}
             </dt>
-            {value && !isList && <dd className="mt-2 ml-9 text-base text-gray-500">{value}</dd>}
+            {value && !isList && <dd className="mt-2 ml-9 text-base text-gray-300">{value}</dd>}
             {value && isList &&
-                <ul className="mt-2 ml-9 text-base text-gray-500">
+                <ul className="mt-2 ml-9 text-base text-gray-300">
                     {value.map(item => (
                         <li className="list-disc" key={item}>{item}</li>
                     ))}

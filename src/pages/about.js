@@ -8,7 +8,7 @@ export default function About() {
   return (
     <>
       <InternalLayout title="About iQuest" description="We're Perth's leading IT consulting company, ready to deploy experts anytime & anywhere.">
-        <h2>iQuest are a dynamic and progressive company founded with a clear objective</h2>
+        <h2 className="max-w-4xl">iQuest are a dynamic and progressive company founded with a clear objective</h2>
         <h3 className="is-h4">Local IT Services helping you access your content anywhere!</h3>
         <p>
           Our goal is to provide our West Australian clients with the most effective technology support and solutions for their business. We strive to be innovative and cost-effective across all areas of our work, from network installations and software deployment through to helpdesk support and cloud technology, iQuest are the leaders in Perth IT support and technology systems.
@@ -23,7 +23,7 @@ export default function About() {
           alt="iQuest About Us Banner"
           placeholder="blurred" />
         <ClientLogos classes="py-20" />
-        <h2 className="text-gray-900 mb-0">The iQuest Team</h2>
+        <h2 className="mb-0">The iQuest Team</h2>
         <p className="text-xl font-bold">A message from the directors</p>
         <p>
           In this fast paced world where everything beeps, blinks and connects, Information Technology (IT) is one of those industries which every single business relies so heavily upon yet, most people don’t understand it. It is the way we connect, operate, and build systems. The ‘ignorance is bliss’ approach can be tempting until systems break down and you are at risk of losing everything. Is this something you have experienced in the past? We come across so many who have.
