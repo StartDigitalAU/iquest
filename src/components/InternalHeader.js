@@ -1,4 +1,5 @@
 import React from 'react'
+import { StaticImage } from "gatsby-plugin-image"
 
 const InternalHeader = ({ title, description }) => {
     return (
@@ -9,6 +10,15 @@ const InternalHeader = ({ title, description }) => {
                 </h1>}
             {description &&
                 <p data-animate-left-more className="mt-3 text-lg leading-relaxed text-white sm:max-w-xl sm:mx-auto lg:mx-0">{description}</p>}
+
+            <div className="absolute inset-0">
+                <StaticImage
+                src="../images/line-data.png"
+                alt=""
+                aria-hidden="true"
+                className="opacity-10"
+                />
+            </div>                
         </div>
     )
 }

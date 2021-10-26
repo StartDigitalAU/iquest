@@ -6,11 +6,11 @@ export default function Directors() {
   return (
     <>
       <InternalLayout title="Our Directors" description="We're Perth's leading IT consulting company, ready to deploy experts anytime & anywhere.">
-        <div className="relative z-10 px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16">
+        <div className="relative z-10 grid lg:grid-cols-2 gap-16">
           <div className="flex flex-col space-y-6">
             <h2 data-animate className="mb-0">
               Anderson Chong<br />
-              <span className="uppercase text-base tracking-wide text-indigo-600 font-bold">Managing Director</span>
+              <span className="text-base text-blue-light">Managing Director</span>
             </h2>
             <p data-animate>
               Our partnerships with these companies are advantageous for our clients as it’s through our relationships that we can offer better pricing and service. Our close relationships with our partners also means we can build upon our knowledge and seek answers quickly on issues of hardware and software.
