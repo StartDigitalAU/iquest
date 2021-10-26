@@ -39,7 +39,7 @@ const CaseStudies = () => {
       </div>
       <div className="absolute inset-0">
         <StaticImage
-          src="../images/line-data.png"
+          src={"../images/line-data.png"}
           alt=""
           aria-hidden="true"
           className="opacity-10"
