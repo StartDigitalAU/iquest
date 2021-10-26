@@ -43,6 +43,7 @@ const CaseStudies = () => {
           alt=""
           aria-hidden="true"
           className="opacity-10"
+          placeholder="none"
         />
       </div>
     </div>
