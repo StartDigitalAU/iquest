@@ -16,8 +16,8 @@ const List = ({ items, icon }) => {
                 {items.map((item) => (
                     <div key={item} className="relative">
                         <dt>
-                            {icon && <IconLoader icon={icons[icon.toString().toLowerCase()]} classes="absolute h-6 w-6 text-green-500" />}
-                            <p className={`leading-6 font-medium ${icon ? 'ml-9' : ''}`}>{item}</p>
+                            {icon && <IconLoader icon={icons[icon.toString().toLowerCase()]} classes="absolute h-6 w-6 text-blue-light" />}
+                            <p className={`leading-6 text-md ${icon ? 'ml-9' : ''}`}>{item}</p>
                         </dt>
                     </div>
                 ))}

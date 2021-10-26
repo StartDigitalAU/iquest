@@ -7,10 +7,10 @@ function ITProjectManagementPerth() {
   return (
     <>
       <InternalLayout title="Project Management">
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col space-y-20">
           <div className="grid lg:grid-cols-2 gap-6 items-center">
             <div>
-              <h2 data-animate>iQuest's IT support Perth network & IT engineers are highly experienced with Project Management.</h2>
+              <h2 className="text-blue-light" data-animate>iQuest's IT support Perth network & IT engineers are highly experienced with Project Management.</h2>
               <p data-animate>The challenging nature of IT project management can be exemplified by the high failure rate reported by The Standish Group. According to an extensive survey undertaken, only 32% of IT projects undertaken are deemed to be a success. This type of failure rate demonstrates the value of specialised project management skills to keep technology projects on track and, ultimately, ensure they’re successful.</p>
               <p data-animate>The iQuest Project Management team combine local industry experience and clear management methodologies with strategies that ensure your project is delivered on time and on budget. From upgrading a desktop fleet and the installation of new servers, through to complex network setup and VOIP telephony services, our team has the capability and experience to help your organisation with all your IT needs.</p>
             </div>
@@ -19,7 +19,7 @@ function ITProjectManagementPerth() {
                 className="w-full h-full rounded-xl shadow-md"
                 src="../../images/iQuest-IT-Project-Management.jpeg"
                 alt="Two men looking at a their work on a computer screen"
-                placeholder="blurred"
+                placeholder="none"
               />
             </div>
           </div>

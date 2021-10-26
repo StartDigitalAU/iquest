@@ -27,6 +27,10 @@ body {
     color: #c4dbf8 !important;
 }
 
+p {
+    @apply text-gray-300;
+}
+
 p + p {
     @apply mt-6;
 }
