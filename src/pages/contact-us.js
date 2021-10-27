@@ -37,15 +37,15 @@ const ContactUs = () => {
             <InternalLayout title="Contact Us">
                 <div className="grid lg:grid-cols-2 gap-16">
                     <div>
-                        <h2 data-animate>Get in touch with us today!</h2>
-                        <p> data-animateiQuest may be a technology company, but at the very core we provide exceptional good old-fashioned service. In a highly competitive market, we are able to distinguish ourselves by offering a personal and premium service delivery experience. iQuest was created on the premise of providing understanding as well as true professionalism. Our success is mainly determined by the commitment and competence of our team of IT Engineers.</p>
-                        <h3 data-animate className="mt-6 mb-2">Contact Us</h3>
+                        <h2 data-animate className="text-blue-light">Get in touch with us today!</h2>
+                        <p data-animate>iQuest may be a technology company, but at the very core we provide exceptional good old-fashioned service. In a highly competitive market, we are able to distinguish ourselves by offering a personal and premium service delivery experience. iQuest was created on the premise of providing understanding as well as true professionalism. Our success is mainly determined by the commitment and competence of our team of IT Engineers.</p>
+                        <h3 data-animate className="mt-6 mb-2 text-blue-light">Contact Us</h3>
                         <div data-animate className="flex flex-col">
                             <span>General Manager: Pietro Bertolini</span>
                             <a className="hover:underline" href="mailto:sales@iquest.com.au">sales@iquest.com.au</a>
                             <a className="hover:underline" href="mailto:pietro.bertolini@iquest.com.au">pietro.bertolini@iquest.com.au</a>
                         </div>
-                        <h3 data-animate className="mt-6 mb-2">Helpdesk</h3>
+                        <h3 data-animate className="mt-6 mb-2 text-blue-light">Helpdesk</h3>
                         <div data-animate className="flex flex-col">
                             <p>The iQuest Helpdesk is here to primarily support our Australian and International clients in urgent need of our IT support team.</p>
                             <span>
@@ -55,7 +55,7 @@ const ContactUs = () => {
                                 International line: <a className="hover:underline" href="tel:+61862086510">(+61)8 6208 6510</a>
                             </span>
                         </div>
-                        <h3 data-animate className="mt-6 mb-2">iQuest Offices</h3>
+                        <h3 data-animate className="mt-6 mb-2 text-blue-light">iQuest Offices</h3>
                         <span data-animate className="block">Perth Office: Level 5, 68 St Georges Terrace, WA 6000</span>
                         <span data-animate className="block">Melbourne Office: Unit 201, 50 Market Street, VIC 3000</span>
                     </div>
@@ -71,10 +71,10 @@ const ContactUs = () => {
                         <input type="hidden" name="form-name" value="contact" />
                         <Input label="name" placeholder="John Doe" changeHandler={handleChange} />
                         <Input label="subject" placeholder="IT Support Services" changeHandler={handleChange} />
-                        <Input label="email" type="email" placeholder="jane.doe@example.com.au" changeHandler={handleChange} />
-                        <Input label="phone" type="tel" placeholder="0412345678" changeHandler={handleChange} />
+                        <Input label="email" type="email" placeholder="john@example.com.au" changeHandler={handleChange} />
+                        <Input label="phone" type="tel" placeholder="0412 345 678" changeHandler={handleChange} />
                         <TextArea changeHandler={handleChange} />
-                        <button type="submit" className="btn btn-blue btn-small w-32 lg:col-span-full ml-auto">Submit</button>
+                        <button type="submit" className="btn btn-blue btn-medium w-32 lg:col-span-full ml-auto">Submit</button>
                     </form>
                 </div>
             </InternalLayout>
@@ -84,10 +84,10 @@ const ContactUs = () => {
 
 const Input = ({ label, type = 'text', placeholder = '', changeHandler }) => {
     return (
-        <div className="self-start relative border border-gray-300 bg-white rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
+        <div className="">
             <label
                 htmlFor={label}
-                className="absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs rounded font-medium text-gray-900 capitalize"
+                className="text-sm text-white mb-6 font-medium capitalize"
             >
                 {label}
             </label>
@@ -95,7 +95,7 @@ const Input = ({ label, type = 'text', placeholder = '', changeHandler }) => {
                 type={type}
                 name={label}
                 id={label}
-                className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm"
+                className="block w-full px-4 py-4 rounded-md border-0 p-0 text-gray-900 placeholder-gray-600 focus:ring-2 focus:ring-blue-light sm:text-sm"
                 placeholder={placeholder}
                 onChange={changeHandler}
             />
@@ -104,15 +104,15 @@ const Input = ({ label, type = 'text', placeholder = '', changeHandler }) => {
 }
 
 const TextArea = ({ changeHandler }) => (
-    <div className="self-start relative border bg-white border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-indigo-600 lg:col-span-full">
+    <div className="w-full lg:col-span-full">
         <label
             htmlFor="message"
-            className="absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900 capitalize"
+            className="text-sm text-white mb-6 font-medium capitalize"
         >
             Message
         </label>
         <textarea
-            className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm"
+            className="block w-full rounded-md border-0 p-4 text-gray-900 placeholder-gray-600 focus:ring-2 focus:ring-blue-light sm:text-sm"
             name="message"
             id="message"
             rows="5"
