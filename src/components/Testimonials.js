@@ -18,6 +18,7 @@ const Testimonials = () => {
           width={250}
           src="../images/Fremantle-Dockers-Client-Logo.png"
           alt="Fremantle Dockers Logo"
+          placeholder="none"
         />
       </section>
     </div>

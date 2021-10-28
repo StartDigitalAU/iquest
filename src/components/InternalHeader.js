@@ -13,7 +13,7 @@ const InternalHeader = ({ title, description }) => {
 
             <div className="absolute inset-0 z-0">
                 <StaticImage
-                src="../images/line-data.png"
+                src="../images/data-lines.png"
                 alt="Line Data Background"
                 aria-hidden="true"
                 className="opacity-10"
