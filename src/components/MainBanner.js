@@ -11,7 +11,7 @@ export default function MainBanner() {
           “I cannot thank iQuest enough. Professional, responsive and willing to assist on such short notice”. <span className="font-bold">Elvira Mustafa</span>
         </p>
         <a href="https://www.google.com/search?q=iquest&oq=iquest&aqs=chrome..69i57j46i175i199i512j0i512j0i10i512j69i60l3j69i61.1321j0j7&sourceid=chrome&ie=UTF-8#lrd=0x2a32bad600ac12cb:0x11b59d901fa06ebf,1,,," target="_blank" rel="noopener">
-          <StaticImage src="../images/google-reviews.png" className="mt-6 object-contain" alt="A 5-star Google review rating" />
+          <StaticImage placeholder="none" className="mt-6 object-contain" src="../images/google-stars.png" width="180" alt="A 5-star Google review rating" />
         </a>
       </div>
       <div className="absolute top-0 right-0 transform translate-x-1/4 lg:w-3/4 xl:w-3/5 ">
