@@ -48,7 +48,7 @@ const Header = () => {
                 </Link>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
-                <Popover.Button className="transparent bg-white rounded-md p-2 inline-flex items-center justify-center text-white-400 hover:text-white-500 hover:bg-white-100">
+                <Popover.Button className="transparent btn-blue rounded-md p-2 inline-flex items-center justify-center text-white-400 hover:text-white-500 hover:bg-white-100">
                   <span className="sr-only">Open menu</span>
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
