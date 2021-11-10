@@ -101,7 +101,7 @@ const Header = () => {
                     </div>
                   </div>
                   <div className="mt-6">
-                    <nav className="grid gap-y-6">
+                    <nav className="grid gap-y-6 text-blue-darker">
                       {menuItems.map((item) => {
                         const subMenuItems = item[1]
                         return (
@@ -109,10 +109,8 @@ const Header = () => {
                             <summary>{item[0].title}</summary>
                             <div>
                               {subMenuItems.map(subItem => {
-                                const Icon = subItem.icon.toString().toLowerCase()
                                 return (
                                   <Link key={subItem.name} to={subItem.href} className="p-3 flex items-center rounded-md hover:bg-gray-50" >
-                                    <IconLoader icon={icons[Icon]} classes={"flex-shrink-0 h-6 w-6 text-indigo-600"} />
                                     <span className="ml-3 text-base font-medium text-gray-900">{subItem.name}</span>
                                   </Link>
                                 )
@@ -123,14 +121,12 @@ const Header = () => {
                       })}
                     </nav>
                   </div>
-                </div>
-                <div className="px-5 space-y-6">
+                  <div className="mt-6 space-y-6">
                   <div className="grid grid-cols-2 gap-4">
                     <Link to="/contact-us" className="btn btn-blue btn-small">Contact Us</Link>
                     <Link to="/case-studies" className="btn btn-white btn-small">Case Studies</Link>
                   </div>
-                  <div>
-                  </div>
+                </div>
                 </div>
               </div>
             </Popover.Panel>

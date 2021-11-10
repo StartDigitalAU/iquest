@@ -6,7 +6,7 @@ const CaseStudiesLayout = ({ pageContext }) => {
     const frontMatter = pageContext.frontmatter
     return (
         <InternalLayout title={frontMatter.client}>
-            <img className="-mt-24 z-9999 relative mb-20 w-full rounded-md" src={`/${frontMatter.featuredImage}`} alt="" />
+            <img className="-mt-24 z-9999 relative mb-20 w-full h-96 max-h-96 object-cover object-center rounded-t-md" src={`/${frontMatter.featuredImage}`} alt="" />
             <div className="px-4 lg:px-0 lg:grid lg:grid-cols-3 lg:gap-x-8">
                 <div>
                     <h2>{frontMatter.client} Executive Summary</h2>

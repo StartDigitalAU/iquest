@@ -6,7 +6,7 @@ const CaseStudy = ({ caseStudy }) => {
     const data = caseStudy.node.frontmatter
     return (
         <div data-animate className="flex flex-col rounded-md">
-            <img className="w-full h-60 max-h-60 object-cover object-bottom rounded-t-md" src={`/${data.featuredImage}`} alt="" />
+            <img className="w-full h-60 max-h-60 object-cover object-center rounded-t-md" src={`/${data.featuredImage}`} alt="" />
             <div className="py-8 px-6 flex flex-col space-y-4 bg-blue-darkest">
                 <div className="flex items-center space-x-1">
                     <span className="text-xl font-bold">{data.client}</span>
