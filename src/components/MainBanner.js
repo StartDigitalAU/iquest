@@ -6,7 +6,7 @@ export default function MainBanner() {
     <div className="max-w-7xl mx-auto px-4 py-16 lg:py-32 xl:px-0 xl:py-46">
       <div data-animate className="relative z-10 transform lg:w-3/4 -translate-y-4">
         <span className="text-md inline-block md:text-lg text-blue-light tracking-wide mb-4">Perth's leading IT solutions team since 2004</span>
-        <h1 className="text-4xl leading-tight lg:text-6xl text-blue-lighter">Future Focused<br/> IT Support & Management</h1>
+        <h1 className="text-4xl leading-normal lg:text-6xl text-blue-lighter">Future Focused<br/> IT Support & Management</h1>
         <p className="text-white lg:w-2/3">
           “I cannot thank iQuest enough. Professional, responsive and willing to assist on such short notice”. <span className="font-bold">Elvira Mustafa</span>
         </p>
