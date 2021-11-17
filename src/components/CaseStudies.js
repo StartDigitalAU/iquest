@@ -15,7 +15,7 @@ const CaseStudies = () => {
               alt="Singtel Casestudy"
               placeholder="blurred"
             />
-            <div className="mt-3 lg:mt-6 text-center"><Link to="/case-studies/kddl" className="btn btn-blue">View case study</Link></div>
+            <div className="mt-3 lg:mt-6 text-center"><Link to="/case-studies/kddi" className="btn btn-blue">View case study</Link></div>
           </div>
           <div data-animate>
             <StaticImage
