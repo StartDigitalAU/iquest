@@ -11,5 +11,5 @@ import './src/js/main.js';
 export const onInitialClientRender = () => {
     setTimeout(function() {
         document.getElementById("___loader").style.display = "none"
-    }, 350)
+    }, 400)
 }

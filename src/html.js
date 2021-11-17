@@ -24,7 +24,7 @@ export default function HTML(props) {
                 backgroundColor: "#242C4C",
                 display: "flex",
                 justifyContent: "center",
-                position: "absolute",
+                position: "fixed",
                 left: 0,
                 top: 0,
                 right: 0,
