@@ -7,3 +7,9 @@
 // You can delete this file if you're not using it
 import './src/styles/global.css';
 import './src/js/main.js';
+
+export const onInitialClientRender = () => {
+    setTimeout(function() {
+        document.getElementById("___loader").style.display = "none"
+    }, 350)
+}
