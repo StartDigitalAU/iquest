@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 import InternalLayout from "../../components/layout/InternalLayout"
 import { StaticImage } from "gatsby-plugin-image"
 import { CheckIcon } from '@heroicons/react/outline'
@@ -16,6 +17,11 @@ function CloudServicesPerth() {
 
   return (
     <>
+      <Helmet htmlAttributes={{ lang: `en` }}>
+        <meta charSet="utf-8" />
+        <title>Cloud Services Perth | iQuest IT Services</title>
+        <meta name="description" content="iQuest provides simple, effective IT support and consulting services that allow you to focus on your business." />
+      </Helmet>
       <InternalLayout title="Cloud Services Perth" >
         <div className="flex flex-col space-y-20">
           <div className="grid lg:grid-cols-1 gap-6 items-center">

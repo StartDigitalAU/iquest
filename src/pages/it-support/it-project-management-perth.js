@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 import InternalLayout from "../../components/layout/InternalLayout"
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -6,6 +7,11 @@ function ITProjectManagementPerth() {
 
   return (
     <>
+      <Helmet htmlAttributes={{ lang: `en` }}>
+        <meta charSet="utf-8" />
+        <title>Project Management Perth | iQuest IT Services</title>
+        <meta name="description" content="iQuest's IT support Perth network & IT engineers are highly experienced with Project Management." />
+      </Helmet>
       <InternalLayout title="Project Management">
         <div className="flex flex-col space-y-20">
           <div className="grid lg:grid-cols-2 gap-6 items-center">

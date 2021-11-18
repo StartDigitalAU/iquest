@@ -6,12 +6,14 @@ module.exports = {
     title: `iQuest | IT Services Perth`,
     description: `iQuest provide a complete suite of IT support services that allow you to focus on what's important - your business.`,
     author: `@Start Digital`,
+    siteUrl: `https://iquest.com.au/`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-preload-fonts`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

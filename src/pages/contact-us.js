@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Helmet } from "react-helmet"
 import { navigate } from 'gatsby-link'
 import InternalLayout from "../components/layout/InternalLayout"
 
@@ -34,6 +35,11 @@ const ContactUs = () => {
 
     return (
         <>
+            <Helmet htmlAttributes={{ lang: `en` }}>
+                <meta charSet="utf-8" />
+                <title>Contact iQuest | IT Services Perth</title>
+                <meta name="description" content="iQuest may be a technology company, but at the very core we provide exceptional good old-fashioned service." />
+            </Helmet>
             <InternalLayout title="Contact Us">
                 <div className="grid lg:grid-cols-2 gap-16">
                     <div>

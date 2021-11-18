@@ -1,10 +1,16 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import InternalLayout from "../../components/layout/InternalLayout"
 import { StaticImage } from "gatsby-plugin-image"
 
 export default function Privacy() {
   return (
     <>
+      <Helmet htmlAttributes={{ lang: `en` }}>
+        <meta charSet="utf-8" />
+        <title>Privacy Policy | IT Support Services Perth</title>
+        <meta name="description" content="iQuest provides simple, effective IT support and consulting services that allow you to focus on your business." />
+      </Helmet>
       <InternalLayout title="Privacy Policy">
         <h2 className="text-blue-light" data-animate>Introduction</h2>
         <p data-animate>

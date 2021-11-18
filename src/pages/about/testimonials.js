@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 import InternalLayout from "../../components/layout/InternalLayout"
 import Quote from "../../components/Quote"
 
@@ -48,6 +49,11 @@ export default function Testimonials() {
 
   return (
     <>
+      <Helmet htmlAttributes={{ lang: `en` }}>
+        <meta charSet="utf-8" />
+        <title>Our Testimonials | IT Support Services Perth</title>
+        <meta name="description" content="Hear from iQuest's partners and clients" />
+      </Helmet>
       <InternalLayout title="Our Testimonials">
         <h2 data-animate>Hear from iQuest's partners and clients</h2>
         <div className="md:grid md:grid-cols-2 md:px-6 lg:px-8">

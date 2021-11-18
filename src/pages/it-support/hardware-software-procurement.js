@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 import InternalLayout from "../../components/layout/InternalLayout"
 import List from "../../components/List"
 import { StaticImage } from "gatsby-plugin-image"
@@ -18,6 +19,11 @@ function HardwareSoftwareProcurement() {
 
   return (
     <>
+      <Helmet htmlAttributes={{ lang: `en` }}>
+        <meta charSet="utf-8" />
+        <title>Hardware and Software Procurement | iQuest IT Services</title>
+        <meta name="description" content="iQuest can assist you with hardware & software procurement." />
+      </Helmet>
       <InternalLayout title="Hardware & Software Procurement" >
         <div className="flex flex-col space-y-16">
           <div className="grid lg:grid-cols-2 gap-6 items-center">

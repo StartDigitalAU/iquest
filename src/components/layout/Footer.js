@@ -96,6 +96,11 @@ export default function Footer() {
                       Contact Us
                     </Link>
                   </li>
+                  <li data-animate>
+                    <Link to="/about/privacy-policy" className="text-sm text-gray-300 hover:text-gray-400">
+                      Privacy Policy
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
