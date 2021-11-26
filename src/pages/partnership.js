@@ -29,6 +29,8 @@ const Partnership = () => {
             }),
         })
             .then((data) => {
+                const downloadButton = document.querySelector("#download-button");
+                downloadButton.click();
                 navigate(form.getAttribute('action'))
             })
             .catch((error) => console.log('Form submission error: ', error))
@@ -59,7 +61,8 @@ const Partnership = () => {
                     <div>
                         <h2 data-animate className="text-blue-light">Partnership</h2>
                         <p data-animate className="mb-12">Our mission is to help you establish a successful IT business as well as a happier balance of work and family. We will provide you with our back office support, ongoing training and mentoring.</p>
-                        <p data-animate className="mb-12">Please complete the below form and we will email through your eBook and further information.</p>
+                        <p data-animate className="mb-12">Please complete the below form to download your eBook with further information.</p>
+                        <a id="download-button" href={"/iQuest-brochure.pdf"} download className="hidden">Download Button</a>
                     <form
                         data-animate-right
                         className="lg:sticky top-8 grid lg:grid-cols-2 gap-6 self-start"
@@ -74,7 +77,7 @@ const Partnership = () => {
                         <Input label="business name" placeholder="Insert Business" changeHandler={handleChange} />
                         <Input label="email" type="email" placeholder="john@example.com.au" changeHandler={handleChange} />
                         <Input label="phone" type="tel" placeholder="0412 345 678" changeHandler={handleChange} />
-                        <button type="submit" className="btn btn-blue btn-medium w-32 lg:col-span-full ml-auto">Submit</button>
+                        <button type="submit" className="btn btn-blue btn-medium w-32 lg:col-span-full ml-auto">Download</button>
                     </form>
                     </div>
                 </div>

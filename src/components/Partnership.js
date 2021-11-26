@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Partnership = () => {
   return (
-    <div className="px-8 max-w-7xl mx-4 md:mx-auto bg-brochure-bg bg-cover bg-no-repeat px-12 pt-12 pb-12 lg:px-20 lg:pt-20 lg:pb-12 rounded-xl mb-20 md:flex">
+    <div className="px-8 max-w-7xl mx-4 md:mx-auto bg-brochure-bg bg-cover bg-no-repeat bg-center px-12 pt-12 pb-12 lg:px-20 lg:pt-20 lg:pb-12 rounded-xl mb-20 md:flex">
       <div className="w-full md:w-3/5 text-white lg:rounded-tr-none lg:rounded-br-none lg:rounded-bl-xl">
         <span className="text-md inline-block md:text-lg text-blue-light tracking-wide mb-4">Achieve business growth and work-life balance with</span>
         <h2 data-animate className="text-4xl leading-normal lg:text-5xl text-blue-lighter mb-2 max-w-xl">iQuest Partnership & Succession</h2>
