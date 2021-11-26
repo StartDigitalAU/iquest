@@ -72,9 +72,9 @@ const Partnership = () => {
                         data-netlify="true"
                         onSubmit={handleSubmit}
                     >
-                        <input type="hidden" name="form-name" value="contact" />
-                        <Input label="name" placeholder="John Doe" changeHandler={handleChange} />
-                        <Input label="business name" placeholder="Insert Business" changeHandler={handleChange} />
+                        <input type="hidden" name="form-name" value="partnership" />
+                        <Input label="name" type="text" placeholder="John Doe" changeHandler={handleChange} />
+                        <Input label="business name" type="text" placeholder="Insert Business" changeHandler={handleChange} />
                         <Input label="email" type="email" placeholder="john@example.com.au" changeHandler={handleChange} />
                         <Input label="phone" type="tel" placeholder="0412 345 678" changeHandler={handleChange} />
                         <button type="submit" className="btn btn-blue btn-medium w-32 lg:col-span-full ml-auto">Download</button>
@@ -97,6 +97,7 @@ const Input = ({ label, type = 'text', placeholder = '', changeHandler }) => {
             </label>
             <input
                 type={type}
+                required
                 name={label}
                 id={label}
                 className="block w-full px-4 py-4 rounded-md border-0 p-0 text-gray-900 placeholder-gray-600 focus:ring-2 focus:ring-blue-light sm:text-sm"
