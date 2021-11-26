@@ -11,7 +11,8 @@ module.exports = {
       backgroundImage: theme => ({
         'iquest-gradient': "url('../images/gradient-bg.png')",
         'secondary-gradient': "url('../images/secondary-gradient-bg.png')",
-        'header-bg': "url('../images/About-Header-Background.jpg')"
+        'header-bg': "url('../images/About-Header-Background.jpg')",
+        'brochure-bg': "url('../images/iQuest-Brochure-BG.jpg')"
       }),
       colors: {
         'blue-lighter': '#c4dbf8',
