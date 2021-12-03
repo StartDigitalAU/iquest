@@ -59,7 +59,7 @@ const Partnership = () => {
                         />
                     </div>
                     <div>
-                        <h2 data-animate className="text-blue-light">Partnership</h2>
+                        <h2 data-animate className="text-blue-light">Succession</h2>
                         <p data-animate className="mb-12">Our mission is to help you establish a successful IT business as well as a happier balance of work and family. We will provide you with our back office support, ongoing training and mentoring.</p>
                         <p data-animate className="mb-12">Please complete the below form to download your eBook with further information.</p>
                         <a id="download-button" href={"/iQuest-brochure.pdf"} download className="hidden">Download Button</a>

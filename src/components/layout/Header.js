@@ -60,6 +60,7 @@ const Header = () => {
                     <MenuPopover key={title} title={title} menu={menuItem[1]} />
                   )
                 })}
+                <Link to="/partnership" className="text-base font-display lowercase font-medium text-white hover:text-white-900">Partnership & Succession</Link>
                 <Link to="/case-studies" className="text-base font-display lowercase font-medium text-white hover:text-white-900">Case Studies</Link>
               </Popover.Group>
               <div className="hidden md:flex items-center justify-end">
@@ -126,6 +127,7 @@ const Header = () => {
                     <Link to="/contact-us" className="btn btn-blue btn-small">Contact Us</Link>
                     <Link to="/case-studies" className="btn btn-white btn-small">Case Studies</Link>
                   </div>
+                  <Link to="/partnership" className="btn btn-white btn-small w-full">Partnership & Succession</Link>
                 </div>
                 </div>
               </div>
