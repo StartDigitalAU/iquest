@@ -41,11 +41,11 @@ export default function Footer() {
       <h2 id="footerHeading" className="sr-only">
         Footer
       </h2>
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div className="max-w-7xl mx-auto py-12 lg:py-16 px-12 lg:px-0">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <img data-animate src={logoLight} width="180" height="45" alt="iQuest Logo" />
-            <p data-animate className="text-white text-base leading-relaxed max-w-md">
+            <p data-animate className="text-gray-300 text-base leading-relaxed max-w-md">
               iQuest provide a complete suite of IT support services that allow you to focus on what's important - your business.
             </p>
             <div data-animate className="flex space-x-6">
@@ -60,11 +60,11 @@ export default function Footer() {
           <div className="mt-12 grid grid-cols-1 gap-8 xl:mt-0 xl:col-span-2">
             <div className="md:grid md:grid-cols-3 md:gap-8">
               <div>
-                <h3 data-animate className="text-lg font-semibold text-white">About</h3>
-                <ul className="mt-4 space-y-4">
+                <h3 data-animate className="text-lg font-semibold text-blue-light">About</h3>
+                <ul className="mt-4 space-y-2">
                   {menuItems[0][1].map((item) => (
                     <li data-animate key={item.name}>
-                      <Link to={item.href} className="text-sm text-white hover:text-gray-400">
+                      <Link to={item.href} className="text-sm text-gray-300 hover:text-gray-400">
                         {item.name}
                       </Link>
                     </li>
@@ -72,11 +72,11 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0 md:ml-10">
-                <h3 data-animate className="text-lg font-semibold text-white">Our Services</h3>
-                <ul className="mt-4 space-y-4">
+                <h3 data-animate className="text-lg font-semibold text-blue-light">Our Services</h3>
+                <ul className="mt-4 space-y-2">
                   {menuItems[1][1].map((item) => (
                     <li data-animate key={item.name}>
-                      <Link to={item.href} className="text-sm text-white hover:text-gray-400">
+                      <Link to={item.href} className="text-sm text-gray-300 hover:text-gray-400">
                         {item.name}
                       </Link>
                     </li>
@@ -84,16 +84,21 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0 md:ml-10">
-                <h3 data-animate className="text-lg font-semibold text-white">More</h3>
-                <ul className="mt-4 space-y-4">
+                <h3 data-animate className="text-lg font-semibold text-blue-light">More</h3>
+                <ul className="mt-4 space-y-2">
                   <li data-animate>
-                    <Link to="/case-studies" className="text-sm text-white hover:text-gray-400">
+                    <Link to="/case-studies" className="text-sm text-gray-300 hover:text-gray-400">
                       Case Studies
                     </Link>
                   </li>
                   <li data-animate>
-                    <Link to="/contact-us" className="text-sm text-white hover:text-gray-400">
+                    <Link to="/contact-us" className="text-sm text-gray-300 hover:text-gray-400">
                       Contact Us
+                    </Link>
+                  </li>
+                  <li data-animate>
+                    <Link to="/about/privacy-policy" className="text-sm text-gray-300 hover:text-gray-400">
+                      Privacy Policy
                     </Link>
                   </li>
                 </ul>
@@ -101,8 +106,8 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-12 border-t border-gray-200 pt-8">
-          <p data-animate className="text-base text-white xl:text-center">&copy; 2021 iQuest, Inc. All rights reserved.</p>
+        <div className="mt-12 border-t border-gray-300 pt-8">
+          <p data-animate className="text-sm text-gray-300 xl:text-center">&copy; 2021 iQuest, Inc. All rights reserved. Website by <a href="https://startdigital.com.au/" target="_blank">Start Digital</a>.</p>
         </div>
       </div>
     </footer>

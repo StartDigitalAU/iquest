@@ -14,9 +14,9 @@ const InternalLayout = ({ children, title, description }) => {
         <>
             <Header />
             <InternalHeader title={title} description={description} />
-            <WaveDivider />
-            <main className="bg-white">
-                <div className="max-w-7xl mx-auto py-16 px-4 xl:px-0">
+            {/* <WaveDivider /> */}
+            <main className="">
+                <div className="max-w-7xl mx-auto py-16 px-4 xl:px-0 text-white">
                     {children}
                 </div>
             </main>

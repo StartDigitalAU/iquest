@@ -48,7 +48,7 @@ const Header = () => {
                 </Link>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
-                <Popover.Button className="transparent bg-white rounded-md p-2 inline-flex items-center justify-center text-white-400 hover:text-white-500 hover:bg-white-100">
+                <Popover.Button className="transparent btn-blue rounded-md p-2 inline-flex items-center justify-center text-white-400 hover:text-white-500 hover:bg-white-100">
                   <span className="sr-only">Open menu</span>
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
@@ -60,6 +60,7 @@ const Header = () => {
                     <MenuPopover key={title} title={title} menu={menuItem[1]} />
                   )
                 })}
+                <Link to="/partnership" className="text-base font-display lowercase font-medium text-white hover:text-white-900">Partnership & Succession</Link>
                 <Link to="/case-studies" className="text-base font-display lowercase font-medium text-white hover:text-white-900">Case Studies</Link>
               </Popover.Group>
               <div className="hidden md:flex items-center justify-end">
@@ -101,7 +102,7 @@ const Header = () => {
                     </div>
                   </div>
                   <div className="mt-6">
-                    <nav className="grid gap-y-6">
+                    <nav className="grid gap-y-6 text-blue-darker">
                       {menuItems.map((item) => {
                         const subMenuItems = item[1]
                         return (
@@ -109,10 +110,8 @@ const Header = () => {
                             <summary>{item[0].title}</summary>
                             <div>
                               {subMenuItems.map(subItem => {
-                                const Icon = subItem.icon.toString().toLowerCase()
                                 return (
                                   <Link key={subItem.name} to={subItem.href} className="p-3 flex items-center rounded-md hover:bg-gray-50" >
-                                    <IconLoader icon={icons[Icon]} classes={"flex-shrink-0 h-6 w-6 text-indigo-600"} />
                                     <span className="ml-3 text-base font-medium text-gray-900">{subItem.name}</span>
                                   </Link>
                                 )
@@ -123,14 +122,13 @@ const Header = () => {
                       })}
                     </nav>
                   </div>
-                </div>
-                <div className="px-5 space-y-6">
+                  <div className="mt-6 space-y-6">
                   <div className="grid grid-cols-2 gap-4">
                     <Link to="/contact-us" className="btn btn-blue btn-small">Contact Us</Link>
                     <Link to="/case-studies" className="btn btn-white btn-small">Case Studies</Link>
                   </div>
-                  <div>
-                  </div>
+                  <Link to="/partnership" className="btn btn-white btn-small w-full">Partnership & Succession</Link>
+                </div>
                 </div>
               </div>
             </Popover.Panel>

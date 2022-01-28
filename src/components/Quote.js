@@ -6,7 +6,7 @@ const Quote = ({ quote, image, company }) => {
             <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
                 <div className="relative text-lg font-medium text-gray-600 md:flex-grow">
                     <svg
-                        className="absolute -top-4 -left-6 transform -translate-x-3 -translate-y-2 h-8 w-8 text-indigo-600"
+                        className="absolute -top-4 -left-6 transform -translate-x-3 -translate-y-2 h-8 w-8 text-blue-light"
                         fill="currentColor"
                         viewBox="0 0 32 32"
                         aria-hidden="true"
@@ -18,13 +18,8 @@ const Quote = ({ quote, image, company }) => {
                     </p>
                 </div>
                 <footer>
-                    <div className="flex space-x-8 items-center">
-                        <img
-                            className="h-24 w-24 object-contain"
-                            src={image.src}
-                            alt={image.alt}
-                        />
-                        <div className="text-base font-medium text-gray-600">{company}</div>
+                    <div className="mt-4 flex space-x-8 items-center">
+                        <div className="text-base font-medium text-blue-light">{company}</div>
                     </div>
                 </footer>
             </blockquote>

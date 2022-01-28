@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 import InternalLayout from "../../components/layout/InternalLayout"
 import List from "../../components/List"
 import { StaticImage } from "gatsby-plugin-image"
@@ -18,11 +19,16 @@ function HardwareSoftwareProcurement() {
 
   return (
     <>
+      <Helmet htmlAttributes={{ lang: `en` }}>
+        <meta charSet="utf-8" />
+        <title>Hardware and Software Procurement | iQuest IT Services</title>
+        <meta name="description" content="iQuest can assist you with hardware & software procurement." />
+      </Helmet>
       <InternalLayout title="Hardware & Software Procurement" >
         <div className="flex flex-col space-y-16">
           <div className="grid lg:grid-cols-2 gap-6 items-center">
             <div>
-              <h2 data-animate>iQuest can assist you with hardware & software procurement.</h2>
+              <h2 className="text-blue-light" data-animate>iQuest can assist you with hardware & software procurement.</h2>
               <p data-animate>Though IT systems run in the background, they are critical to everyday business operations, especially in securing your data and making sure that you connect with your customers all over the world. From network, workstation and server hardware, there are so many leading brands claiming to provide the best solution, but how will you know which one’s the best for your business?</p>
               <p data-animate>At iQuest we’ve done the research for you. Speed, performance, reliability and security are our main criteria in narrowing down the best hardware and software applicable to different businesses and industries. With this in mind, we have partnered with some of the key providers of hardware and software worldwide, aligning us with the very best of what the IT industry offers. We are, therefore, well placed to assist you with your Hardware and Software Procurement.</p>
             </div>
@@ -31,7 +37,7 @@ function HardwareSoftwareProcurement() {
                 className="w-full rounded-xl shadow-md"
                 src="../../images/iQuest-Hardware-Software.jpeg"
                 alt="Two men looking at a their work on a computer screen"
-                placeholder="blurred"
+                placeholder="none"
               />
             </div>
           </div>

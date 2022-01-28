@@ -9,6 +9,7 @@ import ClientLogos from "../components/ClientLogos"
 import FeaturedContent from "../components/FeaturedContent"
 import ManagedIT from "../components/ManagedIT"
 import CaseStudies from "../components/CaseStudies"
+import Partnership from "../components/Partnership"
 import Testimonials from "../components/Testimonials"
 import CloudComputing from "../components/CloudComputing"
 import Footer from "../components/layout/Footer"
@@ -31,6 +32,7 @@ function IndexPage() {
       <FeaturedContent />
       <ManagedIT />
       <CaseStudies />
+      <Partnership />
       <Testimonials />
       <CloudComputing />
       <Footer />

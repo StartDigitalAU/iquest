@@ -2,7 +2,7 @@
     @apply inline-flex self-start items-center justify-center px-8 py-3 text-base font-medium rounded-md md:text-lg transition duration-300 ease-in-out;
 
     &-blue {
-        @apply text-blue-darker bg-blue-medium hover:bg-blue-light;
+        @apply text-blue-darker bg-blue-light hover:bg-blue-darker hover:text-blue-light;
     }
 
     &-white {

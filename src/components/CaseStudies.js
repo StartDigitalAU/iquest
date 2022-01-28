@@ -5,8 +5,8 @@ import { StaticImage } from "gatsby-plugin-image"
 const CaseStudies = () => {
   return (
     <div className="relative">
-      <div className="max-w-7xl relative z-10 mx-auto py-12 px-4 lg:py-20 xl:px-0">
-        <h2 data-animate className="lg:text-5xl text-white text-center">iQuest Case Studies</h2>
+      <div className="max-w-7xl relative z-10 mb-8 mx-auto py-12 px-4 lg:py-20 xl:px-0">
+        <h2 data-animate className="lg:text-5xl text-blue-light text-center">iQuest Case Studies</h2>
         <div className="grid lg:grid-cols-3 gap-6 mt-6 lg:mt-40">
           <div data-animate-left>
             <StaticImage
@@ -15,7 +15,7 @@ const CaseStudies = () => {
               alt="Singtel Casestudy"
               placeholder="blurred"
             />
-            <div className="mt-3 lg:mt-6 text-center"><Link to="/case-studies/kddl" className="btn btn-blue">View case study</Link></div>
+            <div className="mt-3 lg:mt-6 text-center"><Link to="/case-studies/kddi" className="btn btn-blue">View case study</Link></div>
           </div>
           <div data-animate>
             <StaticImage
@@ -39,10 +39,11 @@ const CaseStudies = () => {
       </div>
       <div className="absolute inset-0">
         <StaticImage
-          src="../images/line-data.png"
+          src={"../images/data-lines.png"}
           alt=""
           aria-hidden="true"
           className="opacity-10"
+          placeholder="none"
         />
       </div>
     </div>

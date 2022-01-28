@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import InternalLayout from "../../components/layout/InternalLayout"
 import ClientLogos from "../../components/ClientLogos"
 import { StaticImage } from "gatsby-plugin-image"
@@ -6,6 +7,11 @@ import { StaticImage } from "gatsby-plugin-image"
 export default function Partners() {
   return (
     <>
+      <Helmet htmlAttributes={{ lang: `en` }}>
+        <meta charSet="utf-8" />
+        <title>Our Partners | IT Support Services Perth</title>
+        <meta name="description" content="At iQuest we work alongside global brands to provide the best IT services in Perth & Melbourne." />
+      </Helmet>
       <InternalLayout title="iQuest Partners" description="We're Perth's leading IT consulting company, ready to deploy experts anytime & anywhere.">
         <h2 data-animate>At iQuest we work alongside global brands to provide the best IT services in Perth & Melbourne.</h2>
         <p data-animate>
