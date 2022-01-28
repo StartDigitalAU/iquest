@@ -1,6 +1,6 @@
 module.exports = {
   flags: {
-    DEV_SSR: false
+    DEV_SSR: false,
   },
   siteMetadata: {
     title: `iQuest | IT Services Perth`,
@@ -12,7 +12,6 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -31,7 +30,9 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
-          default: require.resolve("./src/components/layout/CaseStudiesLayout.js"),
+          default: require.resolve(
+            "./src/components/layout/CaseStudiesLayout.js"
+          ),
         },
       },
     },
@@ -52,17 +53,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          'Inter',
-        ],
-        display: 'swap'
-      }
+        fonts: ["Inter"],
+        display: "swap",
+      },
     },
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         typekit: {
-          id: 'zgu5zvw'
+          id: "zgu5zvw",
         },
       },
     },
