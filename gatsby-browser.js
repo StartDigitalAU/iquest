@@ -5,5 +5,9 @@
  */
 
 // You can delete this file if you're not using it
-import './src/styles/global.css';
-import './src/js/main.js';
+import "./src/styles/global.css"
+import "./src/js/main.js"
+
+export const onRouteUpdate = () => {
+  document.getElementById("___loader").style.opacity = 0
+}
