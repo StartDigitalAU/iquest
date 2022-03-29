@@ -42,11 +42,11 @@ export default function Footer() {
         Footer
       </h2>
       <div className="max-w-7xl mx-auto py-12 lg:py-16 px-12 lg:px-0">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+        <div className="xl:grid xl:grid-cols-2 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <img data-animate src={logoLight} width="180" height="45" alt="iQuest Logo" />
-            <p data-animate className="text-gray-300 text-base leading-relaxed max-w-md">
-              iQuest provide a complete suite of IT support services that allow you to focus on what's important - your business.
+            <p data-animate className="text-gray-300 text-sm leading-relaxed max-w-lg">
+            iQuest is one of the leading IT companies in Perth. We provide a complete suite of IT support services that allow you to focus on what's important - your business. We offer Fully Managed IT Support and IT Consulting Services where we act as your offsite IT department regardless of anywhere you are in or outside Perth.
             </p>
             <div data-animate className="flex space-x-6">
               {navigation.social.map((item) => (
@@ -57,7 +57,7 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          <div className="mt-12 grid grid-cols-1 gap-8 xl:mt-0 xl:col-span-2">
+          <div className="mt-12 grid grid-cols-1 gap-8 xl:mt-0">
             <div className="md:grid md:grid-cols-3 md:gap-8">
               <div>
                 <h3 data-animate className="text-lg font-semibold text-blue-light">About</h3>
@@ -71,7 +71,7 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="mt-12 md:mt-0 md:ml-10">
+              <div className="mt-12 md:mt-0">
                 <h3 data-animate className="text-lg font-semibold text-blue-light">Our Services</h3>
                 <ul className="mt-4 space-y-2">
                   {menuItems[1][1].map((item) => (
@@ -83,7 +83,7 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="mt-12 md:mt-0 md:ml-10">
+              <div className="mt-12 md:mt-0">
                 <h3 data-animate className="text-lg font-semibold text-blue-light">More</h3>
                 <ul className="mt-4 space-y-2">
                   <li data-animate>
