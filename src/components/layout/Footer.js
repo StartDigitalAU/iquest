@@ -107,7 +107,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-gray-300 pt-8">
-          <p data-animate className="text-sm text-gray-300 xl:text-center">&copy; 2021 iQuest, Inc. All rights reserved. Website by <a href="https://startdigital.com.au/" target="_blank">Start Digital</a>.</p>
+          <p data-animate className="text-sm text-gray-300 xl:text-center">&copy; 2022 iQuest, Inc. All rights reserved. Website by <a href="https://startdigital.com.au/" target="_blank">Start Digital</a>.</p>
         </div>
       </div>
     </footer>
