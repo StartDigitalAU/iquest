@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Helmet } from "react-helmet"
+import { GatsbySeo } from 'gatsby-plugin-next-seo';
 import { navigate } from 'gatsby-link'
 import InternalLayout from "../components/layout/InternalLayout"
 
@@ -35,11 +35,10 @@ const ContactUs = () => {
 
     return (
         <>
-            <Helmet htmlAttributes={{ lang: `en` }}>
-                <meta charSet="utf-8" />
-                <title>Contact iQuest | IT Services Perth</title>
-                <meta name="description" content="iQuest may be a technology company, but at the very core we provide exceptional good old-fashioned service." />
-            </Helmet>
+            <GatsbySeo
+                title="Contact iQuest for a Range of Business It Support Services in Perth and Western Australia"
+                description="Connect with iQuest's team of expert IT consultants in Perth for a range of Business Information Technology support services in WA."
+            />
             <InternalLayout title="Contact Us">
                 <div className="grid lg:grid-cols-2 gap-16">
                     <div>

@@ -1,17 +1,16 @@
 import * as React from "react"
-import { Helmet } from "react-helmet"
+import { GatsbySeo } from 'gatsby-plugin-next-seo';
 import InternalLayout from "../../components/layout/InternalLayout"
 import { StaticImage } from "gatsby-plugin-image";
 
 export default function Directors() {
   return (
     <>
-      <Helmet htmlAttributes={{ lang: `en` }}>
-        <meta charSet="utf-8" />
-        <title>Our Directors | IT Support Services Perth</title>
-        <meta name="description" content="Delivering exceptional corporate IT support to Perth and WA since 1999. iQuest provide IT support Perth services allowing you to focus on your business." />
-      </Helmet>
-      <InternalLayout title="Our Directors" description="We're Perth's leading IT consulting company, ready to deploy experts anytime & anywhere.">
+      <GatsbySeo
+        title="iQuest Directors are IT Experts in Perth with Rich Business IT Experience"
+        description="As Perth's leading IT consulting company, our Directors are ready to deploy IT experts to our clients anytime and anywhere."
+      />
+      <InternalLayout title="Our Directors" description="We're Perth's leading IT consulting company, ready to deploy experts anytime and anywhere.">
         <div className="relative z-10 grid lg:grid-cols-2 gap-16">
           <div className="flex flex-col space-y-6">
             <h2 data-animate className="mb-0">

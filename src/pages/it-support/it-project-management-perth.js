@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Helmet } from "react-helmet"
+import { GatsbySeo } from 'gatsby-plugin-next-seo';
 import InternalLayout from "../../components/layout/InternalLayout"
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -7,11 +7,10 @@ function ITProjectManagementPerth() {
 
   return (
     <>
-      <Helmet htmlAttributes={{ lang: `en` }}>
-        <meta charSet="utf-8" />
-        <title>Project Management Perth | iQuest IT Services</title>
-        <meta name="description" content="iQuest's IT support Perth network & IT engineers are highly experienced with Project Management." />
-      </Helmet>
+      <GatsbySeo
+        title="IT Project Management Services in Perth, including Expert IT Advice"
+        description="iQuest provides expert Project Management services in Perth with strategies that ensure your project is delivered on time and on budget."
+      />
       <InternalLayout title="Project Management">
         <div className="flex flex-col space-y-20">
           <div className="grid lg:grid-cols-2 gap-6 items-center">

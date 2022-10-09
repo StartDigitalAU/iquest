@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Helmet } from "react-helmet"
+import { GatsbySeo } from 'gatsby-plugin-next-seo';
 import InternalLayout from "../../components/layout/InternalLayout"
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -7,11 +7,10 @@ function BusinessHelpdeskSupportPerth() {
 
   return (
     <>
-      <Helmet htmlAttributes={{ lang: `en` }}>
-        <meta charSet="utf-8" />
-        <title>Business Helpdesk Support Perth | iQuest IT Services</title>
-        <meta name="description" content="We have a team of resourceful technical support experts in Perth providing helpdesk support." />
-      </Helmet>
+      <GatsbySeo
+        title="Business Helpdesk Support Services in Perth From Expert IT Personnel"
+        description="Our resourceful technical experts in Perth provide helpdesk support and other business IT support services for most industries."
+      />
       <InternalLayout title="Business Helpdesk Support" >
         <div className="flex flex-col space-y-20">
           <div className="grid lg:grid-cols-2 gap-6 items-center">

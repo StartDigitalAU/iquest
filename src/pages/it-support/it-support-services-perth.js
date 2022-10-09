@@ -1,4 +1,5 @@
 import * as React from "react"
+import { GatsbySeo } from 'gatsby-plugin-next-seo';
 import InternalLayout from "../../components/layout/InternalLayout"
 import TwoColumnGrid from "../../components/TwoColumnGrid"
 import List from "../../components/List"
@@ -42,6 +43,10 @@ function ITSupportServicesPerth() {
 
   return (
     <>
+      <GatsbySeo
+        title="Expert Managed IT Support Services for Businesses in WA and Melbourne"
+        description="Our approach to IT support is customer focused. We personalise our full IT services depending on the needs of the business and its industry."
+      />
       <InternalLayout title="IT Support Services" description="Providing fully managed IT support services in Perth & Melbourne.">
         <div className="lg:grid lg:grid-cols-2 lg:gap-x-8 pb-16">
           <div>
