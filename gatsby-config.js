@@ -3,8 +3,8 @@ module.exports = {
     DEV_SSR: false,
   },
   siteMetadata: {
-    title: `iQuest | IT Services Perth`,
-    description: `iQuest provide a complete suite of IT support services that allow you to focus on what's important - your business.`,
+    title: `iQuest | IT Support Perth | Corporate IT Services Perth | Managed IT Perth`,
+    description: `Delivering exceptional corporate IT support to Perth since 1999, iQuest provides managed IT services to help you focus on your business.`,
     author: `@Start Digital`,
     siteUrl: `https://iquest.com.au/`,
   },
@@ -13,6 +13,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sitemap`,
+    'gatsby-plugin-next-seo',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

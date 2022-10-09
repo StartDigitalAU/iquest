@@ -1,5 +1,7 @@
 import React, { useEffect } from "react"
 import { Helmet } from "react-helmet"
+import { GatsbySeo } from 'gatsby-plugin-next-seo';
+
 import { setupAnimateInOnScroll } from "../js/main"
 
 import Header from "../components/layout/Header"
@@ -21,7 +23,12 @@ function IndexPage() {
 
   return (
     <>
-      <Helmet htmlAttributes={{ lang: `en` }}>
+      <GatsbySeo
+        title='iQuest | IT Support Perth | Corporate IT Services Perth | Managed IT Perth'
+        description='Delivering exceptional corporate IT support to Perth since 1999, iQuest provides managed IT services to help you focus on your business.'
+      />
+
+      {/* <Helmet htmlAttributes={{ lang: `en` }}>
         <meta charSet="utf-8" />
         <title>
           iQuest | IT Support Perth | Corporate IT Services Perth | Managed IT
@@ -31,7 +38,8 @@ function IndexPage() {
           name="description"
           content="Delivering exceptional corporate IT support to Perth and WA since 1999. iQuest provide IT support Perth services allowing you to focus on your business."
         />
-      </Helmet>
+      </Helmet> */}
+
       <Header />
       <Mainbanner />
       <ClientLogos classes="py-12" />
