@@ -1,11 +1,11 @@
 import React, { useEffect } from "react"
-import { GatsbySeo } from 'gatsby-plugin-next-seo';
+import { GatsbySeo } from "gatsby-plugin-next-seo"
 
 import { setupAnimateInOnScroll } from "../js/main"
 
 import Header from "../components/layout/Header"
 import Mainbanner from "../components/MainBanner"
-import ClientLogos from "../components/ClientLogos"
+import HowWeHelp from "../components/HowWeHelp"
 import FeaturedContent from "../components/FeaturedContent"
 import ManagedIT from "../components/ManagedIT"
 import LeadingIT from "../components/LeadingIT"
@@ -23,14 +23,16 @@ function IndexPage() {
   return (
     <>
       <GatsbySeo
-        title='iQuest | IT Support Perth | Corporate IT Services Perth | Managed IT Perth'
-        description='Delivering exceptional corporate IT support to Perth since 1999, iQuest provides managed IT services to help you focus on your business.'
+        title="iQuest | IT Support Perth | Corporate IT Services Perth | Managed IT Perth"
+        description="Delivering exceptional corporate IT support to Perth since 1999, iQuest provides managed IT services to help you focus on your business."
       />
-      <Header />
-      <Mainbanner />
-      <ClientLogos classes="py-12" />
-      <FeaturedContent />
-      <ManagedIT />
+      <div className="bg-gradient-to-b from-black via-[#110621] to-[#130523]">
+        <Header />
+        <Mainbanner />
+        <HowWeHelp />
+        <FeaturedContent />
+        <ManagedIT />
+      </div>
       <CaseStudies />
       <Partnership />
       <Testimonials />

@@ -2,6 +2,6 @@ body {
   @apply bg-iquest-gradient bg-blue-dark bg-cover bg-no-repeat overflow-x-hidden;
 }
 
-.container {
+/* .container {
   @apply bg-header-bg bg-blue-dark;
-}
+} */
