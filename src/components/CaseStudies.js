@@ -11,12 +11,18 @@ const FlexItems = ({ children }) => {
         children.map((child, index) => (
           <div
             key={index}
-            className={`duration-500 border ${
+            className={`flex-shrink-0 duration-500 border ${
               activeIndex === index ? "flex-1" : ""
             }`}
             onClick={() => setActiveIndex(index)}
           >
-            {child}
+            <div
+              className={`w-fit transition-all duration-300 ${
+                activeIndex === index ? "" : "-rotate-90"
+              }`}
+            >
+              {child}
+            </div>
           </div>
         ))}
     </div>
@@ -53,9 +59,9 @@ const CaseStudies = () => {
 
         {/* Dynamic flex stretchy bit  */}
         <FlexItems>
-          <div className="p-12 flex-shrink-0">Surf Life Saving</div>
-          <div className="p-12 flex-shrink-0">Surf Life Saving</div>
-          <div className="p-12 flex-shrink-0">Surf Life Saving</div>
+          <div className="p-16 flex">Surf Life Saving</div>
+          <div className="p-16 flex">Surf Life Saving</div>
+          <div className="p-16 flex">Surf Life Saving</div>
         </FlexItems>
       </div>
     </div>
