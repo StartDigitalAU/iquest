@@ -35,18 +35,27 @@ const SecurityAwareness = () => {
 const MitigateCybercrimes = () => {
   return (
     <>
-      <h3 className="text-white text-3xl leading-normal lg:text-4xl">
-        Mitigate Cybercrimes
-      </h3>
-      <p>
-        Our IT team have helped businesses across Perth achieve cyber resilience
-        by proactively mitigating cybersecurity risks and arming your business
-        with consistent security monitoring and reporting. You can rest assured
-        that you’re in safe hands with our team of talented IT experts.
-      </p>
-      <Link to={"#"} className="btn text-white">
-        Learn more
-      </Link>
+      <StaticImage
+        src={"../images/women-on-phone.png"}
+        alt="A women looking at her phone"
+        className="absolute inset-0 rounded-2xl"
+      />
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-transparent to-[#2560E6] mix-blend-multiply"></div>
+      <div className="flex flex-col gap-4 z-10">
+        <h3 className="text-white text-3xl leading-normal lg:text-4xl">
+          Mitigate Cybercrimes
+        </h3>
+        <p>
+          Our IT team have helped businesses across Perth achieve cyber
+          resilience by proactively mitigating cybersecurity risks and arming
+          your business with consistent security monitoring and reporting. You
+          can rest assured that you’re in safe hands with our team of talented
+          IT experts.
+        </p>
+        <Link to={"#"} className="btn text-white">
+          Learn more
+        </Link>
+      </div>
     </>
   )
 }
@@ -83,7 +92,7 @@ const HowWeHelp = () => {
         secure, protected and supported at all times.
       </p>
 
-      <div className="relative flex flex-col h-[750px] rounded-2xl">
+      <div className="relative flex flex-col h-[750px] rounded-2xl mt-6">
         <div className="flex-[3] flex flex-col justify-center gap-4 lg:w-1/2 ml-16 lg:ml-32">
           <Content index={index} />
         </div>
