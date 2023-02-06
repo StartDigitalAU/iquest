@@ -13,8 +13,8 @@ export default function ClientLogos({ classes }) {
               className="client_logo md:px-0 px-2"
               objectFit="contain"
               width={150}
-              src={"../images/logos/Singtel-Logo.png"}
-              alt="Singtel logo"
+              src={"../images/logos/Kddi-Logo.png"}
+              alt="KDDI logo"
             />
           </div>
           <div className="flex-1">
@@ -31,8 +31,8 @@ export default function ClientLogos({ classes }) {
               className="client_logo md:px-0 px-2"
               objectFit="contain"
               width={150}
-              src={"../images/logos/Goldfields-Logo.png"}
-              alt="Goldfields Money logo"
+              src={"../images/logos/Argonaut-Logo.png"}
+              alt="Argonaut logo"
             />
           </div>
           <div className="flex-1">
@@ -40,8 +40,8 @@ export default function ClientLogos({ classes }) {
               className="client_logo md:px-0 px-2"
               objectFit="contain"
               width={150}
-              src={"../images/logos/Fremantle-Dockers-Logo.png"}
-              alt="Fremantle Dockers logo"
+              src={"../images/logos/Artrya-Logo.png"}
+              alt="Artrya logo"
             />
           </div>
           <div className="flex-1">
@@ -49,8 +49,8 @@ export default function ClientLogos({ classes }) {
               className="client_logo md:px-0 px-2"
               objectFit="contain"
               width={150}
-              src={"../images/logos/Gumala-Logo.png"}
-              alt="Gumala logo"
+              src={"../images/logos/Advocare-Logo.png"}
+              alt="Advocare logo"
             />
           </div>
         </div>
