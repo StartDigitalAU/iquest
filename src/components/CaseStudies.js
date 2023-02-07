@@ -2,27 +2,18 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-const FlexItems = ({ children }) => {
-  const [activeIndex, setActiveIndex] = useState(0)
-
+const FlexItems = ({ children, activeIndex }) => {
   return (
-    <div className="mt-16 border rounded-2xl flex gap-2">
+    <div className="mt-16 rounded-2xl flex gap-2 h-[600px]">
       {children &&
         children.map((child, index) => (
           <div
             key={index}
-            className={`flex-shrink-0 duration-500 border ${
+            className={`flex-shrink-0 duration-500 ${
               activeIndex === index ? "flex-1" : ""
             }`}
-            onClick={() => setActiveIndex(index)}
           >
-            <div
-              className={`w-fit transition-all duration-300 ${
-                activeIndex === index ? "" : "-rotate-90"
-              }`}
-            >
-              {child}
-            </div>
+            {child}
           </div>
         ))}
     </div>
@@ -30,6 +21,7 @@ const FlexItems = ({ children }) => {
 }
 
 const CaseStudies = () => {
+  const [activeIndex, setActiveIndex] = useState(0)
   return (
     <div className="relative mt-32">
       <div className="absolute inset-0">
@@ -58,10 +50,140 @@ const CaseStudies = () => {
         </p>
 
         {/* Dynamic flex stretchy bit  */}
-        <FlexItems>
-          <div className="p-16 flex">Surf Life Saving</div>
-          <div className="p-16 flex">Surf Life Saving</div>
-          <div className="p-16 flex">Surf Life Saving</div>
+        <FlexItems activeIndex={activeIndex}>
+          {/* KDDI */}
+          <div
+            onClick={() => setActiveIndex(0)}
+            className={`p-16 flex relative cursor-pointer rounded-l-2xl h-full ${
+              activeIndex === 0 ? "flex-1" : ""
+            }`}
+          >
+            <StaticImage
+              src="../images/man-on-phone.png"
+              alt="A man on his phone with the city skyline in the background"
+              className="absolute inset-0 w-full h-full object-cover -z-20 rounded-l-2xl"
+            />
+
+            <StaticImage
+              src="../images/secondary-gradient-bg.png"
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover -z-10 pointer-events-none rounded-l-2xl"
+            />
+
+            <span
+              className={`is-h2 text-white absolute inset-0 flex items-center mb-16 w-full origin-center ${
+                activeIndex === 0 ? "hidden" : ""
+              }`}
+              style={{
+                writingMode: "vertical-rl",
+                textOrientation: "mixed",
+                rotate: "180deg",
+              }}
+            >
+              KDDI Australia & Singapore Telecommunications
+            </span>
+
+            <div
+              className={`flex flex-col justify-end h-full mt-auto gap-4 ${
+                activeIndex === 0 ? "" : "hidden"
+              }`}
+            >
+              <span className="is-h2 text-white">
+                KDDI Australia & Singapore Telecommunications
+              </span>
+              <Link className="btn text-white border-white" to="">
+                Learn More
+              </Link>
+            </div>
+          </div>
+
+          {/* Surf Life Saving */}
+          <div
+            onClick={() => setActiveIndex(1)}
+            className={`p-16 flex relative cursor-pointer h-full ${
+              activeIndex === 1 ? "flex-1" : ""
+            }`}
+          >
+            <span
+              className={`is-h2 text-white absolute inset-0 flex items-center mb-16 w-full origin-center ${
+                activeIndex === 1 ? "hidden" : ""
+              }`}
+              style={{
+                writingMode: "vertical-rl",
+                textOrientation: "mixed",
+                rotate: "180deg",
+              }}
+            >
+              Surf Life Saving
+            </span>
+
+            <StaticImage
+              src="../images/lifesavers.png"
+              alt="Kids running on the beach as lifesavers"
+              className="absolute inset-0 w-full h-full object-cover -z-20"
+            />
+
+            <StaticImage
+              src="../images/secondary-gradient-bg.png"
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover -z-10 pointer-events-none"
+            />
+
+            <div
+              className={`flex flex-col justify-end h-full mt-auto gap-4 ${
+                activeIndex === 1 ? "" : "hidden"
+              }`}
+            >
+              <span className="is-h2 text-white">Surf Life Saving</span>
+              <Link className="btn text-white border-white" to="">
+                Learn More
+              </Link>
+            </div>
+          </div>
+
+          {/* Kiw Logistics */}
+          <div
+            onClick={() => setActiveIndex(2)}
+            className={`p-16 flex relative cursor-pointer rounded-r-2xl h-full ${
+              activeIndex === 2 ? "flex-1" : ""
+            }`}
+          >
+            <span
+              className={`is-h2 text-white absolute inset-0 flex items-center mb-16 w-full origin-center ${
+                activeIndex === 2 ? "hidden" : ""
+              }`}
+              style={{
+                writingMode: "vertical-rl",
+                textOrientation: "mixed",
+                rotate: "180deg",
+              }}
+            >
+              Kwik Logistics
+            </span>
+
+            <StaticImage
+              src="../images/aerial-trucks.png"
+              alt="A group of trucks as seen from above"
+              className="absolute inset-0 w-full h-full object-cover -z-20 rounded-r-2xl"
+            />
+
+            <StaticImage
+              src="../images/secondary-gradient-bg.png"
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover -z-10 pointer-events-none rounded-r-2xl"
+            />
+
+            <div
+              className={`flex flex-col justify-end h-full mt-auto gap-4 ${
+                activeIndex === 2 ? "" : "hidden"
+              }`}
+            >
+              <span className="is-h2 text-white">Kwik Logistics</span>
+              <Link className="btn text-white border-white" to="">
+                Learn More
+              </Link>
+            </div>
+          </div>
         </FlexItems>
       </div>
     </div>
