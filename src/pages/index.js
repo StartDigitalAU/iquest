@@ -13,6 +13,7 @@ import CaseStudies from "../components/CaseStudies"
 import Partnership from "../components/Partnership"
 import Testimonials from "../components/Testimonials"
 import CloudComputing from "../components/CloudComputing"
+import ContactForm from "../components/ContactForm"
 import Footer from "../components/layout/Footer"
 
 function IndexPage() {
@@ -26,7 +27,7 @@ function IndexPage() {
         title="iQuest | IT Support Perth | Corporate IT Services Perth | Managed IT Perth"
         description="Delivering exceptional corporate IT support to Perth since 1999, iQuest provides managed IT services to help you focus on your business."
       />
-      <div className="bg-white">
+      <div className="bg-white rounded-b-[100px] pb-16 mb-[400px] relative z-10">
         <div className="bg-gradient-to-b from-black via-[#110621] to-[#130523] pb-16 lg:pb-48 mb-48 rounded-b-[100px]">
           <Header />
           <Mainbanner />
@@ -35,11 +36,16 @@ function IndexPage() {
         <ManagedIT />
         {/* <FeaturedContent /> */}
         <CaseStudies />
-        <Partnership />
-        <Testimonials />
-        <CloudComputing />
-        <Footer />
       </div>
+      <div className="bg-gradient-to-b from-black via-[#110621] to-[#130523] -mt-[500px] pt-[390px] pb-32">
+        <Partnership />
+      </div>
+
+      <ContactForm />
+
+      <Testimonials />
+      <CloudComputing />
+      <Footer />
     </>
   )
 }

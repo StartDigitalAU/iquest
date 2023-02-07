@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const FlexItems = ({ children, activeIndex }) => {
   return (
-    <div className="mt-16 rounded-2xl flex gap-2 h-[600px]">
+    <div className="absolute left-0 w-full mt-16 rounded-2xl flex gap-2 h-[600px]">
       {children &&
         children.map((child, index) => (
           <div
@@ -23,7 +23,7 @@ const FlexItems = ({ children, activeIndex }) => {
 const CaseStudies = () => {
   const [activeIndex, setActiveIndex] = useState(0)
   return (
-    <div className="relative mt-32">
+    <div className="relative mt-32 pb-[200px]">
       <div className="absolute inset-0">
         <StaticImage
           src={"../images/data-lines.png"}
@@ -33,7 +33,7 @@ const CaseStudies = () => {
           placeholder="none"
         />
       </div>
-      <div className="max-w-7xl relative z-10 mb-8 mx-auto py-12 px-4 lg:py-20 xl:px-0">
+      <div className="container relative z-10 mb-8 mx-auto py-12 px-4 lg:py-20 xl:px-0">
         <p className="text-md font-sans inline-block md:text-lg tracking-wide text-purple mb-6">
           Holistic IT Support Perth
         </p>
