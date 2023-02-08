@@ -32,9 +32,9 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="bg-white rounded-2xl container mx-auto -translate-y-1/2">
-      <div className="max-w-7xl mx-auto border p-16 bg-white">
-        <h4 className="is-h2 text-black text-center">Why iQuest</h4>
+    <div className="bg-white rounded-3xl container mx-auto -mt-[50%] translate-y-1/2">
+      <div className="max-w-7xl mx-auto rounded-3xl p-16 bg-white">
+        <h4 className="is-h1 text-black text-center">Why iQuest</h4>
         <p class="text-black-light max-w-sm mx-auto text-center">
           iQuest provides simple, effective IT support and consulting services
           that allow you to focus on your business. <br />
@@ -42,7 +42,7 @@ const ContactForm = () => {
           <strong>Get in touch with us today!</strong>
         </p>
         <form
-          className="grid lg:grid-cols-2 gap-6 self-start "
+          className="grid lg:grid-cols-2 gap-6 self-start mt-12"
           action="/success"
           name="new-contact-form"
           method="POST"
@@ -71,7 +71,7 @@ const ContactForm = () => {
           <TextArea changeHandler={handleChange} />
           <button
             type="submit"
-            className="btn btn-blue btn-medium w-32 lg:col-span-full ml-auto"
+            className="btn text-white bg-black w-64 lg:col-span-full mx-auto"
           >
             Submit
           </button>
@@ -83,18 +83,15 @@ const ContactForm = () => {
 
 const Input = ({ label, type = "text", placeholder = "", changeHandler }) => {
   return (
-    <div className="">
-      <label
-        htmlFor={label}
-        className="text-sm text-white mb-6 font-medium capitalize"
-      >
+    <div>
+      <label htmlFor={label} className="sr-only">
         {label}
       </label>
       <input
         type={type}
         name={label}
         id={label}
-        className="block w-full px-4 py-4 rounded-md border-0 p-0 text-gray-900 placeholder-gray-600 focus:ring-2 focus:ring-blue-light sm:text-sm"
+        className="block w-full px-4 py-4 rounded-md border-1 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-light sm:text-sm"
         placeholder={placeholder}
         onChange={changeHandler}
       />
@@ -104,14 +101,11 @@ const Input = ({ label, type = "text", placeholder = "", changeHandler }) => {
 
 const TextArea = ({ changeHandler }) => (
   <div className="w-full lg:col-span-full">
-    <label
-      htmlFor="message"
-      className="text-sm text-white mb-6 font-medium capitalize"
-    >
+    <label htmlFor="message" className="sr-only">
       Message
     </label>
     <textarea
-      className="block w-full rounded-md border-0 p-4 text-gray-900 placeholder-gray-600 focus:ring-2 focus:ring-blue-light sm:text-sm"
+      className="block w-full rounded-md border p-4 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-light sm:text-sm"
       name="message"
       id="message"
       rows="5"

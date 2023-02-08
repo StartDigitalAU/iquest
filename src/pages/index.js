@@ -27,7 +27,7 @@ function IndexPage() {
         title="iQuest | IT Support Perth | Corporate IT Services Perth | Managed IT Perth"
         description="Delivering exceptional corporate IT support to Perth since 1999, iQuest provides managed IT services to help you focus on your business."
       />
-      <div className="bg-white rounded-b-[100px] pb-16 mb-[400px] relative z-10">
+      <div className="bg-white rounded-b-[100px] pb-16 mb-[400px] relative z-20">
         <div className="bg-gradient-to-b from-black via-[#110621] to-[#130523] pb-16 lg:pb-48 mb-48 rounded-b-[100px]">
           <Header />
           <Mainbanner />
@@ -37,11 +37,10 @@ function IndexPage() {
         {/* <FeaturedContent /> */}
         <CaseStudies />
       </div>
-      <div className="bg-gradient-to-b from-black via-[#110621] to-[#130523] -mt-[500px] pt-[390px] pb-32">
+      <div className="flex flex-col gap-80 bg-gradient-to-b from-black via-[#110621] to-[#130523] -mt-[500px] pt-[390px] relative z-10">
         <Partnership />
+        <ContactForm />
       </div>
-
-      <ContactForm />
 
       <Testimonials />
       <CloudComputing />
