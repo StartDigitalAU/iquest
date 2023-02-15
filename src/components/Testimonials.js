@@ -8,7 +8,7 @@ register()
 
 const Testimonials = () => {
   return (
-    <section className="pt-[500px] relative rounded-t-[100px]">
+    <section className="pt-[500px] pb-32s relative rounded-t-[100px]">
       <StaticImage
         src={"../images/iQuest-Helpdesk-Support.jpeg"}
         alt=""
