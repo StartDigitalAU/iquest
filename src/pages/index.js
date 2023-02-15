@@ -43,7 +43,6 @@ function IndexPage() {
       </div>
 
       <Testimonials />
-      <CloudComputing />
       <Footer />
     </>
   )

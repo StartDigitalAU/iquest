@@ -6,9 +6,9 @@ import menuJson from "../../../content/menu.json"
 const navigation = {
   social: [
     {
-      name: 'Facebook',
-      href: 'https://www.facebook.com/iQuestConsulting/',
-      icon: (props) => (
+      name: "Facebook",
+      href: "https://www.facebook.com/iQuestConsulting/",
+      icon: props => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
@@ -19,9 +19,9 @@ const navigation = {
       ),
     },
     {
-      name: 'Linkedin',
-      href: 'https://www.linkedin.com/company/iquest-consulting-pty-ltd/',
-      icon: (props) => (
+      name: "Linkedin",
+      href: "https://www.linkedin.com/company/iquest-consulting-pty-ltd/",
+      icon: props => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
@@ -41,16 +41,35 @@ export default function Footer() {
       <h2 id="footerHeading" className="sr-only">
         Footer
       </h2>
-      <div className="max-w-7xl mx-auto py-12 lg:py-16 px-12 lg:px-0">
+      <div className="container mx-auto py-12 lg:py-16 px-12 lg:px-0">
         <div className="xl:grid xl:grid-cols-2 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
-            <img data-animate src={logoLight} width="180" height="45" alt="iQuest Logo" />
-            <p data-animate className="text-gray-300 text-sm leading-relaxed max-w-lg">
-            iQuest is one of the leading IT companies in Perth. We provide a complete suite of IT support services that allow you to focus on what's important - your business. We offer Fully Managed IT Support and IT Consulting Services where we act as your offsite IT department regardless of anywhere you are in or outside Perth.
+            <img
+              data-animate
+              src={logoLight}
+              width="180"
+              height="45"
+              alt="iQuest Logo"
+            />
+            <p
+              data-animate
+              className="text-gray-300 text-sm leading-relaxed max-w-lg"
+            >
+              iQuest is one of the leading IT companies in Perth. We provide a
+              complete suite of IT support services that allow you to focus on
+              what's important - your business. We offer Fully Managed IT
+              Support and IT Consulting Services where we act as your offsite IT
+              department regardless of anywhere you are in or outside Perth.
             </p>
             <div data-animate className="flex space-x-6">
-              {navigation.social.map((item) => (
-                <a key={item.name} href={item.href} target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+              {navigation.social.map(item => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-gray-400"
+                >
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
                 </a>
@@ -60,11 +79,19 @@ export default function Footer() {
           <div className="mt-12 grid grid-cols-1 gap-8 xl:mt-0">
             <div className="md:grid md:grid-cols-3 md:gap-8">
               <div>
-                <h3 data-animate className="text-lg font-semibold text-blue-light">About</h3>
+                <h3
+                  data-animate
+                  className="text-lg font-semibold text-blue-light"
+                >
+                  About
+                </h3>
                 <ul className="mt-4 space-y-2">
-                  {menuItems[0][1].map((item) => (
+                  {menuItems[0][1].map(item => (
                     <li data-animate key={item.name}>
-                      <Link to={item.href} className="text-sm text-gray-300 hover:text-gray-400">
+                      <Link
+                        to={item.href}
+                        className="text-sm text-gray-300 hover:text-gray-400"
+                      >
                         {item.name}
                       </Link>
                     </li>
@@ -72,11 +99,19 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 data-animate className="text-lg font-semibold text-blue-light">Our Services</h3>
+                <h3
+                  data-animate
+                  className="text-lg font-semibold text-blue-light"
+                >
+                  Our Services
+                </h3>
                 <ul className="mt-4 space-y-2">
-                  {menuItems[1][1].map((item) => (
+                  {menuItems[1][1].map(item => (
                     <li data-animate key={item.name}>
-                      <Link to={item.href} className="text-sm text-gray-300 hover:text-gray-400">
+                      <Link
+                        to={item.href}
+                        className="text-sm text-gray-300 hover:text-gray-400"
+                      >
                         {item.name}
                       </Link>
                     </li>
@@ -84,20 +119,34 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 data-animate className="text-lg font-semibold text-blue-light">More</h3>
+                <h3
+                  data-animate
+                  className="text-lg font-semibold text-blue-light"
+                >
+                  More
+                </h3>
                 <ul className="mt-4 space-y-2">
                   <li data-animate>
-                    <Link to="/case-studies" className="text-sm text-gray-300 hover:text-gray-400">
+                    <Link
+                      to="/case-studies"
+                      className="text-sm text-gray-300 hover:text-gray-400"
+                    >
                       Case Studies
                     </Link>
                   </li>
                   <li data-animate>
-                    <Link to="/contact-us" className="text-sm text-gray-300 hover:text-gray-400">
+                    <Link
+                      to="/contact-us"
+                      className="text-sm text-gray-300 hover:text-gray-400"
+                    >
                       Contact Us
                     </Link>
                   </li>
                   <li data-animate>
-                    <Link to="/about/privacy-policy" className="text-sm text-gray-300 hover:text-gray-400">
+                    <Link
+                      to="/about/privacy-policy"
+                      className="text-sm text-gray-300 hover:text-gray-400"
+                    >
                       Privacy Policy
                     </Link>
                   </li>
@@ -107,7 +156,13 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-gray-300 pt-8">
-          <p data-animate className="text-sm text-gray-300 xl:text-center">&copy; 2022 iQuest, Inc. All rights reserved. Website by <a href="https://startdigital.com.au/" target="_blank">Start Digital</a>.</p>
+          <p data-animate className="text-sm text-gray-300 xl:text-center">
+            &copy; 2022 iQuest, Inc. All rights reserved. Website by{" "}
+            <a href="https://startdigital.com.au/" target="_blank">
+              Start Digital
+            </a>
+            .
+          </p>
         </div>
       </div>
     </footer>

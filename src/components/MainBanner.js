@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import ClientLogos from "./ClientLogos"
+import PerlinNoise from "./PerlinNoise"
 
 export default function MainBanner() {
   return (
@@ -26,6 +27,7 @@ export default function MainBanner() {
           </p>
         </div>
       </div>
+      <PerlinNoise />
       {/* <div className="absolute top-0 right-0 transform translate-x-1/4 lg:w-3/4 xl:w-3/5 ">
         <StaticImage
           src="../images/circular-data.png"

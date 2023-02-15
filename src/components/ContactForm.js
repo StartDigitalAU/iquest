@@ -35,7 +35,7 @@ const ContactForm = () => {
     <div className="bg-white rounded-3xl container mx-auto -mt-[50%] translate-y-1/2">
       <div className="max-w-7xl mx-auto rounded-3xl p-16 bg-white">
         <h4 className="is-h1 text-black text-center">Why iQuest</h4>
-        <p class="text-black-light max-w-sm mx-auto text-center">
+        <p className="text-black-light max-w-sm mx-auto text-center">
           iQuest provides simple, effective IT support and consulting services
           that allow you to focus on your business. <br />
           <br />
@@ -49,6 +49,7 @@ const ContactForm = () => {
           data-netlify="true"
           onSubmit={handleSubmit}
         >
+          {/* SUPER IMPORTANT HIDDEN INPUT MAKES FORM SUBMISSIONS WORK ON NETLIFY */}
           <input type="hidden" name="form-name" value="new-contact-form" />
           <Input label="name" placeholder="Name" changeHandler={handleChange} />
           <Input
