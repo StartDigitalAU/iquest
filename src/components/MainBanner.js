@@ -9,7 +9,7 @@ export default function MainBanner() {
       {/* Video */}
 
       <div className="max-w-7xl mx-auto relative z-10 text-white">
-        <div className="lg:w-1/2 flex flex-col gap-4">
+        <div className="lg:w-1/2 flex flex-col gap-6">
           <h2 className="text-md font-sans inline-block md:text-lg tracking-wide text-purple">
             18 Years of Exception Perth IT Support
           </h2>
@@ -17,14 +17,14 @@ export default function MainBanner() {
             Future Focused
             <br /> IT Support & Management
           </h1>
-          <a href={"/contact-us"} className="btn">
-            Get in Touch
-          </a>
           <p className="xl:pr-20">
             Since 2004, iQuest have helped businesses across Perth to feel safe
             online, whilst improving the daily performance and productivity of
             their team.
           </p>
+          <a href={"/contact-us"} className="btn">
+            Get in Touch
+          </a>
         </div>
       </div>
       <PerlinNoise />

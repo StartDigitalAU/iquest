@@ -1,5 +1,5 @@
 .btn {
-  @apply font-display inline-flex self-start items-center justify-center px-8 py-3 text-base font-medium border-2 border-white rounded-md transition duration-300 ease-in-out;
+  @apply font-display inline-flex self-start items-center justify-center px-8 py-3 text-base font-medium border-2 border-white rounded-md transition duration-100 ease-in-out;
 
   &-blue {
     @apply text-blue-darker bg-blue-light hover:bg-blue-darker hover:text-blue-light;
@@ -11,5 +11,9 @@
 
   &-small {
     @apply px-5 py-2 text-base;
+  }
+
+  &:hover {
+    @apply bg-blue-medium text-white;
   }
 }
