@@ -21,9 +21,9 @@ const TestimonialCarousel = () => {
   }, [])
 
   return (
-    <div className="max-w-6xl mx-auto relative">
+    <div className="max-w-6xl mx-auto relative pb-32">
       <button
-        className="text-5xl bg-white rounded-full text-black w-12 h-12 grid place-items-center absolute top-1/2 left-0 z-50"
+        className="text-5xl bg-white rounded-full text-black w-12 h-12 grid place-items-center absolute top-1/2 -translate-y-full left-0 z-50"
         onClick={handlePrev}
       >
         <svg
@@ -43,7 +43,7 @@ const TestimonialCarousel = () => {
       </button>
 
       <button
-        className="text-5xl bg-white rounded-full text-black w-12 h-12 grid place-items-center absolute top-1/2 right-0 z-50"
+        className="text-5xl bg-white rounded-full text-black w-12 h-12 grid place-items-center absolute top-1/2 -translate-y-full right-0 z-50"
         onClick={handleNext}
       >
         <svg

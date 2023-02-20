@@ -37,11 +37,11 @@ const navigation = {
 export default function Footer() {
   const menuItems = menuJson.menuItems
   return (
-    <footer className="" aria-labelledby="footerHeading">
+    <footer className="bg-[#130523] rounded-t-[50px] md:rounded-t-[100px] z-[10] relative" aria-labelledby="footerHeading">
       <h2 id="footerHeading" className="sr-only">
         Footer
       </h2>
-      <div className="container mx-auto py-12 lg:py-16 px-12 lg:px-0">
+      <div className="container mx-auto pt-12 pb-6 lg:pt-16 xl:pb-8 px-12 lg:px-0">
         <div className="xl:grid xl:grid-cols-2 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <img
@@ -155,9 +155,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-12 border-t border-gray-300 pt-8">
-          <p data-animate className="text-sm text-gray-300 xl:text-center">
-            &copy; 2022 iQuest, Inc. All rights reserved. Website by{" "}
+        <div className="mt-12 border-t border-gray-300 pt-4">
+          <p data-animate className="text-sm text-gray-300">
+            &copy; 2023 iQuest, Inc. All rights reserved. Website by{" "}
             <a href="https://startdigital.com.au/" target="_blank">
               Start Digital
             </a>

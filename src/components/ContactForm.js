@@ -33,9 +33,9 @@ const ContactForm = () => {
 
   return (
     <div className="bg-white rounded-3xl container mx-auto -mt-[50%] translate-y-1/2">
-      <div className="max-w-7xl mx-auto rounded-3xl p-16 bg-white">
-        <h4 className="is-h1 text-black text-center">Why iQuest</h4>
-        <p className="text-black-light max-w-sm mx-auto text-center">
+      <div className="max-w-7xl mx-auto rounded-3xl py-12 px-6 md:p-32 bg-white">
+        <h4 className="is-h1 text-black text-center font-bold">Why iQuest</h4>
+        <p className="text-black-light max-w-[600px] mx-auto text-center">
           iQuest provides simple, effective IT support and consulting services
           that allow you to focus on your business. <br />
           <br />
@@ -74,7 +74,7 @@ const ContactForm = () => {
             type="submit"
             className="btn text-white bg-black w-64 lg:col-span-full mx-auto"
           >
-            Submit
+            submit
           </button>
         </form>
       </div>
