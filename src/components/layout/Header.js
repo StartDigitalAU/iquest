@@ -44,13 +44,13 @@ const Header = () => {
         {({ open }) => (
           <>
             <div className="container bg-transparent mx-auto backdrop-blur-md rounded-b-full">
-              <div className="max-w-7xl mx-auto py-12 px-4 xl:px-0">
+              <div className="mx-auto py-12 px-4 xl:px-0">
                 <div className="flex justify-between items-center md:justify-start md:space-x-10">
                   <div className="flex justify-start lg:w-0 lg:flex-1">
                     <Link to={"/"}>
                       <span className="sr-only">iQuest</span>
                       <img
-                        className="h-8 w-auto sm:h-10 mb-2"
+                        className="h-8 w-full sm:h-10 mb-2"
                         src={logoLight}
                         width="180"
                         height="45"
@@ -58,7 +58,7 @@ const Header = () => {
                       />
                     </Link>
                   </div>
-                  <div className="-mr-2 -my-2 md:hidden">
+                  <div className="-mr-2 xl:hidden mt-0 mb-2">
                     <Popover.Button className="transparent btn-blue rounded-md p-2 inline-flex items-center justify-center text-white-400 hover:text-white-500 hover:bg-white-100">
                       <span className="sr-only">Open menu</span>
                       <MenuIcon className="h-6 w-6" aria-hidden="true" />
@@ -66,7 +66,7 @@ const Header = () => {
                   </div>
                   <Popover.Group
                     as="nav"
-                    className="hidden md:flex space-x-10 items-center"
+                    className="hidden xl:flex space-x-10 items-center"
                   >
                     {menuItems.map(menuItem => {
                       const title = menuItem[0].title
@@ -91,7 +91,7 @@ const Header = () => {
                       Case Studies
                     </Link>
                   </Popover.Group>
-                  <div className="hidden md:flex items-center justify-end">
+                  <div className="hidden xl:flex items-center justify-end">
                     <Link to="/contact-us" className="btn text-white lowercase">
                       Contact Us
                     </Link>

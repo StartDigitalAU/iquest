@@ -42,11 +42,11 @@ const CaseStudies = () => {
         </h4>
         <p className="lg:w-3/4 text-black-light">
           iQuest provides professional IT solutions to a diverse range of
-          business sectors such as leading WA sporting entities, construction
-          companies and Not For Profit organisations, ensuring their businesses
-          have the very best in IT services and solutions. Our exceptional
-          service and can-do attitude has helped us become one of Perth’s most
-          trusted IT teams.
+          business sectors such as leading Financial Services, Medical BioTech,
+          WA sporting entities, Construction companies and Not For Profit
+          organisations, ensuring their businesses have the very best in IT
+          services and solutions. Our exceptional service and can-do attitude
+          has helped us become one of Perth’s most trusted IT teams.
         </p>
 
         {/* Dynamic flex stretchy bit  */}

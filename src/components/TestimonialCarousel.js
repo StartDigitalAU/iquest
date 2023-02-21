@@ -71,9 +71,9 @@ const TestimonialCarousel = () => {
           <div className="bg-white rounded-2xl p-12 flex flex-col gap-6 items-center justify-center max-w-4xl mx-auto">
             <StaticImage
               className="mx-auto"
-              width={100}
-              src="../images/Fremantle-Dockers-Client-Logo2.png"
-              alt="Fremantle Dockers Logo"
+              width={200}
+              src="../images/argonaut-logo.png"
+              alt="Argonaut Logo"
               placeholder="none"
             />
             <blockquote className="text-black-light text-center">
@@ -84,11 +84,11 @@ const TestimonialCarousel = () => {
                 and knowledgeable. The ongoing excellent support is really
                 something we sincerely appreciate and rely on.&rdquo;
               </p>
-              <figcaption data-animate-left className="mt-6 text-xl font-bold">
-                Minh Tran
+              <figcaption data-animate-left className="mt-8 text-xl font-bold">
+                Michael Price
               </figcaption>
               <cite data-animate-left className="italic font-normal">
-                Manager, Information Technology, Fremantle Dockers
+                Chief Operating Officer
               </cite>
             </blockquote>
           </div>

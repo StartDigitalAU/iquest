@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 const Partnership = () => {
   return (
     <div className="overflow-hidden relative">
-      <div className="container mx-auto py-32 lg:py-64 grid grid-cols-2 gap-16">
+      <div className="container mx-auto py-32 lg:py-64 grid md:grid-cols-2 gap-16">
         {/* Background */}
         <StaticImage
           className="absolute top-0 left-0 -translate-x-1/3 -translate-y-1/3 opacity-20 bg-blend-color-dodge w-full pointer-events-none"
@@ -22,7 +22,7 @@ const Partnership = () => {
           </h4>
           <p className="">
             As a business owner, is your time all work and no play? Find out how
-            the iQuest team can help your business maximise its Resources and
+            the iQuest team can help your business maximise its resources and
             profitability while also giving you more time to spend with your
             loved ones.
           </p>

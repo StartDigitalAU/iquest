@@ -14,14 +14,13 @@ const SecurityAwareness = () => {
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-transparent to-[#2560E6] mix-blend-multiply"></div>
       <div className="flex flex-col gap-4 z-10">
         <h3 className="text-white text-3xl leading-normal lg:text-4xl">
-          Achieve Cyber Resilience
+          Security Awareness Training
         </h3>
         <p>
-          Our IT team have helped businesses across Perth achieve cyber
-          resilience by proactively mitigating cybersecurity risks and arming
-          your business with consistent security monitoring and reporting. You
-          can rest assured that you’re in safe hands with our team of talented
-          IT experts.
+          Old school security awareness training won’t cut it anymore. Today,
+          your employees are consistently exposed to sophisticated phishing and
+          ransomware attacks. Find out how our Perth IT Support has helped
+          businesses like yours avoid security threats using KnowBe4.
         </p>
         <Link to={"#"} className="btn text-white">
           Learn more
@@ -46,11 +45,10 @@ const MitigateCybercrimes = () => {
           Mitigate Cybercrimes
         </h3>
         <p>
-          Our IT team have helped businesses across Perth achieve cyber
-          resilience by proactively mitigating cybersecurity risks and arming
-          your business with consistent security monitoring and reporting. You
-          can rest assured that you’re in safe hands with our team of talented
-          IT experts.
+          A single click has the ability to compromise your entire organisation.
+          Talk to iQuest to hear how we can help mitigate the risks that come
+          with email impersonation and protect your brand name by preventing
+          impersonators and phishing cybercrimes.
         </p>
         <Link to={"#"} className="btn text-white">
           Learn more
@@ -72,14 +70,13 @@ const BusinessHelpdeskSupport = () => {
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-transparent to-[#2560E6] mix-blend-multiply"></div>
       <div className="flex flex-col gap-4 z-10">
         <h3 className="text-white text-3xl leading-normal lg:text-4xl">
-          Mitigate Cybercrimes
+          Business Helpdesk Support
         </h3>
         <p>
-          Our IT team have helped businesses across Perth achieve cyber
-          resilience by proactively mitigating cybersecurity risks and arming
-          your business with consistent security monitoring and reporting. You
-          can rest assured that you’re in safe hands with our team of talented
-          IT experts.
+          iQuest’s business help desk support is like having your very own IT
+          team onsite. Our 24/7 IT team is only a call away, and are here to
+          answer any of your burning questions. With a 96% client retention rate
+          since 2004, you can rest assured that iQuest always has your back.
         </p>
         <Link to={"#"} className="btn text-white">
           Learn more
@@ -101,14 +98,14 @@ const HardwareAndSoftware = () => {
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-transparent to-[#2560E6] mix-blend-multiply"></div>
       <div className="flex flex-col gap-4 z-10">
         <h3 className="text-white text-3xl leading-normal lg:text-4xl">
-          Mitigate Cybercrimes
+          Hardware & Software
         </h3>
         <p>
-          Our IT team have helped businesses across Perth achieve cyber
-          resilience by proactively mitigating cybersecurity risks and arming
-          your business with consistent security monitoring and reporting. You
-          can rest assured that you’re in safe hands with our team of talented
-          IT experts.
+          At iQuest we’ve done the research for you. Speed, performance,
+          reliability and security are our main criteria in narrowing down the
+          best hardware and software for your business. We’ve partnered with
+          leading providers to ensure we’re providing you with top tier
+          products.
         </p>
         <Link to={"#"} className="btn text-white">
           Learn more
@@ -130,14 +127,13 @@ const CloudComputing = () => {
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-transparent to-[#2560E6] mix-blend-multiply"></div>
       <div className="flex flex-col gap-4 z-10">
         <h3 className="text-white text-3xl leading-normal lg:text-4xl">
-          Mitigate Cybercrimes
+          Cloud Computing
         </h3>
         <p>
-          Our IT team have helped businesses across Perth achieve cyber
-          resilience by proactively mitigating cybersecurity risks and arming
-          your business with consistent security monitoring and reporting. You
-          can rest assured that you’re in safe hands with our team of talented
-          IT experts.
+          We provide Perth businesses with the tools to grow in the cloud,
+          introducing significant cost savings, reduction of overheads and
+          giving 24/7 system access to improve security and optimise business
+          performance. Contact us to discover more.
         </p>
         <Link to={"#"} className="btn text-white">
           Learn more
@@ -177,7 +173,7 @@ const HowWeHelp = () => {
   return (
     <section className="container mx-auto flex flex-col gap-6">
       <p className="text-md inline-block md:text-lg tracking-wide text-purple">
-        Fully Managed IT Services Perth
+        Fully Managed Perth IT Services
       </p>
       <h3 className="text-white text-3xl leading-normal lg:text-5xl">
         How We Help
@@ -211,7 +207,10 @@ const HowWeHelp = () => {
                 d="m21.074 34.745 7.621 7.621 12.7-17.783M31.236.75a40.509 40.509 0 0 1-28.46 11.131 40.692 40.692 0 0 0 28.46 52.07 40.7 40.7 0 0 0 28.46-52.073h-.515A40.495 40.495 0 0 1 31.236.75Z"
               />
             </svg>
-            <span className="font-display">Security Awareness <br/>Training</span>
+            <span className="font-display">
+              Security Awareness <br />
+              Training
+            </span>
           </div>
 
           <div
@@ -236,7 +235,10 @@ const HowWeHelp = () => {
                 stroke-width="1.5"
               />
             </svg>
-            <span className="font-display">Mitigate <br/>Cybercrimes</span>
+            <span className="font-display">
+              Mitigate <br />
+              Cybercrimes
+            </span>
           </div>
           <div
             onClick={() => setIndex(2)}
@@ -260,7 +262,10 @@ const HowWeHelp = () => {
                 stroke-width="1.5"
               />
             </svg>
-            <span className="font-display">Business Helpdesk <br/>Support</span>
+            <span className="font-display">
+              Business Helpdesk <br />
+              Support
+            </span>
           </div>
           <div
             onClick={() => setIndex(3)}
@@ -284,7 +289,9 @@ const HowWeHelp = () => {
                 stroke-width="1.5"
               />
             </svg>
-            <span className="font-display">Hardware <br/>& Software</span>
+            <span className="font-display">
+              Hardware <br />& Software
+            </span>
           </div>
           <div
             onClick={() => setIndex(4)}
@@ -308,7 +315,10 @@ const HowWeHelp = () => {
                 stroke-width="1.5"
               />
             </svg>
-            <span className="font-display">Cloud <br/>Computing</span>
+            <span className="font-display">
+              Cloud <br />
+              Computing
+            </span>
           </div>
         </div>
       </div>

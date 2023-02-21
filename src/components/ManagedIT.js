@@ -7,7 +7,7 @@ const ManagedIT = () => {
     <div className="relative px-4 container mx-auto grid lg:grid-cols-2 gap-16 xl:px-0">
       <div>
         <h3 className="text-md font-sans inline-block md:text-lg tracking-wide text-purple mb-4">
-          Fully managed IT services Perth
+          We’re Here To Help
         </h3>
         <h4 className="text-black text-3xl font-display font-medium leading-normal lg:leading-tight lg:text-5xl mb-4">
           Your Business <br />

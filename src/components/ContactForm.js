@@ -34,12 +34,18 @@ const ContactForm = () => {
   return (
     <div className="bg-white rounded-3xl container mx-auto -mt-[50%] translate-y-1/2">
       <div className="max-w-7xl mx-auto rounded-3xl py-12 px-6 md:p-32 bg-white">
-        <h4 className="is-h1 text-black text-center font-bold">Why iQuest</h4>
+        <p className="text-black mx-auto text-center text-md font-sans md:text-lg tracking-wide mb-6">
+          Achieve Business Growth & Work-Life Balance
+        </p>
+        <h4 className="is-h1 lg:text-5xl text-black text-center font-bold">
+          Get In Touch With Us!
+        </h4>
         <p className="text-black-light max-w-[600px] mx-auto text-center">
-          iQuest provides simple, effective IT support and consulting services
-          that allow you to focus on your business. <br />
+          iQuest provides simple, effective Perth IT support and consulting
+          services that allow you to focus on your business. Get in touch with
+          us today to find out how we can help you.
           <br />
-          <strong>Get in touch with us today!</strong>
+          <br />
         </p>
         <form
           className="grid lg:grid-cols-2 gap-6 self-start mt-12"
