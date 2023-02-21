@@ -40,12 +40,13 @@ const Header = () => {
   return (
     <>
       <Loader />
-      <Popover className="relative z-50">
+      <Popover className="fixed top-0 left-0 w-full z-50">
         {({ open }) => (
           <>
-            <div className="container bg-transparent mx-auto backdrop-blur-md rounded-b-full">
-              <div className="mx-auto py-12 px-4 xl:px-0">
-                <div className="flex justify-between items-center md:justify-start md:space-x-10">
+          <div className="bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg mx-auto rounded-b-[35px] xl:rounded-b-[75px]">
+            <div className="container mx-auto">
+              <div className="mx-auto py-6 xl:py-10">
+                <div className="flex justify-between items-center xl:justify-start md:space-x-10">
                   <div className="flex justify-start lg:w-0 lg:flex-1">
                     <Link to={"/"}>
                       <span className="sr-only">iQuest</span>
@@ -101,6 +102,7 @@ const Header = () => {
             </div>
 
             <MobileMenu open={open} menuItems={menuItems} />
+            </div>
           </>
         )}
       </Popover>

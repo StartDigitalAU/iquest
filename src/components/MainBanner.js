@@ -5,13 +5,13 @@ import PerlinNoise from "./PerlinNoise"
 
 export default function MainBanner() {
   return (
-    <div className="py-16 lg:py-32 xl:py-24 relative">
+    <div className="px-6 md:px-12 xl:px-0 pb-16 lg:pb-32 xl:pb-24 pt-36 md:pt-48 relative">
       {/* Video */}
 
       <div className="relative z-10 text-white">
         <div className="container max-xl:max-w-5xl mx-auto flex flex-col gap-6">
-          <div className="max-w-3xl flex flex-col gap-4 lg:gap-6">
-            <h2 className="text-md font-sans inline-block md:text-lg tracking-wide text-purple">
+          <div className="max-w-3xl flex flex-col gap-6 lg:gap-6 mb-10 lg:mb-0">
+            <h2 className="text-sm font-sans inline-block md:text-lg tracking-wide text-purple">
               18 Years of Exception Perth IT Support
             </h2>
             <h1 className="text-4xl leading-normal lg:text-6xl">

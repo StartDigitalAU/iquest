@@ -384,7 +384,7 @@ export default function PerlinNoise() {
 
   return (
     <div
-      className="absolute top-0 right-0 -translate-y-32 translate-x-1/4"
+      className="absolute top-0 right-0 translate-x-1/4"
       ref={containerRef}
     ></div>
   )

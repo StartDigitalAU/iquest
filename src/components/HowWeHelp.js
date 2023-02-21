@@ -2,6 +2,35 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import React, { useState } from "react"
 
+// Content for the cyber resilience section
+const CyberResilience = () => {
+  return (
+    <>
+      <StaticImage
+        src={"../images/women-on-phone.png"}
+        alt="A women looking at her phone"
+        className="absolute inset-0 rounded-2xl"
+      />
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-transparent to-[#2560E6] mix-blend-multiply"></div>
+      <div className="flex flex-col gap-4 z-10">
+        <h3 className="text-white text-3xl leading-normal lg:text-4xl">
+          Achieve Cyber Resilience
+        </h3>
+        <p>
+          Our IT team have helped businesses across Perth achieve cyber
+          resilience by proactively mitigating cybersecurity risks and arming
+          your business with consistent security monitoring and reporting. You
+          can rest assured that you’re in safe hands with our team of talented
+          IT experts.
+        </p>
+        <Link to={"#"} className="btn text-white">
+          Learn more
+        </Link>
+      </div>
+    </>
+  )
+}
+
 // Content for the security awareness section
 const SecurityAwareness = () => {
   return (
@@ -148,18 +177,21 @@ const Content = ({ index }) => {
   let content
   switch (index) {
     case 0:
-      content = <SecurityAwareness />
+      content = <CyberResilience />
       break
     case 1:
-      content = <MitigateCybercrimes />
+      content = <SecurityAwareness />
       break
     case 2:
-      content = <BusinessHelpdeskSupport />
+      content = <MitigateCybercrimes />
       break
     case 3:
-      content = <HardwareAndSoftware />
+      content = <BusinessHelpdeskSupport />
       break
     case 4:
+      content = <HardwareAndSoftware />
+      break
+    case 5:
       content = <CloudComputing />
       break
   }
@@ -185,26 +217,57 @@ const HowWeHelp = () => {
       </p>
 
       <div className="relative flex flex-col h-[750px] rounded-2xl mt-6">
-        <div className="flex-[3] flex flex-col justify-center gap-4 lg:w-1/2 ml-16 lg:ml-32">
+        <div className="flex-[3] flex flex-col justify-center gap-4 lg:w-1/2 px-10 py-14 lg:p-20">
           <Content index={index} />
         </div>
-        <div className="flex-[1.25] py-8 flex items-center divide-x-2 divide-white bg-white bg-opacity-20 backdrop-blur-md rounded-b-2xl">
+        <div className="flex-[1.25] py-8 grid grid-cols-2 lg:grid-cols-6 items-center gap-6 lg:gap-0 lg:divide-x-2 divide-white bg-black lg:bg-white bg-opacity-70 lg:bg-opacity-20 backdrop-blur-md rounded-b-2xl">
           <div
             onClick={() => setIndex(0)}
             className="h-full flex-1 px-8 flex flex-col items-center justify-center gap-6 text-center text-white text-sm cursor-pointer"
           >
             <svg
-              className="w-16 h-16"
               xmlns="http://www.w3.org/2000/svg"
+              width="62.471"
+              height="64.7"
               viewBox="0 0 62.471 64.7"
             >
               <path
+                id="Path_500"
+                data-name="Path 500"
+                d="M23.324,36.709l7.621,7.621,12.7-17.783M33.486,2.714A40.509,40.509,0,0,1,5.026,13.845a40.692,40.692,0,0,0,28.46,52.07,40.7,40.7,0,0,0,28.46-52.073h-.515A40.495,40.495,0,0,1,33.486,2.714Z"
+                transform="translate(-2.25 -1.964)"
                 fill="none"
                 stroke="#fff"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                d="m21.074 34.745 7.621 7.621 12.7-17.783M31.236.75a40.509 40.509 0 0 1-28.46 11.131 40.692 40.692 0 0 0 28.46 52.07 40.7 40.7 0 0 0 28.46-52.073h-.515A40.495 40.495 0 0 1 31.236.75Z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+              />
+            </svg>
+            <span className="font-display">
+              Achieve Cyber <br />
+              Resilience
+            </span>
+          </div>
+          <div
+            onClick={() => setIndex(1)}
+            className="h-full flex-1 px-8 flex flex-col items-center justify-center gap-6 text-center text-white text-sm cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="52.462"
+              height="67.75"
+              viewBox="0 0 52.462 67.75"
+            >
+              <path
+                id="Path_505"
+                data-name="Path 505"
+                d="M45.269,30.279V17.538a15.288,15.288,0,0,0-30.577,0v12.74M12.144,68.5H47.817a7.644,7.644,0,0,0,7.644-7.644V37.923a7.644,7.644,0,0,0-7.644-7.644H12.144A7.644,7.644,0,0,0,4.5,37.923V60.856A7.644,7.644,0,0,0,12.144,68.5Z"
+                transform="translate(-3.75 -1.5)"
+                fill="none"
+                stroke="#fff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
               />
             </svg>
             <span className="font-display">
@@ -214,7 +277,7 @@ const HowWeHelp = () => {
           </div>
 
           <div
-            onClick={() => setIndex(1)}
+            onClick={() => setIndex(2)}
             className="h-full flex-1 px-8 flex flex-col items-center justify-center gap-6 text-center text-white text-sm cursor-pointer"
           >
             <svg
@@ -241,7 +304,7 @@ const HowWeHelp = () => {
             </span>
           </div>
           <div
-            onClick={() => setIndex(2)}
+            onClick={() => setIndex(3)}
             className="h-full flex-1 px-8 flex flex-col items-center justify-center gap-6 text-center text-white text-sm cursor-pointer"
           >
             <svg
@@ -268,7 +331,7 @@ const HowWeHelp = () => {
             </span>
           </div>
           <div
-            onClick={() => setIndex(3)}
+            onClick={() => setIndex(4)}
             className="h-full flex-1 px-8 flex flex-col items-center justify-center gap-6 text-center text-white text-sm cursor-pointer"
           >
             <svg
@@ -294,7 +357,7 @@ const HowWeHelp = () => {
             </span>
           </div>
           <div
-            onClick={() => setIndex(4)}
+            onClick={() => setIndex(5)}
             className="h-full flex-1 px-8 flex flex-col items-center justify-center gap-6 text-center text-white text-sm cursor-pointer"
           >
             <svg

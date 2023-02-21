@@ -14,6 +14,6 @@
   }
 
   &:hover {
-    @apply bg-blue-medium text-white;
+    @apply bg-[#6656D0] text-white;
   }
 }

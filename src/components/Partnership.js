@@ -14,7 +14,7 @@ const Partnership = () => {
         />
 
         <div>
-          <p className="text-white text-md font-sans inline-block md:text-lg tracking-wide mb-6">
+          <p className="text-[#6656D0] text-md font-sans inline-block md:text-lg tracking-wide mb-6">
             Achieve Business Growth & Work-Life Balance
           </p>
           <h4 className="lg:text-5xl text-white lg:leading-tight font-display mb-6">
