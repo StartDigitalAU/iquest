@@ -5,6 +5,7 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 import IconLoader from './IconLoader'
 import {
     BookmarkAltIcon,
+    BellIcon,
     CalendarIcon,
     ChartBarIcon,
     CursorClickIcon,
@@ -16,7 +17,9 @@ import {
     XIcon,
     WifiIcon,
     DocumentTextIcon,
-    ChatIcon
+    ChatIcon,
+    ShieldCheckIcon,
+    GlobeAltIcon
 } from '@heroicons/react/outline'
 
 const MenuPopover = ({ title, menu }) => {
@@ -33,7 +36,10 @@ const MenuPopover = ({ title, menu }) => {
         xicon: XIcon,
         wifiicon: WifiIcon,
         documenttexticon: DocumentTextIcon,
-        chaticon: ChatIcon
+        chaticon: ChatIcon,
+        shieldcheckicon: ShieldCheckIcon,
+        bellicon: BellIcon,
+        globealticon: GlobeAltIcon,
     }
 
     return (

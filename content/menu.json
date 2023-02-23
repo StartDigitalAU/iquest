@@ -40,19 +40,19 @@
                     "name": "Achieve Cyber Resilience",
                     "description": "Protect Your Business from Cyber Attacks.",
                     "href": "/it-support/cyber-resilience-assessments",
-                    "icon": "ChartBarIcon"
+                    "icon": "GlobeAltIcon"
                 },
                 {
                     "name": "KnowBe4 Cyber Resilience Security Training",
                     "description": "Put Your Business To The Test.",
                     "href": "/it-support/security-training",
-                    "icon": "ChartBarIcon"
+                    "icon": "ShieldCheckIcon"
                 },
                 {
                     "name": "Emergency/Endpoint Detection & Response",
                     "description": "Rely On Perth’s Leading IT team.",
                     "href": "/it-support/emergency-detection-and-response",
-                    "icon": "ChartBarIcon"
+                    "icon": "BellIcon"
                 },
                 {
                     "name": "IT Support Services",
