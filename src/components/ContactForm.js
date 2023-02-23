@@ -32,7 +32,7 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="bg-white rounded-3xl container mx-auto -mt-[50%] translate-y-1/2">
+    <div className="bg-white rounded-3xl container mx-auto lg:-mt-[50%] lg:translate-y-1/2">
       <div className="max-w-7xl mx-auto rounded-3xl py-12 px-6 md:p-32 bg-white">
         <p className="text-black mx-auto text-center text-md font-sans md:text-lg tracking-wide mb-6">
           Achieve Business Growth & Work-Life Balance

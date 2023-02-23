@@ -30,6 +30,10 @@ module.exports = {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
         // sans: ['forma-djr-text, sans-serif', ...defaultTheme.fontFamily.sans],
       },
+      screens: {
+				'2xl': '1640px',
+				'3xl': '2000px',
+			},
     },
   },
   plugins: [

@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 const ManagedIT = () => {
   return (
-    <div className="relative px-6 md:px-12 xl:px-0 container mx-auto grid lg:grid-cols-2 gap-16 xl:px-0">
+    <div className="relative px-6 md:px-12 container mx-auto grid lg:grid-cols-2 gap-16 xl:px-0">
       <div>
         <h3 className="text-md font-sans inline-block md:text-lg tracking-wide text-purple mb-4 font-medium">
           We’re Here To Help
@@ -35,7 +35,7 @@ const ManagedIT = () => {
         </Link>
       </div>
       <div>
-        <div className="relative lg:absolute right-0 top-0 w-full lg:w-2/3">
+        <div className="relative lg:absolute 2xl:relative right-0 top-0 w-full lg:w-2/3">
           <SVG />
           <StaticImage
             className="lg:translate-x-1/3 translate-y-16 aspect-1 rounded-full"
