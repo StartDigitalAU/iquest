@@ -12,7 +12,7 @@ function BusinessHelpdeskSupportPerth() {
         description="Our resourceful technical experts in Perth provide helpdesk support and other business IT support services for most industries."
       />
       <InternalLayout title="Business Helpdesk Support" >
-        <div className="flex flex-col space-y-20">
+        <div className="flex flex-col">
           <div className="grid lg:grid-cols-2 gap-6 items-center">
             <div>
               <h2 className="text-blue-light" data-animate>We have a team of resourceful technical support experts in Perth providing helpdesk support.</h2>

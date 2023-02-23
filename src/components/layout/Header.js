@@ -44,7 +44,7 @@ const Header = () => {
         {({ open }) => (
           <>
           <div className="bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg mx-auto rounded-b-[35px] xl:rounded-b-[75px]">
-            <div className="container mx-auto">
+            <div className="px-8 md:p-0 container mx-auto">
               <div className="mx-auto py-6 xl:py-10">
                 <div className="flex justify-between items-center xl:justify-start md:space-x-10">
                   <div className="flex justify-start lg:w-0 lg:flex-1">

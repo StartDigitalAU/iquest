@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 export default function ClientLogos({ classes }) {
   return (
     <section
-      className={`mx-auto p-12 rounded-3xl bg-white bg-opacity-20 backdrop-blur-lg container ${classes}`}
+      className={`mx-auto p-4 md:p-12 rounded-3xl bg-white bg-opacity-20 backdrop-blur-lg container ${classes}`}
     >
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center space-x-5">

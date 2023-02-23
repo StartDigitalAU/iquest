@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const InternalHeader = ({ title, description }) => {
   return (
-    <div className="max-w-7xl mx-auto pb-16 lg:pb-32 xl:pb-24 pt-36 md:pt-64">
+    <div className="max-w-7xl mx-auto pb-0 lg:pb-16 pt-36 md:pt-64 px-6 md:px-12 xl:px-0">
       {title && (
         <h1
           data-animate-left

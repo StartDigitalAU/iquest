@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 const ManagedIT = () => {
   return (
-    <div className="relative px-4 container mx-auto grid lg:grid-cols-2 gap-16 xl:px-0">
+    <div className="relative px-6 md:px-12 xl:px-0 container mx-auto grid lg:grid-cols-2 gap-16 xl:px-0">
       <div>
         <h3 className="text-md font-sans inline-block md:text-lg tracking-wide text-purple mb-4 font-medium">
           We’re Here To Help
@@ -30,15 +30,15 @@ const ManagedIT = () => {
           By delivering the very best solutions, we’re helping Perth businesses
           minimise risk, improve performance and future proof their technology.
         </p>
-        <Link to={"#"} className="btn text-purple !border-purple mt-6">
+        <Link to={"/about"} className="btn text-purple !border-purple mt-6">
           Learn More
         </Link>
       </div>
       <div>
-        <div className="absolute right-0 top-0 w-2/3">
+        <div className="relative lg:absolute right-0 top-0 w-full lg:w-2/3">
           <SVG />
           <StaticImage
-            className="translate-x-1/3 translate-y-16 aspect-1 rounded-full"
+            className="lg:translate-x-1/3 translate-y-16 aspect-1 rounded-full"
             src="../images/iQuest-IT-Mockup.jpg"
             alt="iQuest Computer Mockup"
             placeholder="dominantColor"
@@ -52,7 +52,7 @@ const ManagedIT = () => {
 }
 
 const SVG = () => (
-  <div className="absolute left-0 top-0 w-64 h-64 z-10 translate-x-full">
+  <div className="absolute left-[0] lg:left-0 top-0 w-64 h-64 z-10 translate-x-full">
     <svg
       className="animate-spin-slow"
       xmlns="http://www.w3.org/2000/svg"

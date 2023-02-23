@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const FlexItems = ({ children, activeIndex }) => {
   return (
-    <div className="absolute left-0 w-full mt-16 rounded-2xl flex gap-2 h-[600px]">
+    <div className="md:absolute left-0 w-full mt-16 rounded-2xl flex flex-col md:flex-row gap-2 md:h-[600px]">
       {children &&
         children.map((child, index) => (
           <div
@@ -23,7 +23,7 @@ const FlexItems = ({ children, activeIndex }) => {
 const CaseStudies = () => {
   const [activeIndex, setActiveIndex] = useState(0)
   return (
-    <div className="relative mt-32 pb-[200px]">
+    <div className="relative mt-32 pb-12 md:pb-[200px]">
       <div className="absolute inset-0">
         <StaticImage
           src={"../images/data-lines.png"}
@@ -33,11 +33,11 @@ const CaseStudies = () => {
           placeholder="none"
         />
       </div>
-      <div className="container relative z-10 mb-8 mx-auto py-12 px-4 lg:py-20 xl:px-0">
+      <div className="container relative z-10 md:mb-8 mx-auto md:py-12 px-4 lg:py-20 xl:px-0">
         <p className="text-md font-sans inline-block md:text-lg tracking-wide text-purple mb-6">
           Holistic IT Support Perth
         </p>
-        <h4 data-animate className="lg:text-5xl font-display text-black mb-6">
+        <h4 data-animate className="text-3xl lg:text-5xl font-display text-black mb-6">
           iQuest Case Studies
         </h4>
         <p className="lg:w-3/4 text-black-light">
@@ -91,7 +91,7 @@ const CaseStudies = () => {
               <span className="is-h2 text-white">
                 KDDI Australia & Singapore Telecommunications
               </span>
-              <Link className="btn text-white border-white" to="">
+              <Link className="btn text-white border-white" to="/case-studies/kddi">
                 Learn More
               </Link>
             </div>
@@ -135,7 +135,7 @@ const CaseStudies = () => {
               }`}
             >
               <span className="is-h2 text-white">Surf Life Saving</span>
-              <Link className="btn text-white border-white" to="">
+              <Link className="btn text-white border-white" to="/case-studies/surf-life-saving-wa">
                 Learn More
               </Link>
             </div>
@@ -179,7 +179,7 @@ const CaseStudies = () => {
               }`}
             >
               <span className="is-h2 text-white">Kwik Logistics</span>
-              <Link className="btn text-white border-white" to="">
+              <Link className="btn text-white border-white" to="/case-studies/kwik-logistics">
                 Learn More
               </Link>
             </div>

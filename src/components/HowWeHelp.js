@@ -23,7 +23,7 @@ const CyberResilience = () => {
           can rest assured that you’re in safe hands with our team of talented
           IT experts.
         </p>
-        <Link to={"#"} className="btn text-white">
+        <Link to={"/it-support/cyber-resilience-assessments"} className="btn text-white">
           Learn more
         </Link>
       </div>
@@ -51,7 +51,7 @@ const SecurityAwareness = () => {
           ransomware attacks. Find out how our Perth IT Support has helped
           businesses like yours avoid security threats using KnowBe4.
         </p>
-        <Link to={"#"} className="btn text-white">
+        <Link to={"/it-support/security-training"} className="btn text-white">
           Learn more
         </Link>
       </div>
@@ -79,7 +79,10 @@ const MitigateCybercrimes = () => {
           with email impersonation and protect your brand name by preventing
           impersonators and phishing cybercrimes.
         </p>
-        <Link to={"#"} className="btn text-white">
+        <Link
+          to={"it-support/it-support-services-perth"}
+          className="btn text-white"
+        >
           Learn more
         </Link>
       </div>
@@ -107,7 +110,10 @@ const BusinessHelpdeskSupport = () => {
           answer any of your burning questions. With a 96% client retention rate
           since 2004, you can rest assured that iQuest always has your back.
         </p>
-        <Link to={"#"} className="btn text-white">
+        <Link
+          to={"/it-support/business-helpdesk-support-perth"}
+          className="btn text-white"
+        >
           Learn more
         </Link>
       </div>
@@ -136,7 +142,10 @@ const HardwareAndSoftware = () => {
           leading providers to ensure we’re providing you with top tier
           products.
         </p>
-        <Link to={"#"} className="btn text-white">
+        <Link
+          to={"/it-support/hardware-software-procurement"}
+          className="btn text-white"
+        >
           Learn more
         </Link>
       </div>
@@ -145,7 +154,7 @@ const HardwareAndSoftware = () => {
 }
 
 // Content for the Cloud Computing Section
-const CloudComputing = () => {
+const TechnologyConsulting = () => {
   return (
     <>
       <StaticImage
@@ -156,15 +165,17 @@ const CloudComputing = () => {
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-transparent to-[#2560E6] mix-blend-multiply"></div>
       <div className="flex flex-col gap-4 z-10">
         <h3 className="text-white text-3xl leading-normal lg:text-4xl">
-          Cloud Computing
+          Technology Consulting
         </h3>
         <p>
-          We provide Perth businesses with the tools to grow in the cloud,
-          introducing significant cost savings, reduction of overheads and
-          giving 24/7 system access to improve security and optimise business
-          performance. Contact us to discover more.
-        </p>
-        <Link to={"#"} className="btn text-white">
+          We assist small, medium and corporate businesses to get the most out
+          of their IT systems. With access to our skilled staff, you will get
+          the best advice and expertise you need in today’s technology
+          marketContact us to discover more.</p>
+        <Link
+          to={"/it-support/technology-consulting-perth"}
+          className="btn text-white"
+        >
           Learn more
         </Link>
       </div>
@@ -192,7 +203,7 @@ const Content = ({ index }) => {
       content = <HardwareAndSoftware />
       break
     case 5:
-      content = <CloudComputing />
+      content = <TechnologyConsulting />
       break
   }
 
@@ -203,7 +214,7 @@ const HowWeHelp = () => {
   const [index, setIndex] = useState(0)
 
   return (
-    <section className="container mx-auto flex flex-col gap-6">
+    <section className="container px-6 md:px-12 xl:px-0 mx-auto flex flex-col gap-6">
       <p className="text-md inline-block md:text-lg tracking-wide text-purple">
         Fully Managed Perth IT Services
       </p>
@@ -216,11 +227,11 @@ const HowWeHelp = () => {
         secure, protected and supported at all times.
       </p>
 
-      <div className="relative flex flex-col h-[750px] rounded-2xl mt-6">
+      <div className="relative flex flex-col lg:h-[750px] rounded-2xl mt-6">
         <div className="flex-[3] flex flex-col justify-center gap-4 lg:w-1/2 px-10 py-14 lg:p-20">
           <Content index={index} />
         </div>
-        <div className="flex-[1.25] py-8 grid grid-cols-2 lg:grid-cols-6 items-center gap-6 lg:gap-0 lg:divide-x-2 divide-white bg-black lg:bg-white bg-opacity-70 lg:bg-opacity-20 backdrop-blur-md rounded-b-2xl">
+        <div className="flex-[1.25] py-8 grid grid-cols-2 lg:grid-cols-6 items-center gap-x-6 gap-y-12 lg:gap-0 lg:divide-x-2 divide-white bg-black lg:bg-white bg-opacity-70 lg:bg-opacity-20 backdrop-blur-md rounded-b-2xl">
           <div
             onClick={() => setIndex(0)}
             className="h-full flex-1 px-8 flex flex-col items-center justify-center gap-6 text-center text-white text-sm cursor-pointer"
@@ -379,8 +390,8 @@ const HowWeHelp = () => {
               />
             </svg>
             <span className="font-display">
-              Cloud <br />
-              Computing
+              Technology <br />
+              Consulting
             </span>
           </div>
         </div>

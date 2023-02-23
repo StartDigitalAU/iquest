@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function TwoColumnGrid({ title, description, items }) {
+export default function FourColumnGrid({ title, description, items }) {
     return (
         <div className="py-16">
             <div className="mx-auto">
@@ -12,7 +12,7 @@ export default function TwoColumnGrid({ title, description, items }) {
                 </div>
 
                 {items && <div className="mt-10">
-                    <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+                    <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 lg:grid-cols-4">
                         {items.map((item) => (
                             <div data-animate key={item.name} className="relative">
                                 <dt>
