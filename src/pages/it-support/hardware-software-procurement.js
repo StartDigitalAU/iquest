@@ -25,7 +25,7 @@ function HardwareSoftwareProcurement() {
       />
       <InternalLayout title="Hardware & Software Procurement" >
         <div className="flex flex-col space-y-16">
-          <div className="grid lg:grid-cols-2 gap-6 items-center">
+          <div className="grid lg:grid-cols-2 gap-6">
             <div>
               <h2 className="text-blue-light mb-8" data-animate>iQuest can assist you with hardware & software procurement.</h2>
               <p data-animate>Though IT systems run in the background, they are critical to everyday business operations, especially in securing your data and making sure that you connect with your customers all over the world. From network, workstation and server hardware, there are so many leading brands claiming to provide the best solution, but how will you know which one’s the best for your business?</p>

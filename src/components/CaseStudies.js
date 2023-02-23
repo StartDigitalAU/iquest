@@ -37,7 +37,10 @@ const CaseStudies = () => {
         <p className="text-md font-sans inline-block md:text-lg tracking-wide text-purple mb-6">
           Holistic IT Support Perth
         </p>
-        <h4 data-animate className="text-3xl lg:text-5xl font-display text-black mb-6">
+        <h4
+          data-animate
+          className="text-3xl lg:text-5xl font-display text-black mb-6"
+        >
           iQuest Case Studies
         </h4>
         <p className="lg:w-3/4 text-black-light">
@@ -54,33 +57,32 @@ const CaseStudies = () => {
           {/* KDDI */}
           <div
             onClick={() => setActiveIndex(0)}
-            className={`p-16 flex relative cursor-pointer rounded-l-2xl h-full ${
+            className={`p-16 flex relative cursor-pointer rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl h-full ${
               activeIndex === 0 ? "flex-1" : ""
             }`}
           >
             <StaticImage
               src="../images/man-on-phone.png"
               alt="A man on his phone with the city skyline in the background"
-              className="absolute inset-0 w-full h-full object-cover -z-20 rounded-l-2xl"
+              className="absolute inset-0 w-full h-full object-cover -z-20 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl"
             />
 
             <StaticImage
               src="../images/secondary-gradient-bg.png"
               alt=""
-              className="absolute inset-0 w-full h-full object-cover -z-10 pointer-events-none rounded-l-2xl"
+              className="absolute inset-0 w-full h-full object-cover -z-10 pointer-events-none rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl"
             />
 
             <span
-              className={`is-h2 text-white absolute inset-0 flex items-center mb-16 w-full origin-center ${
+              className={`is-h2 text-white absolute inset-0 flex items-center justify-center md:mb-16 w-full origin-center ${
                 activeIndex === 0 ? "hidden" : ""
               }`}
               style={{
                 writingMode: "vertical-rl",
                 textOrientation: "mixed",
-                rotate: "180deg",
               }}
             >
-              KDDI Australia & Singapore Telecommunications
+              <div className="rotate-[-90deg] md:rotate-[180deg]">KDDI Australia & Singapore Telecommunications</div>
             </span>
 
             <div
@@ -91,7 +93,10 @@ const CaseStudies = () => {
               <span className="is-h2 text-white">
                 KDDI Australia & Singapore Telecommunications
               </span>
-              <Link className="btn text-white border-white" to="/case-studies/kddi">
+              <Link
+                className="btn text-white border-white"
+                to="/case-studies/kddi"
+              >
                 Learn More
               </Link>
             </div>
@@ -105,16 +110,15 @@ const CaseStudies = () => {
             }`}
           >
             <span
-              className={`is-h2 text-white absolute inset-0 flex items-center mb-16 w-full origin-center ${
+              className={`is-h2 text-white absolute inset-0 flex items-center justify-center md:mb-16 w-full origin-center ${
                 activeIndex === 1 ? "hidden" : ""
               }`}
               style={{
                 writingMode: "vertical-rl",
                 textOrientation: "mixed",
-                rotate: "180deg",
               }}
             >
-              Surf Life Saving
+              <div className="rotate-[-90deg] md:rotate-[180deg]">Surf Life Saving</div>
             </span>
 
             <StaticImage
@@ -135,7 +139,10 @@ const CaseStudies = () => {
               }`}
             >
               <span className="is-h2 text-white">Surf Life Saving</span>
-              <Link className="btn text-white border-white" to="/case-studies/surf-life-saving-wa">
+              <Link
+                className="btn text-white border-white"
+                to="/case-studies/surf-life-saving-wa"
+              >
                 Learn More
               </Link>
             </div>
@@ -144,33 +151,32 @@ const CaseStudies = () => {
           {/* Kiw Logistics */}
           <div
             onClick={() => setActiveIndex(2)}
-            className={`p-16 flex relative cursor-pointer rounded-r-2xl h-full ${
+            className={`p-16 flex relative cursor-pointer rounded-b-2xl md:rounded-r-2xl h-full ${
               activeIndex === 2 ? "flex-1" : ""
             }`}
           >
             <span
-              className={`is-h2 text-white absolute inset-0 flex items-center mb-16 w-full origin-center ${
+              className={`is-h2 text-white absolute inset-0 flex items-center justify-center md:mb-16 w-full origin-center ${
                 activeIndex === 2 ? "hidden" : ""
               }`}
               style={{
                 writingMode: "vertical-rl",
                 textOrientation: "mixed",
-                rotate: "180deg",
               }}
             >
-              Kwik Logistics
+              <div className="rotate-[-90deg] md:rotate-[180deg]">Kwik Logistics</div>
             </span>
 
             <StaticImage
               src="../images/aerial-trucks.png"
               alt="A group of trucks as seen from above"
-              className="absolute inset-0 w-full h-full object-cover -z-20 rounded-r-2xl"
+              className="absolute inset-0 w-full h-full object-cover -z-20 rounded-b-2xl md:rounded-r-2xl"
             />
 
             <StaticImage
               src="../images/secondary-gradient-bg.png"
               alt=""
-              className="absolute inset-0 w-full h-full object-cover -z-10 pointer-events-none rounded-r-2xl"
+              className="absolute inset-0 w-full h-full object-cover -z-10 pointer-events-none rounded-b-2xl md:rounded-r-2xl"
             />
 
             <div
@@ -179,7 +185,10 @@ const CaseStudies = () => {
               }`}
             >
               <span className="is-h2 text-white">Kwik Logistics</span>
-              <Link className="btn text-white border-white" to="/case-studies/kwik-logistics">
+              <Link
+                className="btn text-white border-white"
+                to="/case-studies/kwik-logistics"
+              >
                 Learn More
               </Link>
             </div>

@@ -11,8 +11,8 @@ const CyberResilience = () => {
         alt="A women looking at her phone"
         className="absolute inset-0 rounded-2xl"
       />
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-transparent to-[#2560E6] mix-blend-multiply"></div>
-      <div className="flex flex-col gap-4 z-10">
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#00000071] to-[#255fe6] mix-blend-multiply"></div>
+      <div className="flex flex-col gap-6 z-10">
         <h3 className="text-white text-3xl leading-normal lg:text-4xl">
           Achieve Cyber Resilience
         </h3>
@@ -36,12 +36,12 @@ const SecurityAwareness = () => {
   return (
     <>
       <StaticImage
-        src={"../images/women-on-phone.png"}
-        alt="A women looking at her phone"
+        src={"../images/security-awareness.jpg"}
+        alt="Security Awareness"
         className="absolute inset-0 rounded-2xl"
       />
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-transparent to-[#2560E6] mix-blend-multiply"></div>
-      <div className="flex flex-col gap-4 z-10">
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#000000b4] to-[#255fe6] mix-blend-multiply"></div>
+      <div className="flex flex-col gap-6 z-10">
         <h3 className="text-white text-3xl leading-normal lg:text-4xl">
           Security Awareness Training
         </h3>
@@ -64,12 +64,12 @@ const MitigateCybercrimes = () => {
   return (
     <>
       <StaticImage
-        src={"../images/women-on-phone.png"}
-        alt="A women looking at her phone"
+        src={"../images/cybercrime.jpg"}
+        alt="Cybercrime Mitigation"
         className="absolute inset-0 rounded-2xl"
       />
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-transparent to-[#2560E6] mix-blend-multiply"></div>
-      <div className="flex flex-col gap-4 z-10">
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#00000071] to-[#255fe6] mix-blend-multiply"></div>
+      <div className="flex flex-col gap-6 z-10">
         <h3 className="text-white text-3xl leading-normal lg:text-4xl">
           Mitigate Cybercrimes
         </h3>
@@ -95,12 +95,12 @@ const BusinessHelpdeskSupport = () => {
   return (
     <>
       <StaticImage
-        src={"../images/women-on-phone.png"}
-        alt="A women looking at her phone"
+        src={"../images/helpdesk-support.jpg"}
+        alt="Helpdesk Support"
         className="absolute inset-0 rounded-2xl"
       />
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-transparent to-[#2560E6] mix-blend-multiply"></div>
-      <div className="flex flex-col gap-4 z-10">
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#000000b7] to-[#255fe6] mix-blend-multiply"></div>
+      <div className="flex flex-col gap-6 z-10">
         <h3 className="text-white text-3xl leading-normal lg:text-4xl">
           Business Helpdesk Support
         </h3>
@@ -126,12 +126,12 @@ const HardwareAndSoftware = () => {
   return (
     <>
       <StaticImage
-        src={"../images/women-on-phone.png"}
-        alt="A women looking at her phone"
+        src={"../images/hardware.jpg"}
+        alt="Hardware"
         className="absolute inset-0 rounded-2xl"
       />
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-transparent to-[#2560E6] mix-blend-multiply"></div>
-      <div className="flex flex-col gap-4 z-10">
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#00000092] to-[#255fe6] mix-blend-multiply"></div>
+      <div className="flex flex-col gap-6 z-10">
         <h3 className="text-white text-3xl leading-normal lg:text-4xl">
           Hardware & Software
         </h3>
@@ -158,11 +158,11 @@ const TechnologyConsulting = () => {
   return (
     <>
       <StaticImage
-        src={"../images/women-on-phone.png"}
-        alt="A women looking at her phone"
+        src={"../images/technology-consulting.jpg"}
+        alt="Technology Consulting"
         className="absolute inset-0 rounded-2xl"
       />
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-transparent to-[#2560E6] mix-blend-multiply"></div>
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#000000b5] to-[#255fe6] mix-blend-multiply"></div>
       <div className="flex flex-col gap-4 z-10">
         <h3 className="text-white text-3xl leading-normal lg:text-4xl">
           Technology Consulting

@@ -12,7 +12,7 @@ function CyberResilienceAssessments() {
         description="Protect Your Business from Cyber Attacks."
       />
       <InternalLayout title="Cyber Resilience Assessments">
-        <div className="grid lg:grid-cols-2 gap-6 items-center">
+        <div className="grid gap-6 items-center">
           <div>
             <h2 className="text-blue-light mb-8" data-animate>Protect Your Business from Cyber Attacks.</h2>
             <p data-animate className="text-lg text-gray-300">

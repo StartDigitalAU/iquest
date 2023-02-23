@@ -2,7 +2,6 @@ import * as React from "react"
 import { GatsbySeo } from "gatsby-plugin-next-seo"
 import InternalLayout from "../../components/layout/InternalLayout"
 import FourColumnGrid from "../../components/FourColumnGrid"
-import List from "../../components/List"
 import { Link } from "gatsby"
 
 function SecurityTraining() {
