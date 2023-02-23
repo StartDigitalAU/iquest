@@ -36,35 +36,40 @@ function SecurityTraining() {
         description="Put Your Business To The Test."
       />
       <InternalLayout
-        title="Cyber Security Training"
-        description="Put Your Business To The Test."
-      >
+        title="Cyber Security Training">
         <div className="lg:grid pb-16">
-          <div className="flex flex-col">
-            <h2 data-animate className="text-blue-light mb-6">
-              Technology shouldn't distract you from running your business
-            </h2>
-            <p data-animate className="text-lg text-gray-300">
-              Your employees are frequently exposed to sophisticated social
-              engineering attacks. It is time for a comprehensive approach to
-              effectively manage this problem, managed by people with a
-              technical background.
-            </p>
-            <p data-animate className="text-lg text-gray-300">
-              At iQuest, we have partnered with <i>KnowBe4</i>, a globally
-              renowned platform to help us better assist you in managing this
-              ongoing problem, whilst keeping your business protected from
-              potential threats.
-            </p>
-            <p data-animate className="text-lg text-gray-300">
-              <i>KnowBe4</i> is the world’s largest Cyber Security Awareness
-              training platform. It combines real world simulated phishing
-              attacks, which allows us to assess your Phish-Prone percentage to
-              ultimately deliver a robust and relevant training program. With
-              over 6.6 million users world wide, and a database of engaging
-              content thats ever growing, there has never been a better way to
-              empower your team with they need in this ever evolving landscape.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-6">
+            <div className="flex flex-col">
+              <h2 data-animate className="text-blue-light mb-8">
+                Put Your Business To The Test.
+              </h2>
+              <h3 data-animate className="text-blue-light mb-6">
+                Technology shouldn't distract you from running your business
+              </h3>
+              <p data-animate className="text-lg text-gray-300">
+                Your employees are frequently exposed to sophisticated social
+                engineering attacks. It is time for a comprehensive approach to
+                effectively manage this problem, managed by people with a
+                technical background.
+              </p>
+              <p data-animate className="text-lg text-gray-300">
+                At iQuest, we have partnered with <i>KnowBe4</i>, a globally
+                renowned platform to help us better assist you in managing this
+                ongoing problem, whilst keeping your business protected from
+                potential threats.
+              </p>
+            </div>
+            <div className="flex flex-col">
+              <p data-animate className="text-lg text-gray-300">
+                <i>KnowBe4</i> is the world’s largest Cyber Security Awareness
+                training platform. It combines real world simulated phishing
+                attacks, which allows us to assess your Phish-Prone percentage to
+                ultimately deliver a robust and relevant training program. With
+                over 6.6 million users world wide, and a database of engaging
+                content thats ever growing, there has never been a better way to
+                empower your team with they need in this ever evolving landscape.
+              </p>
+            </div>
           </div>
         </div>
         <FourColumnGrid title="Our Process" items={items} />

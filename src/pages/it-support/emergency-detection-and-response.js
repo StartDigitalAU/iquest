@@ -5,7 +5,6 @@ import TwoColumnGrid from "../../components/TwoColumnGrid"
 import List from "../../components/List"
 
 function EmergencyDetectionResponse() {
-
   const items = [
     {
       name: "Recognise threats before they happen",
@@ -40,49 +39,63 @@ function EmergencyDetectionResponse() {
         title="Emergency/Endpoint Detection & Response"
         description="Rely On Perth’s Leading IT team."
       />
-      <InternalLayout
-        title="Emergency/Endpoint Detection & Response"
-        description="Rely On Perth’s Leading IT team."
-      >
+      <InternalLayout title="Emergency/Endpoint Detection & Response">
         <div className="flex flex-col gap-20">
-          <div className="flex flex-col">
-            <p data-animate className="text-lg text-gray-300">
-              iQuest IT Support Perth ‘ provide fully managed IT Support Services
-              and we take pride in being the offsite IT department for some of
-              Perth’s most recognised businesses. Our mission is to remove issues
-              before they occur, ensuring that our clients maximize their
-              productivity. Our approach to IT support is customer focused and
-              unique to Western Australia. By focusing on each of our clients
-              needs we’re able to align technology with the overall goals of the
-              business, in turn, improving productivity and reducing risk.
-            </p>
-            <p data-animate className="text-lg text-gray-300">
-              That’s why at iQuest, we’re firm believers in thorough EDR as a
-              means of monitoring your attack surface, preventing data breaches
-              and discovering leaked credentials before it’s too late.
-            </p>
-            <p data-animate className="text-lg text-gray-300">
-              Through continuous monitoring and surveillance, our Perth IT
-              specialists have the ability to discover vulnerabilities within your
-              entire organisation's IP footprint in order to take action before a
-              breach occurs.
-            </p>
-          </div>
-          <div className="flex flex-col gap-10">
-            <div className="flex flex-col gap-2">
-              <span>Trust Your Cybersecurity to iQuest</span>
-              <h2 className="text-3xl leading-8 font-extrabold tracking-tight text-blue-light sm:text-4xl">Security Operating Centre (SOC)</h2>
+          <div className="grid lg:grid-cols-2 gap-6">
+            <div className="flex flex-col">
+              <h2 data-animate className="text-blue-light mb-8">
+                Rely On Perth’s Leading IT team.
+              </h2>
+              <p data-animate className="text-lg text-gray-300">
+                iQuest IT Support Perth ‘ provide fully managed IT Support
+                Services and we take pride in being the offsite IT department
+                for some of Perth’s most recognised businesses. Our mission is
+                to remove issues before they occur, ensuring that our clients
+                maximize their productivity. Our approach to IT support is
+                customer focused and unique to Western Australia. By focusing on
+                each of our clients needs we’re able to align technology with
+                the overall goals of the business, in turn, improving
+                productivity and reducing risk.
+              </p>
+              <p data-animate className="text-lg text-gray-300">
+                That’s why at iQuest, we’re firm believers in thorough EDR as a
+                means of monitoring your attack surface, preventing data
+                breaches and discovering leaked credentials before it’s too
+                late.
+              </p>
+              <p data-animate className="text-lg text-gray-300">
+                Through continuous monitoring and surveillance, our Perth IT
+                specialists have the ability to discover vulnerabilities within
+                your entire organisation's IP footprint in order to take action
+                before a breach occurs.
+              </p>
             </div>
+            <div className="flex flex-col">
+              <h2 className="text-blue-light mb-8">
+                Security Operating Centre (SOC)
+              </h2>
+              <h3 className="mb-4">Trust Your Cybersecurity to iQuest</h3>
               <div>
                 <p data-animate className="text-lg text-gray-300">
-                  While many business owners have the perception that an SOC is unattainable and unaffordable for their business, we’d urge you to consider the cost associated with a breach, the loss of data or a loss of brand reputation. Trust in iQuest’s Perth IT professionals to ensure you’re utilising the right tools for your business.
+                  While many business owners have the perception that an SOC is
+                  unattainable and unaffordable for their business, we’d urge
+                  you to consider the cost associated with a breach, the loss of
+                  data or a loss of brand reputation. Trust in iQuest’s Perth IT
+                  professionals to ensure you’re utilising the right tools for
+                  your business.
                 </p>
                 <p data-animate className="text-lg text-gray-300">
-                  Our SOC not only has the ability to identify threats, but also to analyse them, investigate the source, mitigate zero-day-vulnerabilities and craft a roadmap to reduce risk. Utilising world-class cybersecurity platforms, you can rely on iQuest to proactively identify where you’re at risk and assist you in navigating the world of cyber-security.
+                  Our SOC not only has the ability to identify threats, but also
+                  to analyse them, investigate the source, mitigate
+                  zero-day-vulnerabilities and craft a roadmap to reduce risk.
+                  Utilising world-class cybersecurity platforms, you can rely on
+                  iQuest to proactively identify where you’re at risk and assist
+                  you in navigating the world of cyber-security.
                 </p>
               </div>
-              <TwoColumnGrid title="Benefits of an SOC" items={items} />
+            </div>
           </div>
+          <TwoColumnGrid title="Benefits of an SOC" items={items} />
         </div>
       </InternalLayout>
     </>

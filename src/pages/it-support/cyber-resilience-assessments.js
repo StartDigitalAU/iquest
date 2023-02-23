@@ -11,12 +11,11 @@ function CyberResilienceAssessments() {
         title="Cyber Resilience Assessments"
         description="Protect Your Business from Cyber Attacks."
       />
-      <InternalLayout
-        title="Cyber Resilience Assessments"
-        description="Protect Your Business from Cyber Attacks."
-      >
-        <div className="flex flex-col relative">
-          <p data-animate className="text-lg text-gray-300">
+      <InternalLayout title="Cyber Resilience Assessments">
+        <div className="grid lg:grid-cols-2 gap-6 items-center">
+          <div>
+            <h2 className="text-blue-light mb-8" data-animate>Protect Your Business from Cyber Attacks.</h2>
+            <p data-animate className="text-lg text-gray-300">
             At iQuest, we understand the importance of ensuring the cyber
             security of your business. With the increasing frequency of cyber
             attacks, it's more critical than ever to make sure you know your
@@ -43,6 +42,7 @@ function CyberResilienceAssessments() {
           <Link to={"/contact-us"} className="btn text-white mt-8">
             Contact us
           </Link>
+          </div>
         </div>
       </InternalLayout>
     </>
