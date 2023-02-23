@@ -8,7 +8,7 @@ export default function ClientLogos({ classes }) {
     >
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center space-x-5">
-          <div className="flex-1">
+          <div className="flex-1 flex">
             <StaticImage
               className="client_logo md:px-0 px-2"
               objectFit="contain"
@@ -17,7 +17,7 @@ export default function ClientLogos({ classes }) {
               alt="KDDI logo"
             />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 flex">
             <StaticImage
               className="client_logo md:px-0 px-2"
               objectFit="contain"
@@ -26,7 +26,7 @@ export default function ClientLogos({ classes }) {
               alt="Gorgi logo"
             />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 flex">
             <StaticImage
               className="client_logo md:px-0 px-2"
               objectFit="contain"
@@ -35,7 +35,7 @@ export default function ClientLogos({ classes }) {
               alt="Argonaut logo"
             />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 flex">
             <StaticImage
               className="client_logo md:px-0 px-2"
               objectFit="contain"
@@ -44,7 +44,7 @@ export default function ClientLogos({ classes }) {
               alt="Artrya logo"
             />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 flex">
             <StaticImage
               className="client_logo md:px-0 px-2"
               objectFit="contain"
