@@ -8,7 +8,7 @@ register()
 
 const Testimonials = () => {
   return (
-    <section className="px-6 md:px-12 xl:px-0 bg-background bg-overlay pt-[550px] pb-16 md:pb-32 relative mb-[-100px]">
+    <section className="px-6 md:px-12 xl:px-0 bg-background bg-overlay pt-[350px] md:pt-[600px] lg:pt-[550px] pb-16 md:pb-32 relative mb-[-100px]">
       <StaticImage
         src={"../images/perth-afternoon.jpg"}
         alt="Perth in the Afternoon"
