@@ -41,7 +41,7 @@ const MobileMenu = ({ open, menuItems }) => {
                   return (
                     <details key={item[0].title}>
                       <summary>{item[0].title}</summary>
-                      <div>
+                      <div className="max-h-[215px] overflow-y-scroll bg-gray-200 mt-3 rounded-xl">
                         {subMenuItems.map(subItem => {
                           return (
                             <Link
