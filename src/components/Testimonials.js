@@ -12,7 +12,7 @@ const Testimonials = () => {
       <StaticImage
         src={"../images/perth-afternoon.jpg"}
         alt="Perth in the Afternoon"
-        className="absolute inset-0 rounded-t-[50px] lg:rounded-t-[100px]"
+        className="!absolute inset-0 rounded-t-[50px] lg:rounded-t-[100px]"
       />
       <div className="relative z-10 text-center mb-12 lg:mb-24">
         <p className="text-white text-md font-sans inline-block md:text-lg tracking-wide mb-3 lg:mb-6">
