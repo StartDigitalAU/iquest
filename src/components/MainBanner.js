@@ -2,6 +2,7 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import ClientLogos from "./ClientLogos"
 import PerlinNoise from "./PerlinNoise"
+import BannerVideo from "../videos/iquest_video_loop.mp4"
 
 export default function MainBanner() {
   return (
@@ -29,7 +30,12 @@ export default function MainBanner() {
           </div>
         </div>
       </div>
-      <PerlinNoise />
+      <video autoplay muted loop className="hidden xl:block absolute top-0 left-0 w-screen">
+        <source src={BannerVideo} type="video/mp4"/>
+        Your browser does not support the video tag.
+      </video>
+
+      {/* <PerlinNoise /> */}
       {/* <div className="absolute top-0 right-0 transform translate-x-1/4 lg:w-3/4 xl:w-3/5 ">
         <StaticImage
           src="../images/circular-data.png"
@@ -44,7 +50,7 @@ export default function MainBanner() {
           placeholder="none"
           alt="Abstract lines"
           objectFit="cover"
-          className="mix-blend-hard-light"
+          className="mix-blend-hard-light 2xl:top-0 w-screen"
         />
         <ClientLogos classes="absolute inset-0 my-auto h-fit w-full" />
       </div>
