@@ -1,7 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import InternalLayout from "../../components/layout/InternalLayout"
-import { StaticImage } from "gatsby-plugin-image"
 
 export default function Privacy() {
   return (

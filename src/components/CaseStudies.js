@@ -56,7 +56,7 @@ const CaseStudies = () => {
         <FlexItems activeIndex={activeIndex}>
           {/* KDDI */}
           <div
-            onClick={() => setActiveIndex(0)}
+            onClick={() => setActiveIndex(0)} onKeyDown={() => setActiveIndex(0)}
             className={`p-16 flex relative cursor-pointer rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl h-full ${
               activeIndex === 0 ? "flex-1" : ""
             }`}
@@ -64,13 +64,13 @@ const CaseStudies = () => {
             <StaticImage
               src="../images/man-on-phone.png"
               alt="A man on his phone with the city skyline in the background"
-              className="absolute inset-0 w-full h-full object-cover -z-20 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl"
+              className="!absolute inset-0 w-full h-full object-cover -z-20 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl"
             />
 
             <StaticImage
               src="../images/secondary-gradient-bg.png"
               alt=""
-              className="absolute inset-0 w-full h-full object-cover -z-10 pointer-events-none rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl"
+              className="!absolute inset-0 w-full h-full object-cover -z-10 pointer-events-none rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl"
             />
 
             <span
@@ -104,7 +104,7 @@ const CaseStudies = () => {
 
           {/* Surf Life Saving */}
           <div
-            onClick={() => setActiveIndex(1)}
+            onClick={() => setActiveIndex(1)} onKeyDown={() => setActiveIndex(1)}
             className={`p-16 flex relative cursor-pointer h-full ${
               activeIndex === 1 ? "flex-1" : ""
             }`}
@@ -124,13 +124,13 @@ const CaseStudies = () => {
             <StaticImage
               src="../images/lifesavers.png"
               alt="Kids running on the beach as lifesavers"
-              className="absolute inset-0 w-full h-full object-cover -z-20"
+              className="!absolute inset-0 w-full h-full object-cover -z-20"
             />
 
             <StaticImage
               src="../images/secondary-gradient-bg.png"
               alt=""
-              className="absolute inset-0 w-full h-full object-cover -z-10 pointer-events-none"
+              className="!absolute inset-0 w-full h-full object-cover -z-10 pointer-events-none"
             />
 
             <div
@@ -150,7 +150,7 @@ const CaseStudies = () => {
 
           {/* Kiw Logistics */}
           <div
-            onClick={() => setActiveIndex(2)}
+            onClick={() => setActiveIndex(2)} onKeyDown={() => setActiveIndex(2)}
             className={`p-16 flex relative cursor-pointer rounded-b-2xl md:rounded-r-2xl h-full ${
               activeIndex === 2 ? "flex-1" : ""
             }`}
@@ -170,13 +170,13 @@ const CaseStudies = () => {
             <StaticImage
               src="../images/aerial-trucks.png"
               alt="A group of trucks as seen from above"
-              className="absolute inset-0 w-full h-full object-cover -z-20 rounded-b-2xl md:rounded-r-2xl"
+              className="!absolute inset-0 w-full h-full object-cover -z-20 rounded-b-2xl md:rounded-r-2xl"
             />
 
             <StaticImage
               src="../images/secondary-gradient-bg.png"
               alt=""
-              className="absolute inset-0 w-full h-full object-cover -z-10 pointer-events-none rounded-b-2xl md:rounded-r-2xl"
+              className="!absolute inset-0 w-full h-full object-cover -z-10 pointer-events-none rounded-b-2xl md:rounded-r-2xl"
             />
 
             <div

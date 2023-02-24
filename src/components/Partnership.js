@@ -8,7 +8,7 @@ const Partnership = () => {
       <div className="container px-6 md:px-12 xl:px-0 mx-auto pt-48 py-12 md:py-32 md:pt-[500px] lg:pt-[200px] xl:pt-64 lg:pb-24 2xl:py-64 2xl:mb-[400px] grid lg:grid-cols-2 gap-16">
         {/* Background */}
         <StaticImage
-          className="absolute top-0 left-0 -translate-x-1/3 -translate-y-1/3 opacity-20 bg-blend-color-dodge w-full pointer-events-none"
+          className="!absolute top-0 left-0 -translate-x-1/3 -translate-y-1/3 opacity-20 bg-blend-color-dodge w-full pointer-events-none"
           src="../images/circular-data.png"
           alt=""
         />

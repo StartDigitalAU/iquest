@@ -9,7 +9,7 @@ const CyberResilience = () => {
       <StaticImage
         src={"../images/women-on-phone.png"}
         alt="A women looking at her phone"
-        className="absolute inset-0 rounded-2xl"
+        className="!absolute inset-0 rounded-2xl"
       />
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#00000071] to-[#255fe6] mix-blend-multiply"></div>
       <div className="flex flex-col gap-6 z-10">
@@ -38,9 +38,9 @@ const SecurityAwareness = () => {
       <StaticImage
         src={"../images/security-awareness.jpg"}
         alt="Security Awareness"
-        className="absolute inset-0 rounded-2xl"
+        className="!absolute inset-0 rounded-2xl"
       />
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#000000b4] to-[#255fe6] mix-blend-multiply"></div>
+      <div className="!absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#000000b4] to-[#255fe6] mix-blend-multiply"></div>
       <div className="flex flex-col gap-6 z-10">
         <h3 className="text-white text-3xl leading-normal lg:text-4xl">
           Security Awareness Training
@@ -66,9 +66,9 @@ const MitigateCybercrimes = () => {
       <StaticImage
         src={"../images/cybercrime.jpg"}
         alt="Cybercrime Mitigation"
-        className="absolute inset-0 rounded-2xl"
+        className="!absolute inset-0 rounded-2xl"
       />
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#00000071] to-[#255fe6] mix-blend-multiply"></div>
+      <div className="!absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#00000071] to-[#255fe6] mix-blend-multiply"></div>
       <div className="flex flex-col gap-6 z-10">
         <h3 className="text-white text-3xl leading-normal lg:text-4xl">
           Mitigate Cybercrimes
@@ -97,9 +97,9 @@ const BusinessHelpdeskSupport = () => {
       <StaticImage
         src={"../images/helpdesk-support.jpg"}
         alt="Helpdesk Support"
-        className="absolute inset-0 rounded-2xl"
+        className="!absolute inset-0 rounded-2xl"
       />
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#000000b7] to-[#255fe6] mix-blend-multiply"></div>
+      <div className="!absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#000000b7] to-[#255fe6] mix-blend-multiply"></div>
       <div className="flex flex-col gap-6 z-10">
         <h3 className="text-white text-3xl leading-normal lg:text-4xl">
           Business Helpdesk Support
@@ -128,9 +128,9 @@ const HardwareAndSoftware = () => {
       <StaticImage
         src={"../images/hardware.jpg"}
         alt="Hardware"
-        className="absolute inset-0 rounded-2xl"
+        className="!absolute inset-0 rounded-2xl"
       />
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#00000092] to-[#255fe6] mix-blend-multiply"></div>
+      <div className="!absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#00000092] to-[#255fe6] mix-blend-multiply"></div>
       <div className="flex flex-col gap-6 z-10">
         <h3 className="text-white text-3xl leading-normal lg:text-4xl">
           Hardware & Software
@@ -160,9 +160,9 @@ const TechnologyConsulting = () => {
       <StaticImage
         src={"../images/technology-consulting.jpg"}
         alt="Technology Consulting"
-        className="absolute inset-0 rounded-2xl"
+        className="!absolute inset-0 rounded-2xl"
       />
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#000000b5] to-[#255fe6] mix-blend-multiply"></div>
+      <div className="!absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#000000b5] to-[#255fe6] mix-blend-multiply"></div>
       <div className="flex flex-col gap-4 z-10">
         <h3 className="text-white text-3xl leading-normal lg:text-4xl">
           Technology Consulting
@@ -233,7 +233,7 @@ const HowWeHelp = () => {
         </div>
         <div className="flex-[1.25] py-8 grid grid-cols-2 lg:grid-cols-6 items-center gap-x-6 gap-y-12 lg:gap-0 lg:divide-x-2 divide-white bg-black lg:bg-white bg-opacity-70 lg:bg-opacity-20 backdrop-blur-md rounded-b-2xl">
           <div
-            onClick={() => setIndex(0)}
+            onClick={() => setIndex(0)} onKeyDown={() => setIndex(0)}
             className="h-full flex-1 px-8 flex flex-col items-center justify-center gap-6 text-center text-white text-sm cursor-pointer"
           >
             <svg
@@ -260,7 +260,7 @@ const HowWeHelp = () => {
             </span>
           </div>
           <div
-            onClick={() => setIndex(1)}
+            onClick={() => setIndex(1)} onKeyDown={() => setIndex(0)}
             className="h-full flex-1 px-8 flex flex-col items-center justify-center gap-6 text-center text-white text-sm cursor-pointer"
           >
             <svg
@@ -288,7 +288,7 @@ const HowWeHelp = () => {
           </div>
 
           <div
-            onClick={() => setIndex(2)}
+            onClick={() => setIndex(2)} onKeyDown={() => setIndex(0)}
             className="h-full flex-1 px-8 flex flex-col items-center justify-center gap-6 text-center text-white text-sm cursor-pointer"
           >
             <svg
@@ -315,7 +315,7 @@ const HowWeHelp = () => {
             </span>
           </div>
           <div
-            onClick={() => setIndex(3)}
+            onClick={() => setIndex(3)} onKeyDown={() => setIndex(0)}
             className="h-full flex-1 px-8 flex flex-col items-center justify-center gap-6 text-center text-white text-sm cursor-pointer"
           >
             <svg
@@ -342,7 +342,7 @@ const HowWeHelp = () => {
             </span>
           </div>
           <div
-            onClick={() => setIndex(4)}
+            onClick={() => setIndex(4)} onKeyDown={() => setIndex(0)}
             className="h-full flex-1 px-8 flex flex-col items-center justify-center gap-6 text-center text-white text-sm cursor-pointer"
           >
             <svg
@@ -368,7 +368,7 @@ const HowWeHelp = () => {
             </span>
           </div>
           <div
-            onClick={() => setIndex(5)}
+            onClick={() => setIndex(5)} onKeyDown={() => setIndex(0)}
             className="h-full flex-1 px-8 flex flex-col items-center justify-center gap-6 text-center text-white text-sm cursor-pointer"
           >
             <svg

@@ -2,7 +2,6 @@ import * as React from "react"
 import { GatsbySeo } from "gatsby-plugin-next-seo"
 import InternalLayout from "../../components/layout/InternalLayout"
 import TwoColumnGrid from "../../components/TwoColumnGrid"
-import List from "../../components/List"
 
 function EmergencyDetectionResponse() {
   const items = [

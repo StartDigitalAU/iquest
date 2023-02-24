@@ -1,12 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 import logoLight from "/src/images/iquest-white-logo.png"
-import logoDark from "/src/images/iQuest-Perth-Logo.png"
 import menuJson from "../../../content/menu.json"
-import { Fragment } from "react"
 import { Popover, Transition } from "@headlessui/react"
 import MenuPopover from "../MenuPopover"
-import IconLoader from "../IconLoader"
 import Loader from "../Loader"
 import {
   BookmarkAltIcon,
