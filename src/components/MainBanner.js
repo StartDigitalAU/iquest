@@ -16,7 +16,7 @@ export default function MainBanner() {
           muted={true}
           width='100%'
           height='100%'
-          className="absolute top-[-200px] left-0 w-screen"
+          className="absolute top-[-240px] left-0 w-screen"
         />
       </div>
     );

@@ -1,3 +1,7 @@
+html {
+  @apply overflow-x-hidden;
+}
+
 body {
   @apply bg-iquest-gradient bg-blue-dark bg-cover bg-no-repeat overflow-x-hidden;
 }
