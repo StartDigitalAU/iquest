@@ -23,7 +23,10 @@ const CyberResilience = () => {
           can rest assured that you’re in safe hands with our team of talented
           IT experts.
         </p>
-        <Link to={"/it-support/cyber-resilience-assessments"} className="btn text-white">
+        <Link
+          to={"/it-support/cyber-resilience-assessments"}
+          className="btn text-white"
+        >
           Learn more
         </Link>
       </div>
@@ -171,7 +174,8 @@ const TechnologyConsulting = () => {
           We assist small, medium and corporate businesses to get the most out
           of their IT systems. With access to our skilled staff, you will get
           the best advice and expertise you need in today’s technology
-          marketContact us to discover more.</p>
+          marketContact us to discover more.
+        </p>
         <Link
           to={"/it-support/technology-consulting-perth"}
           className="btn text-white"
@@ -222,9 +226,9 @@ const HowWeHelp = () => {
         How We Help
       </h3>
       <p className="lg:w-3/4">
-        From cyber resilience assessments to cyber security training and ongoing
-        management, here’s a glimpse at how we help ensure your business remains
-        secure, protected and supported at all times.
+        From cyber resilience assessments to cyber security awareness training
+        and ongoing management, here’s a glimpse at how we help ensure your
+        business remains secure, protected and supported at all times.
       </p>
 
       <div className="relative flex flex-col lg:h-[750px] rounded-2xl mt-6">
@@ -233,7 +237,8 @@ const HowWeHelp = () => {
         </div>
         <div className="flex-[1.25] py-8 grid grid-cols-2 lg:grid-cols-6 items-center gap-x-6 gap-y-12 lg:gap-0 lg:divide-x-2 divide-white bg-black lg:bg-white bg-opacity-70 lg:bg-opacity-20 backdrop-blur-md rounded-b-2xl">
           <div
-            onClick={() => setIndex(0)} onKeyDown={() => setIndex(0)}
+            onClick={() => setIndex(0)}
+            onKeyDown={() => setIndex(0)}
             className="h-full flex-1 px-8 flex flex-col items-center justify-center gap-6 text-center text-white text-sm cursor-pointer"
           >
             <svg
@@ -249,9 +254,9 @@ const HowWeHelp = () => {
                 transform="translate(-2.25 -1.964)"
                 fill="none"
                 stroke="#fff"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
               />
             </svg>
             <span className="font-display">
@@ -260,7 +265,8 @@ const HowWeHelp = () => {
             </span>
           </div>
           <div
-            onClick={() => setIndex(1)} onKeyDown={() => setIndex(0)}
+            onClick={() => setIndex(1)}
+            onKeyDown={() => setIndex(0)}
             className="h-full flex-1 px-8 flex flex-col items-center justify-center gap-6 text-center text-white text-sm cursor-pointer"
           >
             <svg
@@ -276,9 +282,9 @@ const HowWeHelp = () => {
                 transform="translate(-3.75 -1.5)"
                 fill="none"
                 stroke="#fff"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
               />
             </svg>
             <span className="font-display">
@@ -288,7 +294,8 @@ const HowWeHelp = () => {
           </div>
 
           <div
-            onClick={() => setIndex(2)} onKeyDown={() => setIndex(0)}
+            onClick={() => setIndex(2)}
+            onKeyDown={() => setIndex(0)}
             className="h-full flex-1 px-8 flex flex-col items-center justify-center gap-6 text-center text-white text-sm cursor-pointer"
           >
             <svg
@@ -304,9 +311,9 @@ const HowWeHelp = () => {
                 transform="translate(-3 -0.75)"
                 fill="none"
                 stroke="#fff"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
               />
             </svg>
             <span className="font-display">
@@ -315,7 +322,8 @@ const HowWeHelp = () => {
             </span>
           </div>
           <div
-            onClick={() => setIndex(3)} onKeyDown={() => setIndex(0)}
+            onClick={() => setIndex(3)}
+            onKeyDown={() => setIndex(0)}
             className="h-full flex-1 px-8 flex flex-col items-center justify-center gap-6 text-center text-white text-sm cursor-pointer"
           >
             <svg
@@ -331,9 +339,9 @@ const HowWeHelp = () => {
                 transform="translate(-1.5 -1.5)"
                 fill="none"
                 stroke="#fff"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
               />
             </svg>
             <span className="font-display">
@@ -342,7 +350,8 @@ const HowWeHelp = () => {
             </span>
           </div>
           <div
-            onClick={() => setIndex(4)} onKeyDown={() => setIndex(0)}
+            onClick={() => setIndex(4)}
+            onKeyDown={() => setIndex(0)}
             className="h-full flex-1 px-8 flex flex-col items-center justify-center gap-6 text-center text-white text-sm cursor-pointer"
           >
             <svg
@@ -358,9 +367,9 @@ const HowWeHelp = () => {
                 transform="translate(-0.75 -2.828)"
                 fill="none"
                 stroke="#fff"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
               />
             </svg>
             <span className="font-display">
@@ -368,7 +377,8 @@ const HowWeHelp = () => {
             </span>
           </div>
           <div
-            onClick={() => setIndex(5)} onKeyDown={() => setIndex(0)}
+            onClick={() => setIndex(5)}
+            onKeyDown={() => setIndex(0)}
             className="h-full flex-1 px-8 flex flex-col items-center justify-center gap-6 text-center text-white text-sm cursor-pointer"
           >
             <svg
@@ -384,9 +394,9 @@ const HowWeHelp = () => {
                 transform="translate(-1.481 -3.687)"
                 fill="none"
                 stroke="#fff"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
               />
             </svg>
             <span className="font-display">

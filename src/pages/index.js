@@ -11,6 +11,7 @@ import CaseStudies from "../components/CaseStudies"
 import Partnership from "../components/Partnership"
 import Testimonials from "../components/Testimonials"
 import ContactForm from "../components/ContactForm"
+import SendmarcWidget from "../components/SendmarcWidget"
 import Footer from "../components/layout/Footer"
 
 function IndexPage() {
@@ -39,6 +40,9 @@ function IndexPage() {
       </div>
 
       <Testimonials />
+
+      <SendmarcWidget />
+
       <Footer />
     </>
   )

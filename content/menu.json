@@ -1,90 +1,90 @@
 {
-    "menuItems": [
-        [
-            {
-                "title": "About"
-            },
-            [
-                {
-                    "name": "About Us",
-                    "description": "We're Perth's leading IT consulting company, ready to deploy experts anytime & anywhere.",
-                    "href": "/about",
-                    "icon": "ChartBarIcon"
-                },
-                {
-                    "name": "Our Partners",
-                    "description": "At iQuest we work alongside global brands to provide the best IT services in Perth & Melbourne.",
-                    "href": "/about/our-partners",
-                    "icon": "CursorClickIcon"
-                },
-                {
-                    "name": "Testimonials",
-                    "description": "Hear from iQuest's partners and clients.",
-                    "href": "/about/testimonials",
-                    "icon": "ChatIcon"
-                },
-                {
-                    "name": "Our Directors",
-                    "description": "iQuest offers Fully Managed IT Support Services where we act as your offsite IT department.",
-                    "href": "/about/directors",
-                    "icon": "ViewGridIcon"
-                }
-            ]
-        ],
-        [
-            {
-                "title": "Our Services"
-            },
-            [
-                {
-                    "name": "Achieve Cyber Resilience",
-                    "description": "Protect Your Business from Cyber Attacks.",
-                    "href": "/it-support/cyber-resilience-assessments",
-                    "icon": "GlobeAltIcon"
-                },
-                {
-                    "name": "KnowBe4 Cyber Resilience Security Training",
-                    "description": "Put Your Business To The Test.",
-                    "href": "/it-support/security-training",
-                    "icon": "ShieldCheckIcon"
-                },
-                {
-                    "name": "Emergency/Endpoint Detection & Response",
-                    "description": "Rely On Perth’s Leading IT team.",
-                    "href": "/it-support/emergency-detection-and-response",
-                    "icon": "BellIcon"
-                },
-                {
-                    "name": "IT Support Services",
-                    "description": "Providing fully managed IT support services in Perth & Melbourne.",
-                    "href": "/it-support/it-support-services-perth",
-                    "icon": "ChartBarIcon"
-                },
-                {
-                    "name": "Business Helpdesk Support",
-                    "description": "We have a team of resourceful technical support experts in Perth providing helpdesk support.",
-                    "href": "/it-support/business-helpdesk-support-perth",
-                    "icon": "CursorClickIcon"
-                },
-                {
-                    "name": "Hardware & Software Procurement",
-                    "description": "iQuest can assist you with hardware & software procurement.",
-                    "href": "/it-support/hardware-software-procurement",
-                    "icon": "ViewGridIcon"
-                },
-                {
-                    "name": "Technology Consulting",
-                    "description": "A range of highly experienced IT consultants only a phone call away.",
-                    "href": "/it-support/technology-consulting-perth",
-                    "icon": "WifiIcon"
-                },
-                {
-                    "name": "Project Management",
-                    "description": "Our IT engineers are highly experienced with Project Management.",
-                    "href": "/it-support/it-project-management-perth",
-                    "icon": "DocumentTextIcon"
-                }
-            ]
-        ]
+  "menuItems": [
+    [
+      {
+        "title": "About"
+      },
+      [
+        {
+          "name": "About Us",
+          "description": "We're Perth's leading IT consulting company, ready to deploy experts anytime & anywhere.",
+          "href": "/about",
+          "icon": "ChartBarIcon"
+        },
+        {
+          "name": "Our Partners",
+          "description": "At iQuest we work alongside global brands to provide the best IT services in Perth & Melbourne.",
+          "href": "/about/our-partners",
+          "icon": "CursorClickIcon"
+        },
+        {
+          "name": "Testimonials",
+          "description": "Hear from iQuest's partners and clients.",
+          "href": "/about/testimonials",
+          "icon": "ChatIcon"
+        },
+        {
+          "name": "Our Directors",
+          "description": "iQuest offers Fully Managed IT Support Services where we act as your offsite IT department.",
+          "href": "/about/directors",
+          "icon": "ViewGridIcon"
+        }
+      ]
+    ],
+    [
+      {
+        "title": "Our Services"
+      },
+      [
+        {
+          "name": "Achieve Cyber Resilience",
+          "description": "Protect Your Business from Cyber Attacks.",
+          "href": "/it-support/cyber-resilience-assessments",
+          "icon": "GlobeAltIcon"
+        },
+        {
+          "name": "KnowBe4 Cyber Security Awareness Training",
+          "description": "Put Your Business To The Test.",
+          "href": "/it-support/security-training",
+          "icon": "ShieldCheckIcon"
+        },
+        {
+          "name": "EDR & Managed SOC",
+          "description": "Rely On Perth’s Leading IT team.",
+          "href": "/it-support/emergency-detection-and-response",
+          "icon": "BellIcon"
+        },
+        {
+          "name": "IT Support Services",
+          "description": "Providing fully managed IT support services in Perth & Melbourne.",
+          "href": "/it-support/it-support-services-perth",
+          "icon": "ChartBarIcon"
+        },
+        {
+          "name": "Business Helpdesk Support",
+          "description": "We have a team of resourceful technical support experts in Perth providing helpdesk support.",
+          "href": "/it-support/business-helpdesk-support-perth",
+          "icon": "CursorClickIcon"
+        },
+        {
+          "name": "Hardware & Software Procurement",
+          "description": "iQuest can assist you with hardware & software procurement.",
+          "href": "/it-support/hardware-software-procurement",
+          "icon": "ViewGridIcon"
+        },
+        {
+          "name": "Technology Consulting",
+          "description": "A range of highly experienced IT consultants only a phone call away.",
+          "href": "/it-support/technology-consulting-perth",
+          "icon": "WifiIcon"
+        },
+        {
+          "name": "Project Management",
+          "description": "Our IT engineers are highly experienced with Project Management.",
+          "href": "/it-support/it-project-management-perth",
+          "icon": "DocumentTextIcon"
+        }
+      ]
     ]
+  ]
 }

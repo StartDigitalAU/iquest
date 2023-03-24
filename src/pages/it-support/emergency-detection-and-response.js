@@ -38,7 +38,7 @@ function EmergencyDetectionResponse() {
         title="Emergency/Endpoint Detection & Response"
         description="Rely On Perth’s Leading IT team."
       />
-      <InternalLayout title="Emergency/Endpoint Detection & Response">
+      <InternalLayout title="EDR & Managed SOC">
         <div className="flex flex-col gap-20">
           <div className="grid lg:grid-cols-2 gap-6">
             <div className="flex flex-col">

@@ -31,11 +31,10 @@ function SecurityTraining() {
   return (
     <>
       <GatsbySeo
-        title="Cyber Security Training"
+        title="Cyber Security Awareness Training"
         description="Put Your Business To The Test."
       />
-      <InternalLayout
-        title="Cyber Security Training">
+      <InternalLayout title="Cyber Security Awareness Training">
         <div className="lg:grid pb-16">
           <div className="grid lg:grid-cols-2 gap-6">
             <div className="flex flex-col">
@@ -62,17 +61,20 @@ function SecurityTraining() {
               <p data-animate className="text-lg text-gray-300">
                 <i>KnowBe4</i> is the world’s largest Cyber Security Awareness
                 training platform. It combines real world simulated phishing
-                attacks, which allows us to assess your Phish-Prone percentage to
-                ultimately deliver a robust and relevant training program. With
-                over 6.6 million users world wide, and a database of engaging
-                content thats ever growing, there has never been a better way to
-                empower your team with they need in this ever evolving landscape.
+                attacks, which allows us to assess your Phish-Prone percentage
+                to ultimately deliver a robust and relevant training program.
+                With over 6.6 million users world wide, and a database of
+                engaging content thats ever growing, there has never been a
+                better way to empower your team with they need in this ever
+                evolving landscape.
               </p>
             </div>
           </div>
         </div>
         <FourColumnGrid title="Our Process" items={items} />
-        <p className="is-h2 mt-16">Enquire about Cyber Security Training</p>
+        <p className="is-h2 mt-16">
+          Enquire about Cyber Security Awareness Training
+        </p>
         <Link to={"/contact-us"} className="btn text-white mt-8">
           Contact us
         </Link>

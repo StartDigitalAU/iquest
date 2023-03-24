@@ -56,7 +56,8 @@ const CaseStudies = () => {
         <FlexItems activeIndex={activeIndex}>
           {/* KDDI */}
           <div
-            onClick={() => setActiveIndex(0)} onKeyDown={() => setActiveIndex(0)}
+            onClick={() => setActiveIndex(0)}
+            onKeyDown={() => setActiveIndex(0)}
             className={`p-16 flex relative cursor-pointer rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl h-full ${
               activeIndex === 0 ? "flex-1" : ""
             }`}
@@ -82,7 +83,9 @@ const CaseStudies = () => {
                 textOrientation: "mixed",
               }}
             >
-              <div className="rotate-[-90deg] md:rotate-[180deg]">KDDI Australia & Singapore Telecommunications</div>
+              <div className="rotate-[-90deg] md:rotate-[180deg]">
+                KDDI Australia & Singapore Telecommunications
+              </div>
             </span>
 
             <div
@@ -104,7 +107,8 @@ const CaseStudies = () => {
 
           {/* Surf Life Saving */}
           <div
-            onClick={() => setActiveIndex(1)} onKeyDown={() => setActiveIndex(1)}
+            onClick={() => setActiveIndex(1)}
+            onKeyDown={() => setActiveIndex(1)}
             className={`p-16 flex relative cursor-pointer h-full ${
               activeIndex === 1 ? "flex-1" : ""
             }`}
@@ -118,7 +122,9 @@ const CaseStudies = () => {
                 textOrientation: "mixed",
               }}
             >
-              <div className="rotate-[-90deg] md:rotate-[180deg]">Surf Life Saving</div>
+              <div className="rotate-[-90deg] md:rotate-[180deg]">
+                Surf Life Saving
+              </div>
             </span>
 
             <StaticImage
@@ -142,52 +148,6 @@ const CaseStudies = () => {
               <Link
                 className="btn text-white border-white"
                 to="/case-studies/surf-life-saving-wa"
-              >
-                Learn More
-              </Link>
-            </div>
-          </div>
-
-          {/* Kiw Logistics */}
-          <div
-            onClick={() => setActiveIndex(2)} onKeyDown={() => setActiveIndex(2)}
-            className={`p-16 flex relative cursor-pointer rounded-b-2xl md:rounded-r-2xl h-full ${
-              activeIndex === 2 ? "flex-1" : ""
-            }`}
-          >
-            <span
-              className={`is-h2 text-white absolute inset-0 flex items-center justify-center md:mb-16 w-full origin-center ${
-                activeIndex === 2 ? "hidden" : ""
-              }`}
-              style={{
-                writingMode: "vertical-rl",
-                textOrientation: "mixed",
-              }}
-            >
-              <div className="rotate-[-90deg] md:rotate-[180deg]">Kwik Logistics</div>
-            </span>
-
-            <StaticImage
-              src="../images/aerial-trucks.png"
-              alt="A group of trucks as seen from above"
-              className="!absolute inset-0 w-full h-full object-cover -z-20 rounded-b-2xl md:rounded-r-2xl"
-            />
-
-            <StaticImage
-              src="../images/secondary-gradient-bg.png"
-              alt=""
-              className="!absolute inset-0 w-full h-full object-cover -z-10 pointer-events-none rounded-b-2xl md:rounded-r-2xl"
-            />
-
-            <div
-              className={`flex flex-col justify-end h-full mt-auto gap-4 ${
-                activeIndex === 2 ? "" : "hidden"
-              }`}
-            >
-              <span className="is-h2 text-white">Kwik Logistics</span>
-              <Link
-                className="btn text-white border-white"
-                to="/case-studies/kwik-logistics"
               >
                 Learn More
               </Link>
