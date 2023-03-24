@@ -15,7 +15,7 @@ const SendmarcWidget = () => {
       <form
         id="sendmarc-widget-form"
         className="container text-center flex flex-col gap-4 text-blue-darkest mx-auto max-w-4xl p-12 bg-white rounded-3xl relative z-50 mt-48 mb-24"
-        novalidate
+        noValidate
       >
         <h3>Enter your email to get a free domain security score</h3>
         <div>
@@ -24,10 +24,9 @@ const SendmarcWidget = () => {
           </label>
           <input
             type="email"
-            class="form-control"
             name="email"
             placeholder="you@example.com"
-            className="block w-full px-4 py-4 rounded-md border-1 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-light sm:text-sm"
+            className="form-control block w-full px-4 py-4 rounded-md border-1 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-light sm:text-sm"
           />
         </div>
         <button
