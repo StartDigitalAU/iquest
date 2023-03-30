@@ -170,7 +170,7 @@ const CaseStudies = () => {
                 textOrientation: "mixed",
               }}
             >
-              <div className="rotate-[-90deg] md:rotate-[180deg]">
+              <div className="rotate-[-90deg] md:rotate-[180deg] rounded-b-2xl md:rounded-l-none md:rounded-r-2xl">
                 Argonaut
               </div>
             </span>
@@ -178,13 +178,13 @@ const CaseStudies = () => {
             <StaticImage
               src="../../static/iQuest-Argonaut-Banner.jpg"
               alt="Kids running on the beach as lifesavers"
-              className="!absolute inset-0 w-full h-full object-cover -z-20"
+              className="!absolute inset-0 w-full h-full object-cover -z-20 rounded-b-2xl md:rounded-l-none md:rounded-r-2xl"
             />
 
             <StaticImage
               src="../images/secondary-gradient-bg.png"
               alt=""
-              className="!absolute inset-0 w-full h-full object-cover -z-10 pointer-events-none"
+              className="!absolute inset-0 w-full h-full object-cover -z-10 pointer-events-none rounded-b-2xl md:rounded-l-none md:rounded-r-2xl"
             />
 
             <div
