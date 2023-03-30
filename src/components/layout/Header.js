@@ -40,7 +40,7 @@ const Header = () => {
       <Popover className="fixed top-0 left-0 w-full z-50">
         {({ open }) => (
           <>
-          <div className="bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg mx-auto rounded-b-[35px] xl:rounded-b-[75px]">
+          <div className="bg-black/50 backdrop-filter backdrop-blur-lg mx-auto rounded-b-[35px] xl:rounded-b-[75px]">
             <div className="px-8 md:p-0 container mx-auto">
               <div className="mx-auto py-6 xl:py-10">
                 <div className="flex justify-between items-center xl:justify-start md:space-x-10">

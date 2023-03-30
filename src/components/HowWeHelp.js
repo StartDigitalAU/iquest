@@ -235,7 +235,7 @@ const HowWeHelp = () => {
         <div className="flex-[3] flex flex-col justify-center gap-4 lg:w-1/2 px-10 py-14 lg:p-20">
           <Content index={index} />
         </div>
-        <div className="flex-[1.25] py-8 grid grid-cols-2 lg:grid-cols-6 items-center gap-x-6 gap-y-12 lg:gap-0 lg:divide-x-2 divide-white bg-black lg:bg-white bg-opacity-70 lg:bg-opacity-20 backdrop-blur-md rounded-b-2xl">
+        <div className="flex-[1.25] py-8 grid grid-cols-2 lg:grid-cols-6 items-center gap-x-6 gap-y-12 lg:gap-0 lg:divide-x-2 divide-white bg-black/70 lg:bg-white/20 backdrop-blur-md rounded-b-2xl">
           <div
             onClick={() => setIndex(0)}
             onKeyDown={() => setIndex(0)}
