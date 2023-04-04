@@ -13,7 +13,7 @@ export default function ClientLogos({ classes }) {
               className="client_logo md:px-0 px-2"
               objectFit="contain"
               width={150}
-              src={"../images/logos/kddi-logo.png"}
+              src={"../images/logos/Kddi-Logo.png"}
               alt="KDDI logo"
             />
           </div>
@@ -22,7 +22,7 @@ export default function ClientLogos({ classes }) {
               className="client_logo md:px-0 px-2"
               objectFit="contain"
               width={150}
-              src={"../images/logos/gorgi-logo.png"}
+              src={"../images/logos/Gorgi-Logo.png"}
               alt="Gorgi logo"
             />
           </div>
@@ -31,7 +31,7 @@ export default function ClientLogos({ classes }) {
               className="client_logo md:px-0 px-2"
               objectFit="contain"
               width={150}
-              src={"../images/logos/argonaut-logo.png"}
+              src={"../images/logos/Argonaut-Logo.png"}
               alt="Argonaut logo"
             />
           </div>
@@ -40,7 +40,7 @@ export default function ClientLogos({ classes }) {
               className="client_logo md:px-0 px-2"
               objectFit="contain"
               width={150}
-              src={"../images/logos/artrya-logo.png"}
+              src={"../images/logos/Artrya-Logo.png"}
               alt="Artrya logo"
             />
           </div>
@@ -49,7 +49,7 @@ export default function ClientLogos({ classes }) {
               className="client_logo md:px-0 px-2"
               objectFit="contain"
               width={150}
-              src={"../images/logos/advocare-logo.png"}
+              src={"../images/logos/Advocare-Logo.png"}
               alt="Advocare logo"
             />
           </div>
