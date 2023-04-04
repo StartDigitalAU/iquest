@@ -25,8 +25,6 @@ export default function MainBanner() {
 
   return (
     <div className="pb-16 lg:pb-32 xl:pb-24 pt-36 md:pt-48 relative">
-      {/* Video */}
-
       <div className="relative z-10 text-white px-6 md:px-12 xl:px-0">
         <div className="container max-xl:max-w-5xl mx-auto flex flex-col gap-6">
           <div className="max-w-3xl flex flex-col gap-6 lg:gap-6 mb-10 lg:mb-0">
@@ -49,16 +47,6 @@ export default function MainBanner() {
         </div>
       </div>
       <BannerVideo />
-
-      {/* <PerlinNoise /> */}
-      {/* <div className="absolute top-0 right-0 transform translate-x-1/4 lg:w-3/4 xl:w-3/5 ">
-        <StaticImage
-          src="../images/circular-data.png"
-          placeholder="none"
-          alt="Large abstract shape that represents data"
-          className="opacity-50 xl:opacity-100"
-        />
-      </div> */}
       <div className="relative">
         <StaticImage
           src="../images/data-lines-flipped.png"
