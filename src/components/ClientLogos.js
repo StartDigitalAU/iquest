@@ -13,7 +13,7 @@ export default function ClientLogos({ classes }) {
               className="client_logo md:px-0 px-2"
               objectFit="contain"
               width={150}
-              src={"../images/logos/kddi-logo.png"}
+              src={"../images/logos/Kddi-logo.png"}
               alt="KDDI logo"
             />
           </div>
