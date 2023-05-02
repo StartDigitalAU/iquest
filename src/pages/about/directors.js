@@ -85,7 +85,7 @@ export default function Directors() {
           </div>
           <StaticImage
             className="w-full shadow-xl rounded-xl lg:w-auto"
-            src="../../images/iQuest-Pietro.jpeg"
+            src="../../images/iQuest-Pietro.jpg"
             alt="iQuest About Us Banner"
             placeholder="none"
           />
@@ -121,7 +121,7 @@ export default function Directors() {
           </div>
           <StaticImage
             className="w-full shadow-xl rounded-xl lg:w-auto"
-            src="../../images/iQuest-Matthew.jpeg"
+            src="../../images/iQuest-Matthew.jpg"
             alt="iQuest About Us Banner"
             placeholder="none"
           />
