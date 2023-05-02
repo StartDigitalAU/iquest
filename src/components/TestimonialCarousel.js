@@ -21,7 +21,7 @@ const TestimonialCarousel = () => {
   }, [])
 
   return (
-    <div className="max-w-6xl mx-auto relative pb-32">
+    <div className="relative max-w-6xl pb-32 mx-auto">
       <button
         className="text-5xl bg-white rounded-full text-black w-12 h-12 grid place-items-center bottom-[50px] left-1/3 absolute lg:top-1/2 -translate-x-1/2 lg:translate-x-0 lg:-translate-y-full lg:left-0 z-50"
         onClick={handlePrev}
@@ -68,7 +68,7 @@ const TestimonialCarousel = () => {
         loop="true"
       >
         <swiper-slide>
-          <div className="bg-white rounded-2xl p-12 flex flex-col gap-6 items-center justify-center max-w-4xl mx-auto">
+          <div className="flex flex-col items-center justify-center max-w-4xl gap-6 p-12 mx-auto bg-white rounded-2xl">
             <StaticImage
               className="mx-auto"
               width={200}
@@ -76,7 +76,7 @@ const TestimonialCarousel = () => {
               alt="Argonaut Logo"
               placeholder="none"
             />
-            <blockquote className="text-black-light text-center">
+            <blockquote className="text-center text-black-light">
               <p className="text-black-light">
                 We cannot speak highly enough of the staff assigned to our
                 implementation. Our new infrastructure more complex than our
@@ -94,7 +94,7 @@ const TestimonialCarousel = () => {
           </div>
         </swiper-slide>
         <swiper-slide>
-          <div className="bg-white rounded-2xl p-12 flex flex-col gap-6 items-center justify-center max-w-4xl mx-auto">
+          <div className="flex flex-col items-center justify-center max-w-4xl gap-6 p-12 mx-auto bg-white rounded-2xl">
             <StaticImage
               className="mx-auto"
               width={100}
@@ -102,33 +102,7 @@ const TestimonialCarousel = () => {
               alt="Fremantle Dockers Logo"
               placeholder="none"
             />
-            <blockquote className="text-black-light text-center">
-              <p className="text-black-light">
-                We cannot speak highly enough of the staff assigned to our
-                implementation. Our new infrastructure more complex than our
-                previous systems. The iQuest team were helpful, approachable,
-                and knowledgeable. The ongoing excellent support is really
-                something we sincerely appreciate and rely on.&rdquo;
-              </p>
-              <figcaption data-animate-left className="mt-6 text-xl font-bold">
-                Minh Tran
-              </figcaption>
-              <cite data-animate-left className="italic font-normal">
-                Manager, Information Technology, Fremantle Dockers
-              </cite>
-            </blockquote>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div className="bg-white rounded-2xl p-12 flex flex-col gap-6 items-center justify-center max-w-4xl mx-auto">
-            <StaticImage
-              className="mx-auto"
-              width={100}
-              src="../images/Fremantle-Dockers-Client-Logo2.png"
-              alt="Fremantle Dockers Logo"
-              placeholder="none"
-            />
-            <blockquote className="text-black-light text-center">
+            <blockquote className="text-center text-black-light">
               <p className="text-black-light">
                 We cannot speak highly enough of the staff assigned to our
                 implementation. Our new infrastructure more complex than our

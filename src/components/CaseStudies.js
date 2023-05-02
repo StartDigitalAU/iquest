@@ -33,13 +33,13 @@ const CaseStudies = () => {
           placeholder="none"
         />
       </div>
-      <div className="container relative z-10 md:mb-8 mx-auto md:py-12 px-4 lg:py-20 xl:px-0">
-        <p className="text-md font-sans inline-block md:text-lg tracking-wide text-purple mb-6">
+      <div className="container relative z-10 px-4 mx-auto md:mb-8 md:py-12 lg:py-20 xl:px-0">
+        <p className="inline-block mb-6 font-sans tracking-wide text-md md:text-lg text-purple">
           Holistic IT Support Perth
         </p>
         <h4
           data-animate
-          className="text-3xl lg:text-5xl font-display text-black mb-6"
+          className="mb-6 text-3xl text-black lg:text-5xl font-display"
         >
           iQuest Case Studies
         </h4>
@@ -93,11 +93,11 @@ const CaseStudies = () => {
                 activeIndex === 0 ? "" : "hidden"
               }`}
             >
-              <span className="is-h2 text-white">
+              <span className="text-white is-h2">
                 KDDI Australia & Singapore Telecommunications
               </span>
               <Link
-                className="btn text-white border-white"
+                className="text-white border-white btn"
                 to="/case-studies/kddi"
               >
                 Learn More
@@ -144,16 +144,16 @@ const CaseStudies = () => {
                 activeIndex === 1 ? "" : "hidden"
               }`}
             >
-              <span className="is-h2 text-white">Surf Life Saving</span>
+              <span className="text-white is-h2">Surf Life Saving</span>
               <Link
-                className="btn text-white border-white"
+                className="text-white border-white btn"
                 to="/case-studies/surf-life-saving-wa"
               >
                 Learn More
               </Link>
             </div>
           </div>
-          {/* Argonaut */}
+          {/* Dial A Doctor */}
           <div
             onClick={() => setActiveIndex(2)}
             onKeyDown={() => setActiveIndex(2)}
@@ -171,13 +171,13 @@ const CaseStudies = () => {
               }}
             >
               <div className="rotate-[-90deg] md:rotate-[180deg] rounded-b-2xl md:rounded-l-none md:rounded-r-2xl">
-                Argonaut
+                Dial A Doctor
               </div>
             </span>
 
             <StaticImage
-              src="../../static/iQuest-Argonaut-Banner.jpg"
-              alt="Kids running on the beach as lifesavers"
+              src="../../static/iQuest-Dial-a-Doctor.jpg"
+              alt="A doctor putting on a mask"
               className="!absolute inset-0 w-full h-full object-cover -z-20 rounded-b-2xl md:rounded-l-none md:rounded-r-2xl"
             />
 
@@ -192,10 +192,10 @@ const CaseStudies = () => {
                 activeIndex === 2 ? "" : "hidden"
               }`}
             >
-              <span className="is-h2 text-white">Argonaut</span>
+              <span className="text-white is-h2">Dial A Doctor</span>
               <Link
-                className="btn text-white border-white"
-                to="/case-studies/argonaut"
+                className="text-white border-white btn"
+                to="/case-studies/dial-a-doctor"
               >
                 Learn More
               </Link>
