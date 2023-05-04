@@ -34,18 +34,17 @@ const ManagedIT = () => {
           Learn More
         </Link>
       </div>
-      <div>
-        <div className="relative lg:absolute 2xl:relative right-0 top-0 w-full lg:w-2/3">
-          <SVG />
-          <StaticImage
-            className="lg:translate-x-1/3 translate-y-16 aspect-1 rounded-full"
-            src="../images/iQuest-IT-Mockup.jpg"
-            alt="iQuest Computer Mockup"
-            placeholder="dominantColor"
-            layout="constrained"
-            quality="100"
-          />
-        </div>
+
+      <div className="relative lg:absolute 2xl:relative right-0 top-0 w-full lg:!w-2/3">
+        <SVG />
+        <StaticImage
+          className="lg:translate-x-1/3 translate-y-16 aspect-1 rounded-full"
+          src="../images/iQuest-IT-Mockup.jpg"
+          alt="iQuest Computer Mockup"
+          placeholder="dominantColor"
+          layout="constrained"
+          quality="100"
+        />
       </div>
     </div>
   )
