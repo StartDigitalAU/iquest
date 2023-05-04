@@ -42,7 +42,7 @@ export default function Directors() {
           </div>
           <div data-animate-right>
             <StaticImage
-              className="w-full shadow-xl rounded-xl lg:w-auto"
+              className="w-full shadow-xl rounded-xl lg:w-auto aspect-1"
               src="../../images/iQuest-Anderson.jpeg"
               alt="iQuest About Us Banner"
               placeholder="none"
@@ -84,7 +84,7 @@ export default function Directors() {
             </p>
           </div>
           <StaticImage
-            className="w-full shadow-xl rounded-xl lg:w-auto"
+            className="w-full shadow-xl rounded-xl lg:w-auto aspect-1"
             src="../../images/iQuest-Pietro.jpg"
             alt="iQuest About Us Banner"
             placeholder="none"
@@ -120,7 +120,7 @@ export default function Directors() {
             </p>
           </div>
           <StaticImage
-            className="w-full shadow-xl rounded-xl lg:w-auto"
+            className="w-full shadow-xl rounded-xl lg:w-auto aspect-1"
             src="../../images/iQuest-Matthew.jpg"
             alt="iQuest About Us Banner"
             placeholder="none"
