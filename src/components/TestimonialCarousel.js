@@ -78,7 +78,7 @@ const TestimonialCarousel = () => {
             />
             <blockquote className="text-center text-black-light">
               <p className="text-black-light">
-                We cannot speak highly enough of the staff assigned to our
+                "We cannot speak highly enough of the staff assigned to our
                 implementation. Our new infrastructure more complex than our
                 previous systems. The iQuest team were helpful, approachable,
                 and knowledgeable. The ongoing excellent support is really
@@ -104,17 +104,46 @@ const TestimonialCarousel = () => {
             />
             <blockquote className="text-center text-black-light">
               <p className="text-black-light">
-                We cannot speak highly enough of the staff assigned to our
-                implementation. Our new infrastructure more complex than our
-                previous systems. The iQuest team were helpful, approachable,
-                and knowledgeable. The ongoing excellent support is really
-                something we sincerely appreciate and rely on.&rdquo;
+                "The team assigned to our implementation deserves the highest
+                praise, as we cannot speak highly enough of their remarkable
+                qualities. Our new infrastructure presents a greater level of
+                complexity compared to our previous systems. Throughout the
+                process, the iQuest team has proven to be a valuable asset,
+                offering unwavering support, approachability, and extensive
+                knowledge. We deeply appreciate and rely on the continuous
+                excellence of their assistance.&rdquo;
               </p>
               <figcaption data-animate-left className="mt-6 text-xl font-bold">
                 Minh Tran
               </figcaption>
               <cite data-animate-left className="italic font-normal">
                 Manager, Information Technology, Fremantle Dockers
+              </cite>
+            </blockquote>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div className="flex flex-col items-center justify-center max-w-4xl gap-6 p-12 mx-auto bg-white rounded-2xl">
+            <StaticImage
+              className="mx-auto"
+              width={100}
+              src="../images/artrya.jpg"
+              alt="Artrya Logo"
+              placeholder="none"
+            />
+            <blockquote className="text-center text-black-light">
+              <p className="text-black-light">
+                "As a client of iQuest, I am thoroughly impressed with the
+                quality of their IT services. Their team is knowledgeable,
+                responsive, and goes above and beyond to ensure our IT needs are
+                met. I highly recommend iQuest for their exceptional
+                services.&rdquo;
+              </p>
+              <figcaption data-animate-left className="mt-6 text-xl font-bold">
+                Janice Marcon
+              </figcaption>
+              <cite data-animate-left className="italic font-normal">
+                Chief People & Culture Officer
               </cite>
             </blockquote>
           </div>
