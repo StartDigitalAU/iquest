@@ -13,7 +13,7 @@ module.exports = {
     // `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sitemap`,
-    'gatsby-plugin-next-seo',
+    "gatsby-plugin-next-seo",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -65,6 +65,15 @@ module.exports = {
         typekit: {
           id: "zgu5zvw",
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-3XW6SNFLLS", // Google Analytics / GA
+        ],
       },
     },
     `gatsby-plugin-gatsby-cloud`,
