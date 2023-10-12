@@ -24,20 +24,32 @@ export default function Directors() {
               </span>
             </h2>
             <p data-animate>
-              Our partnerships with these companies are advantageous for our
-              clients as it’s through our relationships that we can offer better
-              pricing and service. Our close relationships with our partners
-              also means we can build upon our knowledge and seek answers
-              quickly on issues of hardware and software.
+              After spending 14 successful years in the banking industry across
+              Singapore and Australia, I took a leap of faith in 2004 and
+              founded iQuest, an information technology (IT) company dedicated
+              to providing scalable and flexible outsourcing solutions. My
+              vision was to support businesses of all sizes and industries, both
+              locally and internationally, with innovative IT services. Today,
+              iQuest stands as a testament to my commitment to fostering
+              collaborative partnerships and recognition for its ability to
+              provide scalable services that fueled clients' growth.
             </p>
             <p data-animate>
-              By having these extremely experienced and influential companies
-              providing us with resources we can provide a range of Technology
-              Consulting activities to you, including Strategic IT planning,
-              Application Software Development, and Business Analyst roles with
-              highly experienced senior IT Consultants by your side. Through
-              iQuest, we specialise in assisting small, medium and corporate
-              businesses to get the most out of their IT systems.
+              In 2018, iQuest underwent a transformative shift to a
+              management-operated model. By involving two trusted business
+              partners and assembling a dedicated team, I aimed to solidify
+              client relationships, explore new business opportunities, and
+              pursue personal and professional growth. This transition served as
+              a major milestone in iQuest's journey, positioning the company for
+              even greater achievements.
+            </p>
+            <p data-animate>
+              In addition to my role as an entrepreneur and business leader, I
+              am deeply committed to mentoring and advising others. Leveraging
+              my extensive experience and broad expertise, I eagerly share
+              insights and guidance with companies within and beyond the Journey
+              Together Partners Network (JPTN). Through this dedication, I aim
+              to foster collaboration and build a vibrant business community.
             </p>
           </div>
           <div data-animate-right>
