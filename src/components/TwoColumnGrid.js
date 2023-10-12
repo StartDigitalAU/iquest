@@ -3,7 +3,7 @@ import React from "react"
 export default function TwoColumnGrid({ title, description, items }) {
     return (
         <div className="py-16">
-            <div className="mx-auto px-4 lg:px-0">
+            <div className="mx-auto">
                 <div className="lg:text-left">
                     {title && <h2 className="text-3xl leading-8 font-extrabold tracking-tight text-blue-light sm:text-4xl">{title}</h2>}
                     {description && <p className="mt-4 max-w-2xl text-xl text-white lg:mx-auto">
@@ -16,7 +16,7 @@ export default function TwoColumnGrid({ title, description, items }) {
                         {items.map((item) => (
                             <div data-animate key={item.name} className="relative">
                                 <dt>
-                                    <p className="font-bold">{item.name}</p>
+                                    <p className="font-bold is-h3">{item.name}</p>
                                 </dt>
                                 <dd className="mt-2 text-gray-300">{item.description}</dd>
                             </div>

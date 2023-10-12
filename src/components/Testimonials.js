@@ -1,34 +1,29 @@
 import React from "react"
+import TestimonialCarousel from "./TestimonialCarousel"
 import { StaticImage } from "gatsby-plugin-image"
+// import function to register Swiper custom elements
+import { register } from "swiper/element/bundle"
+// register Swiper custom elements
+register()
 
 const Testimonials = () => {
   return (
-    <div className="bg-secondary-gradient">
-      <section className="py-12 w-full max-w-7xl mx-auto px-4 grid gap-6 md:py-32 md:grid-cols-3 xl:px-0">
-        <blockquote className="text-blue-lighter lg:col-span-2">
-          <p data-animate className="text-xl font-normal leading-loose">
-            We cannot speak highly enough of the staff assigned to our
-            implementation. Our new infrastructure more complex than our
-            previous systems. The iQuest team were helpful, approachable, and
-            knowledgeable. The ongoing excellent support is really something we
-            sincerely appreciate and rely on.&rdquo;
-          </p>
-          <figcaption data-animate-left className="mt-6 text-xl font-bold">
-            Minh Tran
-          </figcaption>
-          <cite data-animate-left className="italic font-normal">
-            Manager, Information Technology, Fremantle Dockers
-          </cite>
-        </blockquote>
-        <StaticImage
-          className="mx-auto"
-          width={250}
-          src="../images/Fremantle-Dockers-Client-Logo2.png"
-          alt="Fremantle Dockers Logo"
-          placeholder="none"
-        />
-      </section>
-    </div>
+    <section className="px-6 md:px-12 xl:px-0 bg-overlay pt-[350px] md:pt-[600px] lg:pt-[550px] pb-16 md:pb-32 relative mb-[-100px] lg:rounded-[100px]">
+      <StaticImage
+        src={"../images/perth-afternoon.jpg"}
+        alt="Perth in the Afternoon"
+        className="!absolute inset-0 rounded-t-[50px] lg:rounded-[100px]"
+      />
+      <div className="relative z-10 text-center mb-12 lg:mb-24">
+        <p className="text-white text-md font-sans inline-block md:text-lg tracking-wide mb-3 lg:mb-6">
+          Exceptional IT Support Since 2004
+        </p>
+        <h3 className="text-white text-3xl leading-normal lg:text-5xl">
+          Hear How We’ve Helped
+        </h3>
+      </div>
+      <TestimonialCarousel />
+    </section>
   )
 }
 

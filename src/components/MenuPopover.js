@@ -5,6 +5,7 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 import IconLoader from './IconLoader'
 import {
     BookmarkAltIcon,
+    BellIcon,
     CalendarIcon,
     ChartBarIcon,
     CursorClickIcon,
@@ -16,7 +17,9 @@ import {
     XIcon,
     WifiIcon,
     DocumentTextIcon,
-    ChatIcon
+    ChatIcon,
+    ShieldCheckIcon,
+    GlobeAltIcon
 } from '@heroicons/react/outline'
 
 const MenuPopover = ({ title, menu }) => {
@@ -33,7 +36,10 @@ const MenuPopover = ({ title, menu }) => {
         xicon: XIcon,
         wifiicon: WifiIcon,
         documenttexticon: DocumentTextIcon,
-        chaticon: ChatIcon
+        chaticon: ChatIcon,
+        shieldcheckicon: ShieldCheckIcon,
+        bellicon: BellIcon,
+        globealticon: GlobeAltIcon,
     }
 
     return (
@@ -59,8 +65,8 @@ const MenuPopover = ({ title, menu }) => {
                         leaveTo="opacity-0 translate-y-1"
                     >
                         <Popover.Panel static className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-                            <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                                <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                            <div className="lg:w-[700px] rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                <div className="relative grid lg:grid-cols-2 gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                                     {menu.map((item) => {
                                         const Icon = item.icon.toString().toLowerCase()
                                         return (

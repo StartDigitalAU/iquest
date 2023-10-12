@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
 import InternalLayout from "../../components/layout/InternalLayout"
-import { StaticImage } from "gatsby-plugin-image"
 import { CheckIcon } from '@heroicons/react/outline'
 
 const features = [

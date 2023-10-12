@@ -12,15 +12,15 @@ function BusinessHelpdeskSupportPerth() {
         description="Our resourceful technical experts in Perth provide helpdesk support and other business IT support services for most industries."
       />
       <InternalLayout title="Business Helpdesk Support" >
-        <div className="flex flex-col space-y-20">
-          <div className="grid lg:grid-cols-2 gap-6 items-center">
+        <div className="flex flex-col">
+          <div className="grid lg:grid-cols-2 gap-6">
             <div>
-              <h2 className="text-blue-light" data-animate>We have a team of resourceful technical support experts in Perth providing helpdesk support.</h2>
+              <h2 className="text-blue-light mb-6" data-animate>We have a team of resourceful technical support experts in Perth providing helpdesk support.</h2>
               <p data-animate>The iQuest team consists of highly experienced IT support engineers, armed with the latest help desk ticketing systems, remote support consulting tools and diagnostic software. We provide first level through to third level desktop, server and application assistance for all your business IT needs.</p>
             </div>
             <div data-animate-right>
               <StaticImage
-                className="w-full rounded-xl shadow-md"
+                className="w-full rounded-xl shadow-md mb-10"
                 src="../../images/iQuest-Helpdesk-Support.jpeg"
                 alt="Two men looking at a their work on a computer screen"
                 placeholder="none"

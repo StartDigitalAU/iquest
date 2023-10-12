@@ -21,13 +21,7 @@ export default function About() {
         <p>
           iQuest may be a technology company, but at the very core we provide exceptional good old-fashioned service. In a highly competitive market, we are able to distinguish ourselves by offering a personal, tailored service that delivers the very best IT solutions for each and every one of our clients. iQuest was created not only to provide professional IT services to Perth and West Australian businesses but to educate our clients on how technology can run and support businesses. Our success is measured by a high customer satisfaction rate and determined by the commitment and competence of our team of IT Engineers.
         </p>
-        <StaticImage
-          className="mt-20 rounded-2xl shadow-2xl lg:w-auto"
-          src="../../src/images/About-iQuest-Image.png"
-          width={1224}
-          alt="iQuest About Us Banner"
-          placeholder="none" />
-        <ClientLogos classes="py-20" />
+        <ClientLogos classes="py-10 md:py-20 my-8 md:my-16" />
         <h2 className="mb-0 text-blue-light">The iQuest Team</h2>
         <p className="text-xl font-bold">A message from the directors</p>
         <p>
