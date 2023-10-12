@@ -34,7 +34,7 @@ const Partnership = () => {
           </Link>
         </div>
         <StaticImage
-          className="mt-12 lg:mt-0 w-full scale-110"
+          className="mt-12 lg:mt-0 w-full scale-110 contain-img"
           src="../images/iQuest-Partnership-Brochure.png"
           alt="iQuest Brochure Mockup"
           placeholder="none"
