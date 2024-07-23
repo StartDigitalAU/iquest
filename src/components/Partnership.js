@@ -14,17 +14,16 @@ const Partnership = () => {
         />
 
         <div>
-          <p className="text-[#6656D0] text-md font-sans inline-block md:text-lg tracking-wide mb-6">
+          {/* <p className="text-[#6656D0] text-md font-sans inline-block md:text-lg tracking-wide mb-6">
             Achieve Business Growth & Work-Life Balance
-          </p>
+          </p> */}
           <h4 className="text-3xl lg:text-5xl text-white lg:leading-tight font-display mb-6">
-            iQuest Partnership & Succession
+            Journey Together Partner Network (JTPN)
           </h4>
           <p className="">
-            As a business owner, is your time all work and no play? Find out how
-            the iQuest team can help your business maximise its resources and
-            profitability while also giving you more time to spend with your
-            loved ones.
+            Embark on a transformative business journey with JTPN, a
+            collaborative platform designed for ambitious organizations seeking
+            growth and innovation.
           </p>
           <Link
             to="/partnership"

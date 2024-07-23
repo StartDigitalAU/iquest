@@ -43,40 +43,87 @@ const Partnership = () => {
         description="Our mission is to help you establish a successful IT business through our back office IT support from expert IT consultants."
       />
       <InternalLayout
-        title="Let’s Journey Together"
-        description="We want to assist you and your firm with all that we’ve learned throughout our own journey. With iQuest’s strong business acumen and technically competent team, we can help you achieve business growth while maintaining a work-life balance."
+        title="Journey Together Partner Network (JTPN)"
+        description=" Embark on a transformative business journey with JTPN, a
+              collaborative platform designed for ambitious organizations
+              seeking growth and innovation."
       >
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 gap-6">
           <div>
-            <h2 data-animate className="text-blue-light">
-              Partnership
-            </h2>
-            <p data-animate>
-              Our mission is to help you establish a successful IT business as
-              well as a happier balance of work and family. We will provide you
-              with our back office support, ongoing training and mentoring.
+            <h2 className="mb-2 text-blue-light">Our Vision</h2>
+            <p data-animate className="mb-8">
+              Established in 2020, JTPN fosters collaboration, knowledge
+              sharing, and mutual growth among like-minded MSP partners across
+              Australia.
             </p>
-            <StaticImage
-              className="w-full mt-20 max-h-80 rounded-b-xl lg:rounded-bl-none lg:rounded-tr-xl lg:max-h-full"
-              src="../images/iQuest-Journey-Brochure.png"
-              alt="iQuest Brochure Mockup"
-              placeholder="none"
-              height={600}
-              quality="100"
-            />
+            <h3 className="mb-2">Key Benefits</h3>
+            <ul data-animate className="mb-8">
+              <li>
+                <p>Accelerator Program</p>
+              </li>
+              <li>
+                <p>Regular knowledge-sharing sessions</p>
+              </li>
+              <li>
+                <p>New business opportunities and collaborations</p>
+              </li>
+              <li>
+                <p>Shared resources for increased efficiency</p>
+              </li>
+              <li>
+                <p>Collective strategy development</p>
+              </li>
+            </ul>
+            <h3 className="mb-2">JTPN Accelerator Program</h3>
+            <p data-animate className="mb-8">
+              Boost your business growth with our proven program.
+            </p>
+            <h3 className="mb-2">Program Structure</h3>
+            <ul data-animate className="mb-8">
+              <li>
+                <p>Bi-weekly 1.5-hour meetings</p>
+              </li>
+              <li>
+                <p>Quarterly 4-hour strategy sessions</p>
+              </li>
+              <li>
+                <p>Monthly focused discussions</p>
+              </li>
+            </ul>
+            <h3 className="mb-2">Focus Areas</h3>
+            <ul data-animate className="mb-8">
+              <li>
+                <p>Growth Mindset</p>
+              </li>
+              <li>
+                <p>Client Relations</p>
+              </li>
+              <li>
+                <p>Products & Services</p>
+              </li>
+              <li>
+                <p>Processes & Documentation</p>
+              </li>
+              <li>
+                <p>Financial Management</p>
+              </li>
+              <li>
+                <p>Team Building</p>
+              </li>
+            </ul>
           </div>
           <div>
-            <h2 data-animate className="text-blue-light">
-              Succession
+            <h2 data-animate className="text-blue-light mb-2">
+              Why Join?
             </h2>
-            <p data-animate className="mb-12">
-              Our mission is to help you establish a successful IT business as
-              well as a happier balance of work and family. We will provide you
-              with our back office support, ongoing training and mentoring.
+            <p data-animate>
+              Consistent support and guidance- Strategic planning opportunities-
+              Work "on" your business, not just "in" it- Proven track record of
+              partner growth and profitability
             </p>
-            <p data-animate className="mb-12">
-              Please complete the below form to download your eBook with further
-              information.
+            <p data-animate className="mb-10">
+              Join JTPN today and accelerate your MSP business growth through
+              proven program, collaboration and strategic development.
             </p>
             <a
               id="download-button"
@@ -127,6 +174,14 @@ const Partnership = () => {
                 Download
               </button>
             </form>
+            <StaticImage
+              className="w-full mt-20 max-h-80 rounded-b-xl lg:rounded-bl-none lg:rounded-tr-xl lg:max-h-full"
+              src="../images/iQuest-Journey-Brochure.png"
+              alt="iQuest Brochure Mockup"
+              placeholder="none"
+              height={600}
+              quality="100"
+            />
           </div>
         </div>
       </InternalLayout>
